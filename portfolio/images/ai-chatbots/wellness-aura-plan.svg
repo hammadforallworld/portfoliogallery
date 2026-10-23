@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgPlan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a14"/>
+      <stop offset="100%" stop-color="#14182b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bgPlan)"/>
+  <!-- Document Sheet Mockup -->
+  <rect x="180" y="30" width="440" height="390" rx="12" fill="#ffffff" filter="drop-shadow(0 10px 20px rgba(0,0,0,0.5))"/>
+  <!-- Document Header -->
+  <rect x="180" y="30" width="440" height="60" rx="12" fill="#655cf6"/>
+  <text x="210" y="65" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#ffffff">AURA PERSONALIZED HEALTH BLUEPRINT</text>
+  <text x="210" y="80" font-family="'Inter', sans-serif" font-size="11" fill="#e0e7ff">Generated automatically via Make.com + AI Engine</text>
+  
+  <!-- Content lines in PDF -->
+  <text x="210" y="120" font-family="'Inter', sans-serif" font-size="13" font-weight="bold" fill="#1e293b">1. Daily Nutrition Schedule</text>
+  <rect x="210" y="130" width="380" height="3" fill="#e2e8f0"/>
+  <text x="210" y="150" font-family="'Inter', sans-serif" font-size="11" fill="#475569">• Breakfast: Oats, Greek yogurt, chia seeds &amp; berries (450 kcal)</text>
+  <text x="210" y="170" font-family="'Inter', sans-serif" font-size="11" fill="#475569">• Lunch: Grilled chicken / tofu bowl with quinoa and greens (620 kcal)</text>
+  <text x="210" y="190" font-family="'Inter', sans-serif" font-size="11" fill="#475569">• Dinner: Salmon / lentil curry with steamed asparagus (580 kcal)</text>
+
+  <text x="210" y="230" font-family="'Inter', sans-serif" font-size="13" font-weight="bold" fill="#1e293b">2. Caloric &amp; Macro Breakdown</text>
+  <rect x="210" y="240" width="380" height="3" fill="#e2e8f0"/>
+  <rect x="210" y="255" width="110" height="40" rx="6" fill="#f1f5f9"/>
+  <text x="265" y="273" font-family="'Inter', sans-serif" font-size="10" fill="#64748b" text-anchor="middle">CALORIES</text>
+  <text x="265" y="289" font-family="'Inter', sans-serif" font-size="13" font-weight="bold" fill="#655cf6" text-anchor="middle">2,100 kcal</text>
+
+  <rect x="345" y="255" width="110" height="40" rx="6" fill="#f1f5f9"/>
+  <text x="400" y="273" font-family="'Inter', sans-serif" font-size="10" fill="#64748b" text-anchor="middle">PROTEIN</text>
+  <text x="400" y="289" font-family="'Inter', sans-serif" font-size="13" font-weight="bold" fill="#0ea5e9" text-anchor="middle">165 g</text>
+
+  <rect x="480" y="255" width="110" height="40" rx="6" fill="#f1f5f9"/>
+  <text x="535" y="273" font-family="'Inter', sans-serif" font-size="10" fill="#64748b" text-anchor="middle">WATER TARGET</text>
+  <text x="535" y="289" font-family="'Inter', sans-serif" font-size="13" font-weight="bold" fill="#10b981" text-anchor="middle">3.2 Liters</text>
+
+  <text x="210" y="325" font-family="'Inter', sans-serif" font-size="13" font-weight="bold" fill="#1e293b">3. Automated Delivery Status</text>
+  <rect x="210" y="335" width="380" height="3" fill="#e2e8f0"/>
+  <text x="210" y="355" font-family="'Inter', sans-serif" font-size="11" fill="#10b981">✔ PDF compiled and dispatched to user inbox via Gmail API webhook</text>
+  <text x="210" y="375" font-family="'Inter', sans-serif" font-size="11" fill="#64748b">Session ID: #WA-2026-9841 • Verified by Hammad Hassan Workflow</text>
+</svg>

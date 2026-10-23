@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#ffffff"/>
+
+  <!-- Outer Double Border Frame -->
+  <rect x="25" y="25" width="1150" height="750" fill="none" stroke="#94a3b8" stroke-width="2"/>
+  <rect x="35" y="35" width="1130" height="730" fill="none" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Corner Brackets -->
+  <rect x="20" y="20" width="18" height="18" fill="#cbd5e1" stroke="#94a3b8" stroke-width="1.5"/>
+  <rect x="1162" y="20" width="18" height="18" fill="#cbd5e1" stroke="#94a3b8" stroke-width="1.5"/>
+  <rect x="20" y="762" width="18" height="18" fill="#cbd5e1" stroke="#94a3b8" stroke-width="1.5"/>
+  <rect x="1162" y="762" width="18" height="18" fill="#cbd5e1" stroke="#94a3b8" stroke-width="1.5"/>
+
+  <!-- ================= TOP LEFT: DeepLearning.AI Logo ================= -->
+  <g transform="translate(100, 110)">
+    <!-- Concentric Target Logo Icon -->
+    <circle cx="28" cy="28" r="26" fill="#ff4d5a"/>
+    <circle cx="28" cy="28" r="18" fill="#ffffff"/>
+    <circle cx="28" cy="28" r="11" fill="#ff4d5a"/>
+    <circle cx="28" cy="28" r="4" fill="#ffffff"/>
+    <!-- Brand Name -->
+    <text x="68" y="38" font-family="'Inter', sans-serif" font-size="46" font-weight="800" fill="#ff4d5a" letter-spacing="-0.5">DeepLearning<tspan fill="#334155">.AI</tspan></text>
+  </g>
+
+  <!-- ================= TOP RIGHT: Header & Coursera Badge ================= -->
+  <g transform="translate(870, 115)">
+    <text x="0" y="0" font-family="'Inter', sans-serif" font-size="20" font-weight="700" fill="#1e293b" letter-spacing="2">COURSE</text>
+    <text x="0" y="26" font-family="'Inter', sans-serif" font-size="20" font-weight="700" fill="#1e293b" letter-spacing="2">CERTIFICATE</text>
+  </g>
+
+  <!-- Coursera Circular Embossed Stamp Badge -->
+  <g transform="translate(930, 390)">
+    <circle cx="0" cy="0" r="105" fill="#f8fafc" stroke="#334155" stroke-width="2.5" stroke-dasharray="4,4"/>
+    <circle cx="0" cy="0" r="95" fill="none" stroke="#0056d2" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="70" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="0" y="6" font-family="'Inter', sans-serif" font-size="22" font-weight="900" fill="#0056d2" text-anchor="middle" letter-spacing="-0.5">coursera</text>
+    <path id="badgeTextPath" d="M -75,0 A 75,75 0 1,1 75,0" fill="none"/>
+    <text font-family="'Inter', sans-serif" font-size="8.5" font-weight="700" fill="#475569" letter-spacing="1.5">
+      <textPath href="#badgeTextPath" startOffset="50%" text-anchor="middle">EDUCATION FOR EVERYONE</textPath>
+    </text>
+  </g>
+
+  <!-- ================= RECIPIENT & DETAILS ================= -->
+  <text x="100" y="245" font-family="'Courier New', monospace" font-size="16" font-weight="600" fill="#475569">Aug 19, 2025</text>
+
+  <!-- Recipient Name -->
+  <text x="100" y="315" font-family="'Georgia', serif" font-size="44" font-weight="700" fill="#0f172a" letter-spacing="1">Hammad Hassan</text>
+
+  <text x="100" y="375" font-family="'Inter', sans-serif" font-size="16" font-weight="400" fill="#475569">has successfully completed</text>
+
+  <!-- Course Title -->
+  <text x="100" y="440" font-family="'Georgia', serif" font-size="34" font-weight="700" fill="#1e293b">AI For Everyone</text>
+
+  <text x="100" y="495" font-family="'Inter', sans-serif" font-size="15" font-weight="400" fill="#475569">
+    an online non-credit course authorized by DeepLearning.AI and offered through Coursera
+  </text>
+
+  <!-- ================= SIGNATURE: Andrew Ng ================= -->
+  <g transform="translate(100, 680)">
+    <!-- Signature path -->
+    <path d="M 0 -15 C 20 -40, 35 -5, 55 -25 C 70 -40, 95 -10, 120 -20 M 15 0 C 45 5, 80 0, 110 -5" fill="none" stroke="#1e293b" stroke-width="2.2" stroke-linecap="round"/>
+    <line x1="0" y1="5" x2="280" y2="5" stroke="#cbd5e1" stroke-width="1.5"/>
+    <text x="0" y="28" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#1e293b">Andrew Ng</text>
+    <text x="0" y="46" font-family="'Inter', sans-serif" font-size="12" font-weight="500" fill="#64748b">Founder, DeepLearning.AI</text>
+    <text x="0" y="62" font-family="'Inter', sans-serif" font-size="12" font-weight="500" fill="#64748b">Co-founder, Coursera</text>
+  </g>
+
+  <!-- ================= BOTTOM RIGHT VERIFICATION ================= -->
+  <g transform="translate(1060, 720)">
+    <text x="0" y="-20" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#64748b" text-anchor="end">Verify at:</text>
+    <text x="0" y="0" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#0056d2" text-anchor="end">
+      https://coursera.org/verify/FH4NF10RYGRW
+    </text>
+    <text x="0" y="18" font-family="'Inter', sans-serif" font-size="10.5" font-weight="400" fill="#94a3b8" text-anchor="end">
+      Coursera has confirmed the identity of this individual and their participation in the course.
+    </text>
+  </g>
+</svg>

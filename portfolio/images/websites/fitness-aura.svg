@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgFit" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a10"/>
+      <stop offset="50%" stop-color="#161214"/>
+      <stop offset="100%" stop-color="#241315"/>
+    </linearGradient>
+    <linearGradient id="orangeFire" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bgFit)"/>
+  
+  <!-- Browser Frame -->
+  <rect x="50" y="30" width="700" height="390" rx="14" fill="#120f12" stroke="#332426" stroke-width="2"/>
+  <rect x="50" y="30" width="700" height="42" rx="14" fill="#1f181a"/>
+  <circle cx="75" cy="51" r="5" fill="#ef4444"/>
+  <circle cx="95" cy="51" r="5" fill="#f59e0b"/>
+  <circle cx="115" cy="51" r="5" fill="#10b981"/>
+  <text x="400" y="55" font-family="'Inter', sans-serif" font-size="11" fill="#a89a9c" text-anchor="middle">https://fitness-aura-portal.local</text>
+
+  <!-- Fitness Portal UI -->
+  <text x="80" y="110" font-family="'Inter', sans-serif" font-size="20" font-weight="900" fill="#ffffff">🔥 FITNESS AURA PRO</text>
+  <text x="80" y="145" font-family="'Inter', sans-serif" font-size="28" font-weight="900" fill="#f97316">CRUSH YOUR LIMITS</text>
+  <text x="80" y="175" font-family="'Inter', sans-serif" font-size="13" fill="#d1d5db">High-intensity routines, trainer bookings, &amp; dynamic performance logging.</text>
+
+  <!-- 3 Workout Cards in UI -->
+  <rect x="80" y="210" width="190" height="170" rx="10" fill="#1c1618" stroke="#42292c"/>
+  <rect x="95" y="225" width="60" height="20" rx="4" fill="url(#orangeFire)"/>
+  <text x="125" y="239" font-family="'Inter', sans-serif" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">CARDIO</text>
+  <text x="95" y="270" font-family="'Inter', sans-serif" font-size="15" font-weight="bold" fill="#ffffff">HIIT Engine</text>
+  <text x="95" y="290" font-family="'Inter', sans-serif" font-size="11" fill="#9ca3af">45 mins • 520 kcal</text>
+  <rect x="95" y="325" width="160" height="28" rx="6" fill="#2d1e21"/>
+  <text x="175" y="343" font-family="'Inter', sans-serif" font-size="11" font-weight="bold" fill="#f97316" text-anchor="middle">Book Session</text>
+
+  <rect x="295" y="210" width="190" height="170" rx="10" fill="#1c1618" stroke="#42292c"/>
+  <rect x="310" y="225" width="60" height="20" rx="4" fill="#655cf6"/>
+  <text x="340" y="239" font-family="'Inter', sans-serif" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">STRENGTH</text>
+  <text x="310" y="270" font-family="'Inter', sans-serif" font-size="15" font-weight="bold" fill="#ffffff">Hypertrophy Split</text>
+  <text x="310" y="290" font-family="'Inter', sans-serif" font-size="11" fill="#9ca3af">60 mins • Progressive</text>
+  <rect x="310" y="325" width="160" height="28" rx="6" fill="#2d1e21"/>
+  <text x="390" y="343" font-family="'Inter', sans-serif" font-size="11" font-weight="bold" fill="#f97316" text-anchor="middle">Book Session</text>
+
+  <rect x="510" y="210" width="210" height="170" rx="10" fill="#1c1618" stroke="#42292c"/>
+  <rect x="525" y="225" width="70" height="20" rx="4" fill="#10b981"/>
+  <text x="560" y="239" font-family="'Inter', sans-serif" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">RECOVERY</text>
+  <text x="525" y="270" font-family="'Inter', sans-serif" font-size="15" font-weight="bold" fill="#ffffff">Mobility Flow</text>
+  <text x="525" y="290" font-family="'Inter', sans-serif" font-size="11" fill="#9ca3af">30 mins • Active Reset</text>
+  <rect x="525" y="325" width="180" height="28" rx="6" fill="#2d1e21"/>
+  <text x="615" y="343" font-family="'Inter', sans-serif" font-size="11" font-weight="bold" fill="#f97316" text-anchor="middle">Book Session</text>
+</svg>

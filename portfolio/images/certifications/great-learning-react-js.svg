@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#ffffff"/>
+
+  <!-- ================= GEOMETRIC CORNER BRACKET FRAMES ================= -->
+  <!-- Top Left: Bold Cyan Bracket -->
+  <path d="M 50 60 L 250 60 L 250 85 L 75 85 L 75 280 L 50 280 Z" fill="#0284c7"/>
+
+  <!-- Top Right: Navy Line Bracket -->
+  <path d="M 950 85 L 1150 85 L 1150 200" fill="none" stroke="#1e3a8a" stroke-width="6"/>
+
+  <!-- Bottom Left: Purple/Indigo Line Bracket -->
+  <path d="M 75 600 L 75 740 L 320 740" fill="none" stroke="#4338ca" stroke-width="6"/>
+
+  <!-- Bottom Right: Bold Cyan Corner Bracket -->
+  <path d="M 950 740 L 1150 740 L 1150 560 L 1125 560 L 1125 715 L 950 715 Z" fill="#0284c7"/>
+
+  <!-- ================= CENTER: Great Learning Logo ================= -->
+  <g transform="translate(600, 160)">
+    <!-- Great Learning G Logo -->
+    <path d="M -90 -25 A 25 25 0 1 0 -65 0 L -65 -12 L -78 -12 L -78 -2 L -72 -2 A 15 15 0 1 1 -90 -15 Z" fill="#0284c7"/>
+    <text x="-45" y="-6" font-family="'Inter', sans-serif" font-size="34" font-weight="900" fill="#1e3a8a">Great</text>
+    <text x="-45" y="24" font-family="'Inter', sans-serif" font-size="34" font-weight="900" fill="#1e3a8a">Learning</text>
+  </g>
+
+  <!-- ================= DOCUMENT TITLE ================= -->
+  <text x="600" y="290" font-family="'Inter', -apple-system, sans-serif" font-size="48" font-weight="800" fill="#0f172a" text-anchor="middle" letter-spacing="1">
+    CERTIFICATE OF COMPLETION
+  </text>
+
+  <!-- Presented to -->
+  <text x="600" y="365" font-family="'Inter', sans-serif" font-size="18" font-weight="500" fill="#475569" text-anchor="middle">
+    Presented to
+  </text>
+
+  <!-- Recipient Name: Hammad Hassan -->
+  <text x="600" y="435" font-family="'Inter', sans-serif" font-size="46" font-weight="800" fill="#0284c7" text-anchor="middle">
+    Hammad Hassan
+  </text>
+
+  <!-- For successfully completing... -->
+  <text x="600" y="495" font-family="'Inter', sans-serif" font-size="19" font-weight="500" fill="#334155" text-anchor="middle">
+    For successfully completing a free online course
+  </text>
+
+  <!-- Course Title: React JS Tutorial -->
+  <text x="600" y="555" font-family="'Inter', sans-serif" font-size="36" font-weight="800" fill="#0f172a" text-anchor="middle">
+    React JS Tutorial
+  </text>
+
+  <!-- Provided by Great Learning Academy -->
+  <text x="600" y="625" font-family="'Inter', sans-serif" font-size="15" font-weight="500" fill="#64748b" text-anchor="middle">
+    Provided by
+  </text>
+  <text x="600" y="655" font-family="'Inter', sans-serif" font-size="22" font-weight="800" fill="#1e3a8a" text-anchor="middle">
+    Great Learning Academy
+  </text>
+  <text x="600" y="685" font-family="'Inter', sans-serif" font-size="13" font-weight="500" fill="#94a3b8" text-anchor="middle">
+    (On October 2024)
+  </text>
+
+  <!-- Bottom Right Verification URL -->
+  <g transform="translate(1120, 755)">
+    <text x="0" y="0" font-family="'Inter', sans-serif" font-size="12" font-weight="500" fill="#475569" text-anchor="end">
+      To verify this certificate visit <tspan font-weight="700" fill="#0284c7">https://www.mygreatlearning.com/certificate/UHEUKNPI</tspan>
+    </text>
+  </g>
+</svg>

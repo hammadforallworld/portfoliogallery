@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#ffffff"/>
+
+  <!-- Top Curved Red & Black Swoop Banner -->
+  <path d="M 0 0 L 1200 0 L 1200 110 Q 600 150 0 70 Z" fill="#0f172a"/>
+  <path d="M 0 0 L 600 0 Q 300 80 0 120 Z" fill="#dc2626"/>
+  <path d="M 0 40 Q 400 90 900 120 L 850 130 Q 350 95 0 55 Z" fill="#ef4444" opacity="0.6"/>
+
+  <!-- ================= TOP LOGO & TITLE ================= -->
+  <!-- Top Left: Velocity Solutions Logo -->
+  <g transform="translate(140, 160)">
+    <!-- Winged Velocity V Logo -->
+    <path d="M 0 0 L 25 35 L 50 0 L 35 0 L 25 20 L 15 0 Z" fill="#0f172a"/>
+    <path d="M -15 -10 L 25 35 L 65 -10 L 52 -10 L 25 18 L -2 -10 Z" fill="#dc2626"/>
+    <text x="75" y="16" font-family="'Inter', sans-serif" font-size="24" font-weight="900" fill="#0f172a" letter-spacing="1">VELOCITY</text>
+    <text x="75" y="32" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#dc2626" letter-spacing="3">SOLUTIONS</text>
+  </g>
+
+  <!-- Title: Certificate of Internship -->
+  <text x="700" y="195" font-family="'Inter', sans-serif" font-size="44" font-weight="700" fill="#0f172a">
+    Certificate of Internship
+  </text>
+
+  <!-- This is to certify that -->
+  <text x="600" y="275" font-family="'Inter', sans-serif" font-size="18" font-weight="500" fill="#475569" text-anchor="middle">
+    This is to certify that
+  </text>
+
+  <!-- Recipient Name: Hammad Hassan -->
+  <text x="600" y="340" font-family="'Inter', sans-serif" font-size="46" font-weight="800" fill="#1e3a8a" text-anchor="middle">
+    Hammad Hassan
+  </text>
+
+  <!-- Internship Program Details -->
+  <text x="600" y="405" font-family="'Inter', sans-serif" font-size="19" font-weight="500" fill="#1e293b" text-anchor="middle">
+    Has successfully completed the <tspan font-weight="800" fill="#0f172a">Remote C++ Programming Internship Program</tspan>
+  </text>
+  <text x="600" y="435" font-family="'Inter', sans-serif" font-size="19" font-weight="700" fill="#0f172a" text-anchor="middle">
+    from 01-July-2025 to 31-July-2025.
+  </text>
+
+  <!-- Body paragraphs -->
+  <text x="600" y="485" font-family="'Inter', sans-serif" font-size="15" font-weight="400" fill="#334155" text-anchor="middle">
+    During this period, the intern has demonstrated commitment, professional skills, and the ability to work effectively in a virtual
+  </text>
+  <text x="600" y="510" font-family="'Inter', sans-serif" font-size="15" font-weight="400" fill="#334155" text-anchor="middle">
+    environment. Their contributions have been valuable to the assigned projects and objectives.
+  </text>
+  <text x="600" y="555" font-family="'Inter', sans-serif" font-size="15" font-weight="400" fill="#334155" text-anchor="middle">
+    We commend their dedication and wish them continued success in their professional journey.
+  </text>
+
+  <!-- ================= SIGNATURE & OFFICIAL SEAL ================= -->
+  <!-- Left Side: Signature -->
+  <g transform="translate(500, 650)">
+    <path d="M -50 -10 C -25 -40, 0 15, 25 -20 C 45 -40, 75 -10, 100 -25" fill="none" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="-80" y1="5" x2="180" y2="5" stroke="#0f172a" stroke-width="1.5"/>
+    <text x="50" y="32" font-family="'Inter', sans-serif" font-size="16" font-weight="700" fill="#0f172a" text-anchor="middle">Authorized Signatory</text>
+    <text x="50" y="55" font-family="'Inter', sans-serif" font-size="14" font-weight="500" fill="#475569" text-anchor="middle">Velocity Solutions</text>
+  </g>
+
+  <!-- Right Side: Official Red Seal Stamp -->
+  <g transform="translate(900, 650)">
+    <circle cx="0" cy="0" r="65" fill="#ffffff" stroke="#dc2626" stroke-width="3" stroke-dasharray="3,3"/>
+    <circle cx="0" cy="0" r="56" fill="none" stroke="#dc2626" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="46" fill="#fff1f2"/>
+    <path d="M -10 -15 L 0 5 L 10 -15 Z" fill="#dc2626"/>
+    <text x="0" y="16" font-family="'Inter', sans-serif" font-size="9" font-weight="800" fill="#dc2626" text-anchor="middle">Velocity</text>
+    <text x="0" y="27" font-family="'Inter', sans-serif" font-size="7.5" font-weight="700" fill="#dc2626" text-anchor="middle">Solutions</text>
+  </g>
+</svg>

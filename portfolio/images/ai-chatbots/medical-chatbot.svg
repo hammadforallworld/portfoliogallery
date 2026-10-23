@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 475" width="100%" height="100%">
+  <!-- Clean High-Contrast Medical Triage Mockup Canvas -->
+  <rect width="800" height="475" fill="#f8fafc"/>
+  <rect x="0" y="0" width="800" height="475" fill="none" stroke="#e2e8f0" stroke-width="2"/>
+
+  <!-- Window Mockup -->
+  <rect x="50" y="30" width="700" height="415" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="drop-shadow(0 6px 18px rgba(0,0,0,0.06))"/>
+  
+  <!-- Header -->
+  <rect x="50" y="30" width="700" height="40" rx="12" fill="#0284c7"/>
+  <circle cx="72" cy="50" r="4" fill="#ffffff" opacity="0.8"/>
+  <circle cx="86" cy="50" r="4" fill="#ffffff" opacity="0.8"/>
+  <circle cx="100" cy="50" r="4" fill="#ffffff" opacity="0.8"/>
+  <text x="360" y="55" font-family="'Inter', sans-serif" font-size="11.5" font-weight="bold" fill="#ffffff" text-anchor="middle">🏥 Clinical Triage &amp; Medical Intake Assistant</text>
+  
+  <!-- Badges in Header -->
+  <rect x="540" y="38" width="85" height="24" rx="5" fill="#0f172a" opacity="0.7"/>
+  <text x="582" y="54" font-family="'Inter', sans-serif" font-size="9" font-weight="bold" fill="#38bdf8" text-anchor="middle">⚡ Botpress</text>
+  
+  <rect x="635" y="38" width="95" height="24" rx="5" fill="#ea580c" opacity="0.9"/>
+  <text x="682" y="54" font-family="'Inter', sans-serif" font-size="9" font-weight="bold" fill="#ffffff" text-anchor="middle">🔄 n8n Webhook</text>
+
+  <!-- Left Stats Card -->
+  <rect x="75" y="90" width="210" height="330" rx="10" fill="#f0f9ff" stroke="#bae6fd"/>
+  <rect x="90" y="105" width="180" height="34" rx="6" fill="#0284c7"/>
+  <text x="180" y="126" font-family="'Inter', sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">+ Patient Intake Flow</text>
+
+  <text x="95" y="160" font-family="'Inter', sans-serif" font-size="9.5" fill="#64748b">Dialogue Engine:</text>
+  <text x="95" y="176" font-family="'Inter', sans-serif" font-size="11" font-weight="bold" fill="#0284c7">Botpress Conversational</text>
+
+  <text x="95" y="205" font-family="'Inter', sans-serif" font-size="9.5" fill="#64748b">Backend Automation:</text>
+  <text x="95" y="221" font-family="'Inter', sans-serif" font-size="11" font-weight="bold" fill="#ea580c">n8n Live Webhooks</text>
+
+  <text x="95" y="250" font-family="'Inter', sans-serif" font-size="9.5" fill="#64748b">Safety Filters:</text>
+  <text x="95" y="266" font-family="'Inter', sans-serif" font-size="11" font-weight="bold" fill="#f59e0b">Strict Red-Flag Screening</text>
+
+  <rect x="90" y="295" width="180" height="105" rx="6" fill="#ffffff" stroke="#e0f2fe"/>
+  <text x="180" y="318" font-family="'Inter', sans-serif" font-size="9.5" font-weight="bold" fill="#0369a1" text-anchor="middle">Clinical Architecture</text>
+  <text x="180" y="336" font-family="'Inter', sans-serif" font-size="8.5" fill="#475569" text-anchor="middle">• Botpress Natural Logic</text>
+  <text x="180" y="352" font-family="'Inter', sans-serif" font-size="8.5" fill="#ea580c" text-anchor="middle">• n8n Automated Intake Sync</text>
+  <text x="180" y="368" font-family="'Inter', sans-serif" font-size="8.5" fill="#64748b" text-anchor="middle">• Triage Protocol v2.4</text>
+
+  <!-- Right Chat Stream -->
+  <rect x="305" y="90" width="420" height="330" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+  
+  <rect x="325" y="108" width="340" height="52" rx="8" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="340" y="128" font-family="'Inter', sans-serif" font-size="10.5" font-weight="600" fill="#0284c7">Medical Assistant:</text>
+  <text x="340" y="145" font-family="'Inter', sans-serif" font-size="10" fill="#334155">Please specify current symptoms, onset, and severity.</text>
+
+  <rect x="385" y="175" width="320" height="42" rx="8" fill="#0284c7"/>
+  <text x="400" y="195" font-family="'Inter', sans-serif" font-size="10" fill="#ffffff">User: Mild dry cough and headache since yesterday.</text>
+  <text x="400" y="208" font-family="'Inter', sans-serif" font-size="9" fill="#e0f2fe">No fever, no shortness of breath.</text>
+
+  <rect x="325" y="232" width="375" height="72" rx="8" fill="#ffffff" stroke="#bbf7d0"/>
+  <text x="340" y="252" font-family="'Inter', sans-serif" font-size="10.5" font-weight="bold" fill="#15803d">Triage Result: Low Urgency (Category 4)</text>
+  <text x="340" y="270" font-family="'Inter', sans-serif" font-size="9.5" fill="#334155">• Hydration, rest, and monitor body temperature.</text>
+  <text x="340" y="286" font-family="'Inter', sans-serif" font-size="9" fill="#64748b">• If symptoms persist beyond 72h, consult physician.</text>
+
+  <rect x="325" y="320" width="320" height="36" rx="6" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="340" y="342" font-family="'Inter', sans-serif" font-size="9.5" fill="#94a3b8">Enter health query or symptom...</text>
+  <rect x="655" y="320" width="45" height="36" rx="6" fill="#0284c7"/>
+  <path d="M672 338 L683 338 M678 333 L683 338 L678 343" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

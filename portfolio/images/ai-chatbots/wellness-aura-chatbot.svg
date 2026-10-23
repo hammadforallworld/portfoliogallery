@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgChatbot" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0b14"/>
+      <stop offset="100%" stop-color="#18182f"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bgChatbot)"/>
+  <rect x="100" y="40" width="600" height="370" rx="16" fill="#121222" stroke="#655cf6" stroke-width="2"/>
+  <rect x="100" y="40" width="600" height="50" rx="16" fill="#1a1a30"/>
+  <circle cx="130" cy="65" r="8" fill="#10b981"/>
+  <text x="150" y="70" font-family="'Inter', sans-serif" font-size="14" font-weight="bold" fill="#ffffff">Wellness Aura Conversational Engine</text>
+  <text x="670" y="70" font-family="'Inter', sans-serif" font-size="12" fill="#818cf8" text-anchor="end">v2.4 Production</text>
+  
+  <!-- Dialogue Tree UI -->
+  <rect x="130" y="115" width="400" height="50" rx="10" fill="#20203a"/>
+  <text x="145" y="136" font-family="'Inter', sans-serif" font-size="12" fill="#e2e8f0">Context-Aware Wellness Assessment</text>
+  <text x="145" y="152" font-family="'Inter', sans-serif" font-size="11" fill="#94a3b8">Evaluates BMR, sleep patterns, and daily hydration.</text>
+
+  <rect x="270" y="185" width="400" height="50" rx="10" fill="#655cf6"/>
+  <text x="285" y="206" font-family="'Inter', sans-serif" font-size="12" fill="#ffffff">Client Prompt Ingestion &amp; Intent Routing</text>
+  <text x="285" y="222" font-family="'Inter', sans-serif" font-size="11" fill="#e0e7ff">Matches user parameters with targeted nutrition knowledge bases.</text>
+
+  <rect x="130" y="255" width="400" height="50" rx="10" fill="#20203a"/>
+  <text x="145" y="276" font-family="'Inter', sans-serif" font-size="12" fill="#38bdf8">Automated Webhook Output</text>
+  <text x="145" y="292" font-family="'Inter', sans-serif" font-size="11" fill="#94a3b8">Transmits plan specs to Make.com automation scenario.</text>
+
+  <!-- Status pill -->
+  <rect x="300" y="335" width="200" height="36" rx="18" fill="#10b981" opacity="0.15" stroke="#10b981" stroke-width="1.5"/>
+  <text x="400" y="358" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#10b981" text-anchor="middle">✔ Fully Tested &amp; Deployed</text>
+</svg>

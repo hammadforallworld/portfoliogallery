@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#ffffff"/>
+
+  <!-- Right Side: Vibrant Magenta Circuit Strip -->
+  <rect x="1015" y="0" width="185" height="800" fill="#e11d48"/>
+  <g stroke="#ffffff" stroke-width="2" opacity="0.25">
+    <path d="M 1030 100 L 1090 160 L 1150 160"/>
+    <circle cx="1150" cy="160" r="4" fill="#ffffff"/>
+    <path d="M 1050 250 L 1110 310 L 1110 400"/>
+    <circle cx="1110" cy="400" r="4" fill="#ffffff"/>
+    <path d="M 1080 500 L 1140 560 L 1180 560"/>
+    <circle cx="1180" cy="560" r="4" fill="#ffffff"/>
+    <path d="M 1030 650 L 1090 710 L 1160 710"/>
+    <circle cx="1160" cy="710" r="4" fill="#ffffff"/>
+  </g>
+
+  <!-- ================= TOP LOGOS ================= -->
+  <!-- Top Left: CIQ Logo -->
+  <g transform="translate(80, 60)">
+    <circle cx="28" cy="28" r="24" fill="none" stroke="#0f172a" stroke-width="6"/>
+    <text x="65" y="24" font-family="'Inter', sans-serif" font-size="11" font-weight="800" fill="#0f172a" letter-spacing="0.5">CAMBRIDGE</text>
+    <text x="65" y="38" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#475569" letter-spacing="0.5">INTERNATIONAL</text>
+    <text x="65" y="50" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#64748b" letter-spacing="0.5">QUALIFICATIONS</text>
+  </g>
+
+  <!-- Top Right Logo: uniathêna -->
+  <g transform="translate(1015, 60)">
+    <text x="-20" y="36" font-family="'Inter', sans-serif" font-size="34" font-weight="900" fill="#0f172a" text-anchor="end">uniath<tspan fill="#e11d48">ê</tspan>na</text>
+  </g>
+
+  <!-- ================= DATE & RECIPIENT ================= -->
+  <text x="80" y="200" font-family="'Inter', sans-serif" font-size="16" font-weight="500" fill="#64748b">05, November 2024</text>
+
+  <text x="80" y="265" font-family="'Inter', sans-serif" font-size="44" font-weight="900" fill="#0f172a">Hammad Hassan</text>
+
+  <text x="80" y="315" font-family="'Inter', sans-serif" font-size="16" font-weight="500" fill="#475569">has successfully completed</text>
+
+  <!-- Course Title -->
+  <text x="80" y="375" font-family="'Inter', sans-serif" font-size="32" font-weight="900" fill="#0f172a">
+    Essentials of MS Excel - Formulas
+  </text>
+  <text x="80" y="420" font-family="'Inter', sans-serif" font-size="32" font-weight="900" fill="#0f172a">
+    and Functions
+  </text>
+
+  <!-- Description paragraph -->
+  <text x="80" y="475" font-family="'Inter', sans-serif" font-size="15" font-weight="400" fill="#475569">
+    This course has been developed and delivered by UniAthena in partnership
+  </text>
+  <text x="80" y="500" font-family="'Inter', sans-serif" font-size="15" font-weight="400" fill="#475569">
+    with Cambridge International Qualifications, UK
+  </text>
+
+  <!-- ================= SIGNATURE ================= -->
+  <g transform="translate(80, 600)">
+    <path d="M 0 -10 C 20 -35, 45 10, 65 -15 C 80 -30, 110 -5, 140 -20 M 15 5 C 45 0, 90 5, 130 0" fill="none" stroke="#1e293b" stroke-width="2" stroke-linecap="round"/>
+    <text x="0" y="40" font-family="'Inter', sans-serif" font-size="15" font-weight="800" fill="#0f172a">Huw Flynn Hughes</text>
+    <line x1="0" y1="52" x2="380" y2="52" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="0" y="70" font-family="'Inter', sans-serif" font-size="11.5" font-weight="500" fill="#64748b">
+      Responsible Officer | Cambridge International Qualifications, UK
+    </text>
+  </g>
+
+  <!-- Bottom Accreditation Text -->
+  <text x="80" y="720" font-family="'Inter', sans-serif" font-size="11" font-weight="500" fill="#64748b">
+    Athena Global Education is a member institution of Federation for Education in Europe (FEDE)
+  </text>
+  <text x="80" y="740" font-family="'Inter', sans-serif" font-size="11" font-weight="400" fill="#94a3b8">
+    This is a blockchain verified certificate, the authenticity of this document can be verified by scanning the QR code at the end of the document
+  </text>
+
+  <!-- ================= BOTTOM RIGHT QR & BLOCKCHAIN ID ================= -->
+  <g transform="translate(860, 600)">
+    <!-- FEDE Logo -->
+    <text x="0" y="40" font-family="'Inter', sans-serif" font-size="34" font-weight="900" fill="#f97316">FE<tspan fill="#0284c7">DE</tspan></text>
+    <text x="0" y="60" font-family="'Inter', sans-serif" font-size="8" font-weight="600" fill="#64748b">Federation for EDucation in Europe</text>
+    <text x="0" y="72" font-family="'Inter', sans-serif" font-size="7.5" font-weight="500" fill="#94a3b8">Fédération Européenne Des Écoles</text>
+  </g>
+
+  <g transform="translate(930, 610)">
+    <!-- QR Code Box -->
+    <rect x="-10" y="-10" width="85" height="85" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" rx="4"/>
+    <rect x="0" y="0" width="22" height="22" fill="#0f172a"/>
+    <rect x="4" y="4" width="14" height="14" fill="#ffffff"/>
+    <rect x="8" y="8" width="6" height="6" fill="#0f172a"/>
+
+    <rect x="43" y="0" width="22" height="22" fill="#0f172a"/>
+    <rect x="47" y="4" width="14" height="14" fill="#ffffff"/>
+    <rect x="51" y="8" width="6" height="6" fill="#0f172a"/>
+
+    <rect x="0" y="43" width="22" height="22" fill="#0f172a"/>
+    <rect x="4" y="47" width="14" height="14" fill="#ffffff"/>
+    <rect x="8" y="51" width="6" height="6" fill="#0f172a"/>
+
+    <!-- Blockchain ID -->
+    <text x="32" y="94" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#475569" text-anchor="middle">Blockchain ID</text>
+    <text x="32" y="108" font-family="'Courier New', monospace" font-size="10" font-weight="800" fill="#0f172a" text-anchor="middle">6801-5313-2024</text>
+  </g>
+</svg>

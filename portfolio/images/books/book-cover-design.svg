@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 475" width="100%" height="100%">
+  <!-- Clean High-Contrast Book Design Canvas -->
+  <rect width="800" height="475" fill="#f8fafc"/>
+  <rect x="0" y="0" width="800" height="475" fill="none" stroke="#e2e8f0" stroke-width="2"/>
+
+  <text x="400" y="38" font-family="'Inter', -apple-system, sans-serif" font-size="16" font-weight="800" fill="#1e293b" text-anchor="middle" letter-spacing="0.5">Amazon KDP &amp; Publishing Package</text>
+
+  <!-- 3D Book Presentation -->
+  <g transform="translate(180, 55)">
+    <!-- Book Shadow -->
+    <ellipse cx="230" cy="360" rx="200" ry="20" fill="rgba(0,0,0,0.12)"/>
+
+    <!-- Spine -->
+    <polygon points="60,30 95,10 95,340 60,360" fill="#2d254f" stroke="#4338ca" stroke-width="1"/>
+    <text x="180" y="-70" font-family="'Inter', sans-serif" font-size="10" font-weight="bold" fill="#ffffff" transform="rotate(90)">THE ARCHITECT OF TOMORROW</text>
+
+    <!-- Front Cover -->
+    <polygon points="95,10 330,30 330,360 95,340" fill="#1e1838" stroke="#4338ca" stroke-width="1.5"/>
+    
+    <!-- Gold / Purple Accents on Cover -->
+    <circle cx="212" cy="170" r="45" fill="none" stroke="#fbbf24" stroke-width="2"/>
+    <circle cx="212" cy="170" r="32" fill="none" stroke="#505ff6" stroke-width="1" stroke-dasharray="4 4"/>
+    <text x="212" y="177" font-family="'Inter', sans-serif" font-size="24" fill="#fbbf24" text-anchor="middle">✦</text>
+
+    <text x="212" y="95" font-family="'Inter', sans-serif" font-size="16" font-weight="900" fill="#ffffff" text-anchor="middle">THE ARCHITECT</text>
+    <text x="212" y="115" font-family="'Inter', sans-serif" font-size="14" font-weight="800" fill="#fbbf24" text-anchor="middle">OF TOMORROW</text>
+    <text x="212" y="132" font-family="'Inter', sans-serif" font-size="8" fill="#cbd5e1" text-anchor="middle">AI &amp; Autonomous Workflows</text>
+
+    <text x="212" y="275" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle">HAMMAD HASSAN</text>
+    <text x="212" y="292" font-family="'Inter', sans-serif" font-size="8" fill="#94a3b8" text-anchor="middle">BESTSELLER EDITION</text>
+  </g>
+</svg>

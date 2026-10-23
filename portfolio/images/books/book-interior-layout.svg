@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgBookInt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a14"/>
+      <stop offset="100%" stop-color="#161224"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bgBookInt)"/>
+
+  <text x="400" y="50" font-family="'Inter', sans-serif" font-size="20" font-weight="bold" fill="#ffffff" text-anchor="middle">Interior Book Typesetting &amp; Page Layout</text>
+  <text x="400" y="75" font-family="'Inter', sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">Professional typography, widow/orphan protection, and custom drop caps</text>
+
+  <!-- Open Book Spreads -->
+  <!-- Left Page -->
+  <rect x="100" y="105" width="290" height="300" rx="4" fill="#fafafa" filter="drop-shadow(-4px 4px 10px rgba(0,0,0,0.5))"/>
+  <!-- Right Page -->
+  <rect x="410" y="105" width="290" height="300" rx="4" fill="#f5f5f5" filter="drop-shadow(4px 4px 10px rgba(0,0,0,0.5))"/>
+
+  <!-- Left Page Content -->
+  <text x="245" y="130" font-family="'Georgia', serif" font-size="9" fill="#94a3b8" text-anchor="middle">CHAPTER 4: THE NEURAL SHIFT</text>
+  <text x="130" y="165" font-family="'Georgia', serif" font-size="32" font-weight="bold" fill="#1e1b4b">I</text>
+  <text x="150" y="155" font-family="'Georgia', serif" font-size="10" fill="#334155">n the evolving panorama of machine</text>
+  <text x="150" y="170" font-family="'Georgia', serif" font-size="10" fill="#334155">intelligence, human creative strategy</text>
+  <text x="130" y="188" font-family="'Georgia', serif" font-size="10" fill="#334155">remains the premier guiding compass. Every</text>
+  <text x="130" y="204" font-family="'Georgia', serif" font-size="10" fill="#334155">automated protocol begins with a question of</text>
+  <text x="130" y="220" font-family="'Georgia', serif" font-size="10" fill="#334155">purpose and architectural clarity.</text>
+
+  <!-- Text lines mockup -->
+  <rect x="130" y="240" width="230" height="4" fill="#cbd5e1"/>
+  <rect x="130" y="254" width="230" height="4" fill="#cbd5e1"/>
+  <rect x="130" y="268" width="230" height="4" fill="#cbd5e1"/>
+  <rect x="130" y="282" width="210" height="4" fill="#cbd5e1"/>
+  <rect x="130" y="296" width="230" height="4" fill="#cbd5e1"/>
+  <rect x="130" y="310" width="180" height="4" fill="#cbd5e1"/>
+  <text x="245" y="380" font-family="'Georgia', serif" font-size="10" fill="#64748b" text-anchor="middle">74</text>
+
+  <!-- Right Page Content -->
+  <text x="555" y="130" font-family="'Georgia', serif" font-size="9" fill="#94a3b8" text-anchor="middle">HAMMAD HASSAN</text>
+  <rect x="440" y="155" width="230" height="4" fill="#cbd5e1"/>
+  <rect x="440" y="169" width="230" height="4" fill="#cbd5e1"/>
+  <rect x="440" y="183" width="230" height="4" fill="#cbd5e1"/>
+  <rect x="440" y="197" width="200" height="4" fill="#cbd5e1"/>
+
+  <!-- Diagram Box on Right Page -->
+  <rect x="440" y="220" width="230" height="100" rx="4" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <text x="555" y="260" font-family="'Inter', sans-serif" font-size="11" font-weight="bold" fill="#475569" text-anchor="middle">Figure 4.2: Workflow Map</text>
+  <text x="555" y="280" font-family="'Inter', sans-serif" font-size="9" fill="#64748b" text-anchor="middle">[ Ingest ] ➔ [ Process ] ➔ [ Output ]</text>
+
+  <rect x="440" y="335" width="230" height="4" fill="#cbd5e1"/>
+  <text x="555" y="380" font-family="'Georgia', serif" font-size="10" fill="#64748b" text-anchor="middle">75</text>
+</svg>

@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="uos-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#061a14"/>
+      <stop offset="50%" stop-color="#0a261e"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="uos-gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="uos-emerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <pattern id="uos-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(16, 185, 129, 0.06)" stroke-width="1"/>
+      <circle cx="40" cy="40" r="1" fill="rgba(245, 158, 11, 0.15)"/>
+    </pattern>
+    <filter id="uos-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#uos-bg)"/>
+  <rect width="800" height="450" fill="url(#uos-pattern)"/>
+
+  <!-- Atmospheric Glow -->
+  <circle cx="680" cy="110" r="160" fill="#10b981" opacity="0.1" filter="url(#uos-glow)"/>
+  <circle cx="140" cy="380" r="130" fill="#f59e0b" opacity="0.08" filter="url(#uos-glow)"/>
+
+  <!-- Outer Border Frame -->
+  <rect x="20" y="20" width="760" height="410" rx="16" fill="none" stroke="rgba(16, 185, 129, 0.25)" stroke-width="1.5"/>
+
+  <!-- Emblem / Academic Crest (Right side) -->
+  <g transform="translate(560, 130)">
+    <!-- Laurel Wreath & Seal -->
+    <circle cx="100" cy="100" r="82" fill="#062d22" stroke="url(#uos-gold)" stroke-width="2.5" opacity="0.9"/>
+    <circle cx="100" cy="100" r="72" fill="none" stroke="rgba(245, 158, 11, 0.3)" stroke-width="1.5" stroke-dasharray="4,4"/>
+    
+    <!-- Open Book Knowledge Icon -->
+    <path d="M 68 85 Q 100 88 100 115 Q 100 88 132 85 L 132 125 Q 100 128 100 155 Q 100 128 68 125 Z" fill="none" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="100" y1="115" x2="100" y2="155" stroke="#fbbf24" stroke-width="2.5"/>
+    <line x1="76" y1="96" x2="94" y2="98" stroke="rgba(251, 191, 36, 0.6)" stroke-width="1.5"/>
+    <line x1="76" y1="106" x2="94" y2="108" stroke="rgba(251, 191, 36, 0.6)" stroke-width="1.5"/>
+    <line x1="106" y1="98" x2="124" y2="96" stroke="rgba(251, 191, 36, 0.6)" stroke-width="1.5"/>
+    <line x1="106" y1="108" x2="124" y2="106" stroke="rgba(251, 191, 36, 0.6)" stroke-width="1.5"/>
+
+    <!-- Academic Star Crown -->
+    <polygon points="100,56 104,66 114,66 106,72 109,82 100,76 91,82 94,72 86,66 96,66" fill="#fbbf24"/>
+    
+    <!-- Motto ribbon -->
+    <text x="100" y="215" font-family="'JetBrains Mono', monospace" font-size="11" fill="rgba(251, 191, 36, 0.75)" text-anchor="middle" letter-spacing="2">ESTD. 2002 • PUNJAB</text>
+  </g>
+
+  <!-- Content Left Column -->
+  <!-- Top Badge Pill -->
+  <g transform="translate(60, 56)">
+    <rect x="0" y="0" width="200" height="30" rx="15" fill="rgba(16, 185, 129, 0.12)" stroke="rgba(16, 185, 129, 0.4)" stroke-width="1"/>
+    <circle cx="15" cy="15" r="4" fill="#10b981"/>
+    <text x="28" y="20" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#34d399" letter-spacing="1.5">GRADUATE DEGREE</text>
+  </g>
+
+  <!-- Institution Name -->
+  <text x="60" y="125" font-family="'Inter', sans-serif" font-size="14" font-weight="600" fill="#94a3b8" letter-spacing="2">UNIVERSITY OF SARGODHA</text>
+
+  <!-- Degree Title -->
+  <text x="60" y="165" font-family="'Inter', sans-serif" font-size="28" font-weight="800" fill="#ffffff" letter-spacing="-0.5">Associate Degree in Arts</text>
+  <text x="60" y="202" font-family="'Inter', sans-serif" font-size="30" font-weight="800" fill="url(#uos-gold)" letter-spacing="-0.5">(ADA / B.A. Program)</text>
+
+  <!-- Timeline & Status Badges -->
+  <g transform="translate(60, 235)">
+    <rect x="0" y="0" width="124" height="28" rx="6" fill="#1e293b" stroke="rgba(255,255,255,0.1)"/>
+    <text x="62" y="18" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600" fill="#cbd5e1" text-anchor="middle">2023 — 2024</text>
+
+    <rect x="136" y="0" width="120" height="28" rx="6" fill="rgba(16, 185, 129, 0.12)" stroke="rgba(16, 185, 129, 0.35)"/>
+    <circle cx="148" cy="14" r="3.5" fill="#10b981"/>
+    <text x="198" y="18" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#34d399" text-anchor="middle">COMPLETED</text>
+  </g>
+
+  <!-- Specialization Pills -->
+  <g transform="translate(60, 290)">
+    <rect x="0" y="0" width="170" height="26" rx="6" fill="rgba(16, 185, 129, 0.08)" stroke="rgba(16, 185, 129, 0.2)"/>
+    <text x="85" y="17" font-family="'Inter', sans-serif" font-size="11" font-weight="500" fill="#a7f3d0" text-anchor="middle">Critical Inquiry &amp; Logic</text>
+
+    <rect x="180" y="0" width="150" height="26" rx="6" fill="rgba(245, 158, 11, 0.08)" stroke="rgba(245, 158, 11, 0.2)"/>
+    <text x="255" y="17" font-family="'Inter', sans-serif" font-size="11" font-weight="500" fill="#fde68a" text-anchor="middle">Applied Humanities</text>
+
+    <rect x="340" y="0" width="165" height="26" rx="6" fill="rgba(16, 185, 129, 0.08)" stroke="rgba(16, 185, 129, 0.2)"/>
+    <text x="422" y="17" font-family="'Inter', sans-serif" font-size="11" font-weight="500" fill="#a7f3d0" text-anchor="middle">Research Communication</text>
+  </g>
+
+  <!-- Bottom Info Bar -->
+  <g transform="translate(60, 360)">
+    <line x1="0" y1="0" x2="680" y2="0" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="0" y="24" font-family="'JetBrains Mono', monospace" font-size="11" fill="#64748b">&gt; Public Sector Research University | Major in Humanities &amp; Analytical Studies</text>
+  </g>
+</svg>

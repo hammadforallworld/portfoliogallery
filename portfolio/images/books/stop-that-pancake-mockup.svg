@@ -1,0 +1,239 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <!-- Studio Background Gradient -->
+    <linearGradient id="bgStudio" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="40%" stop-color="#fef3c7"/>
+      <stop offset="100%" stop-color="#fde68a"/>
+    </linearGradient>
+
+    <!-- Table Wood Gradient -->
+    <linearGradient id="tableWood" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="30%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+
+    <!-- Cover Background Gradient -->
+    <linearGradient id="coverBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="55%" stop-color="#7dd3fc"/>
+      <stop offset="60%" stop-color="#86efac"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+
+    <!-- Pancake Color Gradients -->
+    <radialGradient id="pancakeBody" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="65%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </radialGradient>
+
+    <linearGradient id="syrupDrip" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+
+    <!-- Filter Shadows -->
+    <filter id="bookShadow" x="-20%" y="-20%" width="150%" height="150%">
+      <feDropShadow dx="-15" dy="25" stdDeviation="20" flood-color="#451a03" flood-opacity="0.35"/>
+    </filter>
+    
+    <filter id="dropShadowGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Background Warm Wall -->
+  <rect width="1600" height="900" fill="url(#bgStudio)"/>
+
+  <!-- Sunlit Window Light Rays -->
+  <polygon points="200,0 650,0 850,550 50,550" fill="#ffffff" opacity="0.25"/>
+  <polygon points="750,0 1200,0 1450,550 650,550" fill="#ffffff" opacity="0.18"/>
+
+  <!-- Wooden Studio Desk -->
+  <rect x="0" y="520" width="1600" height="380" fill="url(#tableWood)"/>
+  <!-- Table Edge Highlight -->
+  <line x1="0" y1="520" x2="1600" y2="520" stroke="#fef3c7" stroke-width="4" opacity="0.6"/>
+
+  <!-- ========================================================================= -->
+  <!-- STANDING HARDCOVER STORYBOOK (Center-Left) -->
+  <!-- ========================================================================= -->
+  <g transform="translate(180, 100)" filter="url(#bookShadow)">
+    <!-- Book Spine 3D Perspective -->
+    <path d="M 0,35 L 35,0 L 35,630 L 0,665 Z" fill="#0284c7"/>
+    <text x="-330" y="24" transform="rotate(-90)" font-family="'Comic Sans MS', 'Fredoka', cursive, sans-serif" font-weight="900" font-size="22" fill="#ffffff" letter-spacing="3">STOP THAT PANCAKE! • HAMMAD HASSAN</text>
+
+    <!-- Book Front Cover -->
+    <rect x="35" y="0" width="460" height="630" rx="10" fill="url(#coverBg)"/>
+    <!-- Glossy border -->
+    <rect x="35" y="0" width="460" height="630" rx="10" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.7"/>
+
+    <!-- Cover Sun & Clouds -->
+    <circle cx="430" cy="70" r="45" fill="#fef08a" opacity="0.9"/>
+    <path d="M 100,80 Q 130,50 170,70 Q 210,60 230,85 Q 240,110 200,110 Q 150,115 100,80 Z" fill="#ffffff" opacity="0.85"/>
+
+    <!-- TOP TITLE: STOP THAT PANCAKE! -->
+    <g transform="translate(265, 95)" text-anchor="middle">
+      <!-- 3D Shadow -->
+      <text x="0" y="5" font-family="'Impact', 'Arial Black', sans-serif" font-size="44" fill="#78350f" letter-spacing="1">STOP THAT</text>
+      <text x="0" y="0" font-family="'Impact', 'Arial Black', sans-serif" font-size="44" fill="#fbbf24" letter-spacing="1">STOP THAT</text>
+      
+      <!-- PANCAKE! -->
+      <text x="0" y="56" font-family="'Impact', 'Arial Black', sans-serif" font-size="52" fill="#78350f" letter-spacing="2">PANCAKE!</text>
+      <text x="0" y="50" font-family="'Impact', 'Arial Black', sans-serif" font-size="52" fill="#f59e0b" letter-spacing="2">PANCAKE!</text>
+      
+      <!-- Subtitle Badge -->
+      <rect x="-170" y="70" width="340" height="26" rx="13" fill="#ffffff" filter="url(#dropShadowGlow)"/>
+      <text x="0" y="88" font-family="'Comic Sans MS', 'Fredoka', cursive, sans-serif" font-size="13" font-weight="bold" fill="#0284c7">A HILARIOUS STORY FOR EARLY READERS</text>
+    </g>
+
+    <!-- RUNAWAY PANCAKE CHARACTER -->
+    <g transform="translate(265, 330)">
+      <!-- Motion lines -->
+      <path d="M -120,-20 Q -90,-15 -60,-20" stroke="#f59e0b" stroke-width="4" stroke-linecap="round" fill="none"/>
+      <path d="M -130,10 Q -90,15 -60,10" stroke="#f59e0b" stroke-width="4" stroke-linecap="round" fill="none"/>
+      <path d="M -110,40 Q -80,45 -50,40" stroke="#f59e0b" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+      <!-- Pancake Body -->
+      <ellipse cx="0" cy="0" rx="90" ry="75" fill="url(#pancakeBody)" stroke="#78350f" stroke-width="4"/>
+      <!-- Melting Butter Square -->
+      <rect x="-22" y="-55" width="44" height="30" rx="6" fill="#fef08a" stroke="#d97706" stroke-width="2"/>
+      <!-- Syrup Drip -->
+      <path d="M -15,-25 Q -10,15 -5,5 Q 5,25 15,-10 Q 25,10 30,-25 Z" fill="url(#syrupDrip)"/>
+
+      <!-- Big Googly Eyes -->
+      <circle cx="-30" cy="-10" r="22" fill="#ffffff" stroke="#78350f" stroke-width="3"/>
+      <circle cx="-25" cy="-10" r="11" fill="#0f172a"/>
+      <circle cx="-21" cy="-14" r="4" fill="#ffffff"/>
+
+      <circle cx="30" cy="-10" r="22" fill="#ffffff" stroke="#78350f" stroke-width="3"/>
+      <circle cx="35" cy="-10" r="11" fill="#0f172a"/>
+      <circle cx="39" cy="-14" r="4" fill="#ffffff"/>
+
+      <!-- Cheerful Smile -->
+      <path d="M -25,25 Q 0,55 25,25 Z" fill="#dc2626" stroke="#78350f" stroke-width="3"/>
+      <path d="M -10,38 Q 0,46 10,38 Z" fill="#fca5a5"/>
+
+      <!-- Little Running Sneakers -->
+      <!-- Left Foot -->
+      <path d="M -50,60 L -30,85 L -5,80 L -25,55 Z" fill="#ef4444" stroke="#78350f" stroke-width="2"/>
+      <rect x="-10" y="78" width="30" height="12" rx="6" fill="#ffffff" stroke="#78350f" stroke-width="2"/>
+      <!-- Right Foot (Kicking back) -->
+      <path d="M 25,50 L 55,75 L 80,68 L 50,45 Z" fill="#ef4444" stroke="#78350f" stroke-width="2"/>
+      <rect x="75" y="62" width="28" height="12" rx="6" fill="#ffffff" stroke="#78350f" stroke-width="2"/>
+    </g>
+
+    <!-- CHASING CHARACTERS SILHOUETTES AT BOTTOM -->
+    <g transform="translate(100, 480)">
+      <!-- Chef Pierre waving spatula -->
+      <circle cx="50" cy="20" r="18" fill="#ffffff" stroke="#78350f" stroke-width="2"/>
+      <path d="M 40,5 Q 50,-15 60,5 Z" fill="#ffffff" stroke="#78350f" stroke-width="2"/>
+      <path d="M 35,38 L 65,38 L 75,90 L 25,90 Z" fill="#ffffff" stroke="#78350f" stroke-width="2"/>
+      <!-- Spatula -->
+      <line x1="65" y1="35" x2="95" y2="10" stroke="#78350f" stroke-width="4"/>
+      <rect x="90" y="0" width="22" height="16" rx="2" fill="#94a3b8" stroke="#78350f" stroke-width="2"/>
+
+      <!-- Barnaby Bear tangled in net -->
+      <circle cx="160" cy="35" r="24" fill="#78350f"/>
+      <circle cx="145" cy="15" r="8" fill="#92400e"/>
+      <circle cx="175" cy="15" r="8" fill="#92400e"/>
+      <path d="M 135,55 L 185,55 L 195,95 L 125,95 Z" fill="#2563eb"/>
+      <text x="160" y="42" font-size="14" fill="#ffffff" font-weight="bold" text-anchor="middle">😵</text>
+
+      <!-- Benny Bunny jumping -->
+      <ellipse cx="250" cy="50" rx="14" ry="18" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+      <ellipse cx="245" cy="22" rx="4" ry="16" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+      <ellipse cx="255" cy="22" rx="4" ry="16" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+    </g>
+
+    <!-- AUTHOR BADGE (BOTTOM CENTER) -->
+    <g transform="translate(265, 595)" text-anchor="middle">
+      <rect x="-140" y="-18" width="280" height="36" rx="18" fill="#fef08a" stroke="#b45309" stroke-width="3" filter="url(#dropShadowGlow)"/>
+      <text x="0" y="6" font-family="'Comic Sans MS', 'Fredoka', cursive, sans-serif" font-size="16" font-weight="bold" fill="#78350f">By Hammad Hassan</text>
+    </g>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- OPEN STORYBOOK SPREAD (Right Foreground) -->
+  <!-- ========================================================================= -->
+  <g transform="translate(730, 240)" filter="url(#dropShadowGlow)">
+    <!-- Book Pages Drop Shadows -->
+    <path d="M 0,20 Q 380,-10 760,20 L 760,490 Q 380,460 0,490 Z" fill="#f1f5f9"/>
+
+    <!-- Left Open Page -->
+    <path d="M 20,25 Q 380,5 380,25 L 380,475 Q 200,470 20,475 Z" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <!-- Right Open Page -->
+    <path d="M 380,25 Q 560,5 740,25 L 740,475 Q 380,470 380,475 Z" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+
+    <!-- Center Book Crease Shadow -->
+    <line x1="380" y1="20" x2="380" y2="480" stroke="#cbd5e1" stroke-width="6"/>
+    <line x1="380" y1="20" x2="380" y2="480" stroke="#94a3b8" stroke-width="2"/>
+
+    <!-- Red Ribbon Bookmark -->
+    <path d="M 380,20 Q 420,200 450,510 L 430,520 L 420,495 Z" fill="#dc2626"/>
+
+    <!-- LEFT PAGE CONTENT: ILLUSTRATION & STORY -->
+    <g transform="translate(50, 60)">
+      <!-- Chapter Tag -->
+      <rect x="0" y="0" width="130" height="24" rx="12" fill="#fef3c7"/>
+      <text x="65" y="16" font-family="'Comic Sans MS', cursive" font-size="12" font-weight="bold" fill="#b45309" text-anchor="middle">CHAPTER 1</text>
+
+      <!-- Kitchen Illustration Thumbnail -->
+      <rect x="15" y="35" width="280" height="170" rx="12" fill="#e0f2fe"/>
+      <!-- Chef flipping pancake -->
+      <circle cx="100" cy="115" r="30" fill="#fde047" stroke="#ca8a04" stroke-width="2"/>
+      <text x="100" y="122" font-size="28" text-anchor="middle">🥞</text>
+      <text x="170" y="130" font-size="34" text-anchor="middle">👨‍🍳</text>
+      <text x="235" y="90" font-size="28" text-anchor="middle">💨</text>
+
+      <!-- Story Text (Large beginner font) -->
+      <text x="15" y="240" font-family="'Comic Sans MS', 'Fredoka', cursive, sans-serif" font-size="17" font-weight="bold" fill="#0f172a">One sunny morning,</text>
+      <text x="15" y="270" font-family="'Comic Sans MS', 'Fredoka', cursive, sans-serif" font-size="17" font-weight="bold" fill="#0f172a">Chef Pierre baked a giant</text>
+      <text x="15" y="300" font-family="'Comic Sans MS', 'Fredoka', cursive, sans-serif" font-size="17" font-weight="bold" fill="#d97706">golden pancake.</text>
+      
+      <text x="15" y="345" font-family="'Comic Sans MS', 'Fredoka', cursive, sans-serif" font-size="16" fill="#334155">POP! The pancake sprang to life!</text>
+      <text x="15" y="375" font-family="'Comic Sans MS', 'Fredoka', cursive, sans-serif" font-size="16" fill="#dc2626" font-weight="bold">"You cannot catch me!" it cried.</text>
+
+      <text x="150" y="405" font-family="'Georgia', serif" font-size="12" fill="#94a3b8">1</text>
+    </g>
+
+    <!-- RIGHT PAGE CONTENT: ILLUSTRATION & STORY -->
+    <g transform="translate(420, 60)">
+      <!-- Barnyard Chase Thumbnail -->
+      <rect x="15" y="35" width="280" height="170" rx="12" fill="#dcfce7"/>
+      <!-- Running pancake & bear -->
+      <text x="80" y="120" font-size="32" text-anchor="middle">🥞</text>
+      <text x="140" y="125" font-size="24" text-anchor="middle">💨</text>
+      <text x="210" y="125" font-size="36" text-anchor="middle">🐻</text>
+      <text x="260" y="115" font-size="24" text-anchor="middle">🌾</text>
+
+      <!-- Story Text -->
+      <text x="15" y="240" font-family="'Comic Sans MS', 'Fredoka', cursive, sans-serif" font-size="17" font-weight="bold" fill="#0f172a">Down the farm rolled</text>
+      <text x="15" y="270" font-family="'Comic Sans MS', 'Fredoka', cursive, sans-serif" font-size="17" font-weight="bold" fill="#0f172a">the delicious pancake!</text>
+
+      <text x="15" y="315" font-family="'Comic Sans MS', 'Fredoka', cursive, sans-serif" font-size="16" fill="#334155">Barnaby Bear swung his net.</text>
+      <text x="15" y="345" font-family="'Comic Sans MS', 'Fredoka', cursive, sans-serif" font-size="16" fill="#334155">WHOOPS! He landed head-first</text>
+      <text x="15" y="375" font-family="'Comic Sans MS', 'Fredoka', cursive, sans-serif" font-size="16" fill="#ea580c" font-weight="bold">KER-PLOP in the haystack!</text>
+
+      <text x="150" y="405" font-family="'Georgia', serif" font-size="12" fill="#94a3b8">2</text>
+    </g>
+  </g>
+
+  <!-- TABLETOP PROPS: Maple Syrup Jug & Strawberries -->
+  <g transform="translate(1380, 560)">
+    <!-- Glass Jug of Maple Syrup -->
+    <ellipse cx="60" cy="180" rx="45" ry="18" fill="#451a03" opacity="0.3"/>
+    <path d="M 30,170 Q 20,80 50,60 L 70,60 Q 100,80 90,170 Z" fill="#d97706" opacity="0.85" stroke="#92400e" stroke-width="3"/>
+    <!-- Jug Handle -->
+    <path d="M 35,90 Q 5,115 35,145" stroke="#92400e" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <rect x="42" y="105" width="36" height="30" rx="4" fill="#fef3c7" stroke="#b45309"/>
+    <text x="60" y="125" font-family="'Comic Sans MS', cursive" font-size="10" font-weight="bold" fill="#78350f" text-anchor="middle">SYRUP</text>
+
+    <!-- Strawberries on Table -->
+    <circle cx="-15" cy="165" r="14" fill="#ef4444"/>
+    <path d="M -17,152 L -13,152 L -15,148 Z" fill="#22c55e"/>
+    <circle cx="10" cy="175" r="12" fill="#dc2626"/>
+    <path d="M 8,164 L 12,164 L 10,160 Z" fill="#22c55e"/>
+  </g>
+</svg>

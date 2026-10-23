@@ -1,0 +1,315 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <!-- Water & Pond Background Gradient -->
+    <linearGradient id="pondBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0f2fe"/>
+      <stop offset="50%" stop-color="#bae6fd"/>
+      <stop offset="100%" stop-color="#7dd3fc"/>
+    </linearGradient>
+
+    <!-- Water Surface Gradient -->
+    <linearGradient id="waterSurface" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="60%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+
+    <!-- Lily Pad Gradient -->
+    <radialGradient id="lilyPadGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4ade80"/>
+      <stop offset="80%" stop-color="#16a34a"/>
+      <stop offset="100%" stop-color="#14532d"/>
+    </radialGradient>
+
+    <!-- Frog Skin Gradient -->
+    <radialGradient id="frogGreen" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#86efac"/>
+      <stop offset="70%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#15803d"/>
+    </radialGradient>
+
+    <!-- Pancake Body Gradient -->
+    <radialGradient id="pancakeBody" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="65%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </radialGradient>
+
+    <!-- Sneaker Red Gradient -->
+    <linearGradient id="sneakerRed" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </linearGradient>
+
+    <filter id="shadowPage" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+
+    <filter id="waterGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#38bdf8" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Full Book Spread Background -->
+  <rect width="1600" height="900" fill="#f8fafc"/>
+
+  <!-- Left Page (x: 50 to 780, y: 30 to 870) -->
+  <rect x="50" y="30" width="730" height="840" rx="8" fill="url(#pondBg)" stroke="#e2e8f0" stroke-width="2"/>
+
+  <!-- Right Page (x: 820 to 1550, y: 30 to 870) -->
+  <rect x="820" y="30" width="730" height="840" rx="8" fill="url(#pondBg)" stroke="#e2e8f0" stroke-width="2"/>
+
+  <!-- Center Crease Shadow -->
+  <rect x="780" y="30" width="40" height="840" fill="#cbd5e1" opacity="0.6"/>
+  <line x1="800" y1="30" x2="800" y2="870" stroke="#94a3b8" stroke-width="3"/>
+
+  <!-- ========================================================================= -->
+  <!-- LEFT PAGE: FREDDIE THE FROG & THE LILY POND CHASE -->
+  <!-- ========================================================================= -->
+  <g transform="translate(100, 70)">
+    <!-- Header Tag -->
+    <rect x="0" y="0" width="230" height="38" rx="19" fill="#0284c7"/>
+    <text x="115" y="25" font-family="'Impact', 'Arial Black', sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" letter-spacing="1">PAGE 5 • THE LILY POND</text>
+
+    <!-- Story Headline -->
+    <text x="0" y="90" font-family="'Comic Sans MS', 'Fredoka', cursive, sans-serif" font-size="34" font-weight="900" fill="#0369a1">"Ribbit! My Sticky Tongue!"</text>
+
+    <!-- Pond Illustration Area -->
+    <g transform="translate(0, 120)">
+      <!-- Sky & Pond Card -->
+      <rect x="0" y="0" width="630" height="380" rx="16" fill="#f0f9ff" stroke="#38bdf8" stroke-width="3"/>
+
+      <!-- Distant Hills & Cattail Reeds -->
+      <path d="M 0,200 Q 150,150 300,190 T 630,170 L 630,380 L 0,380 Z" fill="#bae6fd" opacity="0.5"/>
+
+      <!-- Reeds & Bulrushes on Left -->
+      <g stroke="#15803d" stroke-width="4" stroke-linecap="round">
+        <line x1="20" y1="260" x2="10" y2="130"/>
+        <line x1="35" y1="260" x2="40" y2="110"/>
+        <line x1="50" y1="260" x2="65" y2="140"/>
+      </g>
+      <!-- Cattail brown tops -->
+      <rect x="6" y="130" width="10" height="35" rx="5" fill="#78350f"/>
+      <rect x="35" y="110" width="11" height="40" rx="5.5" fill="#78350f"/>
+      <rect x="60" y="140" width="10" height="30" rx="5" fill="#78350f"/>
+
+      <!-- Pond Water Body -->
+      <path d="M 0,220 C 180,210 320,240 630,220 L 630,380 L 0,380 Z" fill="url(#waterSurface)"/>
+
+      <!-- Water Ripples -->
+      <ellipse cx="220" cy="280" rx="90" ry="16" fill="none" stroke="#7dd3fc" stroke-width="2" opacity="0.7"/>
+      <ellipse cx="480" cy="310" rx="70" ry="12" fill="none" stroke="#7dd3fc" stroke-width="2" opacity="0.7"/>
+
+      <!-- Lily Pads Floating in Pond -->
+      <g transform="translate(180, 275)">
+        <ellipse cx="0" cy="0" rx="60" ry="22" fill="url(#lilyPadGrad)" stroke="#14532d" stroke-width="2"/>
+        <!-- Notch cut in lily pad -->
+        <polygon points="0,0 -15,-22 15,-22" fill="url(#waterSurface)"/>
+        <!-- Lotus Flower -->
+        <circle cx="30" cy="-6" r="10" fill="#f43f5e"/>
+        <circle cx="30" cy="-6" r="5" fill="#fef08a"/>
+      </g>
+
+      <g transform="translate(360, 295)">
+        <ellipse cx="0" cy="0" rx="75" ry="26" fill="url(#lilyPadGrad)" stroke="#14532d" stroke-width="2"/>
+        <polygon points="0,0 20,-26 50,-24" fill="url(#waterSurface)"/>
+      </g>
+
+      <!-- PANCAKE SPRINTING OVER LILY PADS -->
+      <g transform="translate(200, 215)">
+        <!-- Pancake Body -->
+        <ellipse cx="0" cy="0" rx="60" ry="46" fill="url(#pancakeBody)" stroke="#78350f" stroke-width="4"/>
+        <ellipse cx="0" cy="-6" rx="46" ry="32" fill="#fef08a" opacity="0.4"/>
+        <!-- Eyes looking at Frog with cheeky smirk -->
+        <circle cx="-16" cy="-8" r="12" fill="#ffffff" stroke="#78350f" stroke-width="2"/>
+        <circle cx="-12" cy="-8" r="6" fill="#0f172a"/>
+        <circle cx="20" cy="-8" r="12" fill="#ffffff" stroke="#78350f" stroke-width="2"/>
+        <circle cx="24" cy="-8" r="6" fill="#0f172a"/>
+        <!-- Cheeky tongue/smile -->
+        <path d="M -12,12 Q 4,28 18,10" stroke="#78350f" stroke-width="3" fill="none"/>
+        <path d="M 6,18 Q 12,30 18,18 Z" fill="#ef4444"/>
+        <!-- Red Sneakers leaping -->
+        <g transform="translate(-30, 42)">
+          <path d="M 0,0 L 25,0 L 30,14 L -5,14 Z" fill="url(#sneakerRed)" stroke="#78350f" stroke-width="2"/>
+          <rect x="-7" y="14" width="38" height="6" rx="3" fill="#ffffff" stroke="#78350f" stroke-width="1.5"/>
+        </g>
+        <g transform="translate(15, 36) rotate(-20)">
+          <path d="M 0,0 L 25,0 L 30,14 L -5,14 Z" fill="url(#sneakerRed)" stroke="#78350f" stroke-width="2"/>
+          <rect x="-7" y="14" width="38" height="6" rx="3" fill="#ffffff" stroke="#78350f" stroke-width="1.5"/>
+        </g>
+        <!-- Tiny Water Splash -->
+        <circle cx="-45" cy="45" r="5" fill="#e0f2fe"/>
+        <circle cx="-55" cy="35" r="3" fill="#e0f2fe"/>
+      </g>
+
+      <!-- FREDDIE THE FROG ON HIS MOSSY ROCK (Puffing round cheeks) -->
+      <g transform="translate(480, 240)">
+        <!-- Mossy Rock -->
+        <ellipse cx="20" cy="70" rx="85" ry="40" fill="#64748b" stroke="#334155" stroke-width="3"/>
+        <ellipse cx="10" cy="55" rx="75" ry="22" fill="#4ade80" opacity="0.4"/>
+
+        <!-- Frog Body -->
+        <ellipse cx="20" cy="10" rx="55" ry="45" fill="url(#frogGreen)" stroke="#14532d" stroke-width="3"/>
+
+        <!-- Giant Puffed-up Cheeks! -->
+        <circle cx="-25" cy="5" r="28" fill="#86efac" stroke="#16a34a" stroke-width="2"/>
+        <circle cx="65" cy="5" r="28" fill="#86efac" stroke="#16a34a" stroke-width="2"/>
+
+        <!-- Frog Belly (Pale Cream) -->
+        <ellipse cx="20" cy="20" rx="30" ry="25" fill="#fef9c3"/>
+
+        <!-- Big Googly Eyes on Top of Head -->
+        <g transform="translate(-15, -35)">
+          <circle cx="0" cy="0" r="18" fill="#ffffff" stroke="#14532d" stroke-width="3"/>
+          <circle cx="2" cy="0" r="9" fill="#0f172a"/>
+          <circle cx="5" cy="-3" r="3" fill="#ffffff"/>
+        </g>
+        <g transform="translate(55, -35)">
+          <circle cx="0" cy="0" r="18" fill="#ffffff" stroke="#14532d" stroke-width="3"/>
+          <circle cx="-2" cy="0" r="9" fill="#0f172a"/>
+          <circle cx="0" cy="-3" r="3" fill="#ffffff"/>
+        </g>
+
+        <!-- Webbed Feet -->
+        <ellipse cx="-35" cy="50" rx="22" ry="10" fill="#22c55e" stroke="#14532d" stroke-width="2"/>
+        <ellipse cx="75" cy="50" rx="22" ry="10" fill="#22c55e" stroke="#14532d" stroke-width="2"/>
+
+        <!-- Speech Bubble: Ribbit! -->
+        <g transform="translate(-80, -90)">
+          <rect x="0" y="0" width="130" height="42" rx="12" fill="#ffffff" stroke="#0284c7" stroke-width="2.5"/>
+          <polygon points="55,42 65,42 45,60" fill="#ffffff" stroke="#0284c7" stroke-width="2"/>
+          <line x1="56" y1="41" x2="64" y2="41" stroke="#ffffff" stroke-width="4"/>
+          <text x="65" y="27" font-family="'Comic Sans MS', cursive" font-size="20" font-weight="900" fill="#0284c7" text-anchor="middle">RIBBIT!</text>
+        </g>
+      </g>
+
+      <!-- Little Yellow Duckling in Shock -->
+      <g transform="translate(80, 310)">
+        <ellipse cx="0" cy="0" rx="18" ry="14" fill="#facc15" stroke="#ca8a04" stroke-width="2"/>
+        <circle cx="-12" cy="-10" r="10" fill="#facc15" stroke="#ca8a04" stroke-width="2"/>
+        <circle cx="-15" cy="-12" r="3" fill="#0f172a"/>
+        <polygon points="-26,-10 -20,-14 -20,-6" fill="#f97316"/>
+        <text x="25" y="-10" font-family="'Comic Sans MS', cursive" font-size="14" font-weight="bold" fill="#0369a1">QUACK!</text>
+      </g>
+    </g>
+
+    <!-- Story Text Below Scene (Large, Clean Phonics) -->
+    <g transform="translate(10, 540)">
+      <rect x="0" y="0" width="610" height="190" rx="14" fill="#ffffff" stroke="#bae6fd" stroke-width="2" filter="url(#shadowPage)"/>
+      <text x="30" y="48" font-family="'Comic Sans MS', 'Fredoka', cursive, sans-serif" font-size="24" font-weight="bold" fill="#0f172a">Next came the sparkling blue duck pond!</text>
+      <text x="30" y="86" font-family="'Comic Sans MS', 'Fredoka', cursive, sans-serif" font-size="24" font-weight="bold" fill="#0284c7">Freddie the Frog puffed up his giant green cheeks.</text>
+      <text x="30" y="125" font-family="'Comic Sans MS', 'Fredoka', cursive, sans-serif" font-size="22" font-weight="900" fill="#15803d">"RIBBIT! Pancakes are my favorite snack!" croaked Freddie.</text>
+      <text x="30" y="162" font-family="'Comic Sans MS', 'Fredoka', cursive, sans-serif" font-size="22" font-weight="bold" fill="#78350f">"My long sticky tongue is super-fast! Watch this!"</text>
+    </g>
+
+    <!-- Page Number -->
+    <text x="315" y="770" font-family="'Comic Sans MS', cursive" font-size="16" font-weight="bold" fill="#94a3b8" text-anchor="middle">Page 5</text>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- RIGHT PAGE: BOING ON LILY PAD & FREDDIE'S BIG SPLASH! -->
+  <!-- ========================================================================= -->
+  <g transform="translate(870, 70)">
+    <!-- Header Tag -->
+    <rect x="0" y="0" width="230" height="38" rx="19" fill="#16a34a"/>
+    <text x="115" y="25" font-family="'Impact', 'Arial Black', sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" letter-spacing="1">PAGE 6 • BOING &amp; SPLASH!</text>
+
+    <!-- Story Headline -->
+    <text x="0" y="90" font-family="'Comic Sans MS', 'Fredoka', cursive, sans-serif" font-size="34" font-weight="900" fill="#15803d">The Trampoline Bounce!</text>
+
+    <!-- Splash Action Illustration -->
+    <g transform="translate(0, 120)">
+      <rect x="0" y="0" width="630" height="380" rx="16" fill="#f0fdf4" stroke="#86efac" stroke-width="3"/>
+
+      <!-- Pond Water Base -->
+      <path d="M 0,230 C 150,220 300,240 630,220 L 630,380 L 0,380 Z" fill="url(#waterSurface)"/>
+
+      <!-- Trampoline Lily Pad (Bent deep downwards with tension lines) -->
+      <g transform="translate(180, 270)">
+        <path d="M -90,0 Q 0,40 90,0 Q 0,-25 -90,0 Z" fill="url(#lilyPadGrad)" stroke="#14532d" stroke-width="3"/>
+        <!-- Boing springs/motion vibrations -->
+        <path d="M -70,-20 Q 0,-45 70,-20" stroke="#f59e0b" stroke-width="4" stroke-dasharray="6,6" fill="none"/>
+        <path d="M -50,-35 Q 0,-60 50,-35" stroke="#f59e0b" stroke-width="3" stroke-dasharray="6,6" fill="none"/>
+      </g>
+
+      <!-- PANCAKE SOARING IN THE SKY -->
+      <g transform="translate(220, 75) rotate(15)">
+        <ellipse cx="0" cy="0" rx="70" ry="54" fill="url(#pancakeBody)" stroke="#78350f" stroke-width="4"/>
+        <ellipse cx="0" cy="-8" rx="55" ry="38" fill="#fef08a" opacity="0.4"/>
+        <!-- Winking Cartoon Eye & Wide Grin -->
+        <path d="M -26,-6 Q -16,-18 -6,-6" stroke="#78350f" stroke-width="5" stroke-linecap="round" fill="none"/>
+        <circle cx="20" cy="-6" r="14" fill="#ffffff" stroke="#78350f" stroke-width="2"/>
+        <circle cx="22" cy="-6" r="7" fill="#0f172a"/>
+        <!-- Big Laughing Open Mouth -->
+        <path d="M -16,14 Q 4,40 24,14 Z" fill="#dc2626" stroke="#78350f" stroke-width="3"/>
+        <path d="M -6,14 Q 4,24 14,14 Z" fill="#ffffff"/>
+
+        <!-- Red Sneakers kicking happily -->
+        <g transform="translate(-40, 42) rotate(20)">
+          <path d="M 0,0 L 26,0 L 32,15 L -6,15 Z" fill="url(#sneakerRed)" stroke="#78350f" stroke-width="2"/>
+          <rect x="-8" y="15" width="40" height="6" rx="3" fill="#ffffff" stroke="#78350f" stroke-width="1.5"/>
+        </g>
+        <g transform="translate(18, 46) rotate(-25)">
+          <path d="M 0,0 L 26,0 L 32,15 L -6,15 Z" fill="url(#sneakerRed)" stroke="#78350f" stroke-width="2"/>
+          <rect x="-8" y="15" width="40" height="6" rx="3" fill="#ffffff" stroke="#78350f" stroke-width="1.5"/>
+        </g>
+
+        <!-- Motion Trail -->
+        <path d="M -40,30 Q -60,110 -40,180" stroke="#f59e0b" stroke-width="6" stroke-dasharray="8,6" fill="none"/>
+      </g>
+
+      <!-- BOING SOUND BUBBLE -->
+      <g transform="translate(70, 160)">
+        <polygon points="0,0 20,-20 40,-5 60,-25 80,-10 100,-25 95,15 115,35 85,40 95,65 65,55 50,75 35,55 10,65 15,35 -15,25" fill="#fef08a" stroke="#f59e0b" stroke-width="3"/>
+        <text x="50" y="32" font-family="'Impact', 'Arial Black', sans-serif" font-size="24" fill="#b45309" text-anchor="middle">BOING!</text>
+      </g>
+
+      <!-- FREDDIE THE FROG IN BELLY-FLOP SPLASH -->
+      <g transform="translate(460, 220)">
+        <!-- Giant Splash Water Droplets -->
+        <g fill="#38bdf8" stroke="#0284c7" stroke-width="2">
+          <circle cx="-60" cy="-60" r="12"/>
+          <circle cx="-30" cy="-90" r="16"/>
+          <circle cx="10" cy="-110" r="14"/>
+          <circle cx="60" cy="-80" r="18"/>
+          <circle cx="90" cy="-40" r="12"/>
+        </g>
+        <path d="M -80,20 Q -40,-80 0,0 Q 40,-80 80,20 Z" fill="#e0f2fe" opacity="0.8"/>
+
+        <!-- Frog Belly Flopping Upside Down / Tangled -->
+        <g transform="rotate(130)">
+          <ellipse cx="0" cy="0" rx="50" ry="40" fill="url(#frogGreen)" stroke="#14532d" stroke-width="3"/>
+          <ellipse cx="0" cy="-5" rx="32" ry="24" fill="#fef9c3"/>
+          <!-- Frog Legs Splayed -->
+          <ellipse cx="-45" cy="25" rx="18" ry="32" fill="#22c55e" stroke="#14532d" stroke-width="2"/>
+          <ellipse cx="45" cy="25" rx="18" ry="32" fill="#22c55e" stroke="#14532d" stroke-width="2"/>
+          <!-- Dizzy Swirl Eyes -->
+          <circle cx="-16" cy="-25" r="14" fill="#ffffff" stroke="#14532d" stroke-width="2"/>
+          <path d="M -16,-25 m -6,0 a 6,6 0 1,0 12,0 a 4,4 0 1,0 -8,0" fill="none" stroke="#0f172a" stroke-width="2"/>
+          <circle cx="16" cy="-25" r="14" fill="#ffffff" stroke="#14532d" stroke-width="2"/>
+          <path d="M 16,-25 m -6,0 a 6,6 0 1,0 12,0 a 4,4 0 1,0 -8,0" fill="none" stroke="#0f172a" stroke-width="2"/>
+          <!-- Frog Long Pink Sticky Tongue Wrapped on Reed -->
+          <path d="M 0,-10 Q 60,-70 120,-30 T 160,-80" fill="none" stroke="#f43f5e" stroke-width="8" stroke-linecap="round"/>
+        </g>
+
+        <!-- SPLASH SOUND EFFECT BUBBLE -->
+        <g transform="translate(-10, -50)">
+          <polygon points="0,0 25,-35 55,-15 85,-45 110,-10 145,-30 135,15 170,45 130,55 150,85 100,75 80,105 60,75 20,85 30,50 -15,40" fill="#bae6fd" stroke="#0284c7" stroke-width="3"/>
+          <text x="75" y="42" font-family="'Impact', 'Arial Black', sans-serif" font-size="26" fill="#0369a1" text-anchor="middle">SPLAAASH!</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Story Text Below Scene (Large, Clean Phonics) -->
+    <g transform="translate(10, 540)">
+      <rect x="0" y="0" width="610" height="190" rx="14" fill="#ffffff" stroke="#86efac" stroke-width="2" filter="url(#shadowPage)"/>
+      <text x="30" y="48" font-family="'Comic Sans MS', 'Fredoka', cursive, sans-serif" font-size="24" font-weight="900" fill="#d97706"><tspan fill="#ea580c">BOING!</tspan> went the giant lily pad like a trampoline!</text>
+      <text x="30" y="86" font-family="'Comic Sans MS', 'Fredoka', cursive, sans-serif" font-size="24" font-weight="bold" fill="#0f172a">The pancake leaped high up into the sunny sky!</text>
+      <text x="30" y="125" font-family="'Comic Sans MS', 'Fredoka', cursive, sans-serif" font-size="22" font-weight="bold" fill="#0284c7"><tspan fill="#0284c7">KER-SPLASH!</tspan> Freddie did a huge belly-flop into the mud!</text>
+      <text x="30" y="162" font-family="'Comic Sans MS', 'Fredoka', cursive, sans-serif" font-size="22" font-weight="900" fill="#15803d">"Nice try, froggy!" laughed the Pancake. "You missed me!"</text>
+    </g>
+
+    <!-- Page Number -->
+    <text x="315" y="770" font-family="'Comic Sans MS', cursive" font-size="16" font-weight="bold" fill="#94a3b8" text-anchor="middle">Page 6</text>
+  </g>
+</svg>

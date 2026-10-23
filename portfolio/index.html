@@ -1,0 +1,1633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#f8fafc">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="description" content="Hammad Hassan - AI & Digital Solutions Developer Portfolio. Showcasing AI Chatbots, Automations, Web Apps, Mobile Apps, Publishing, and Digital Solutions.">
+  <title>Hammad Hassan | AI & Digital Solutions Developer</title>
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Top Real-Time Scroll Progress Indicator -->
+  <div id="scroll-progress-bar" class="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- ========================================================================
+       AI FUTURISTIC BACKGROUND EFFECTS ENGINE
+       - Organic Multi-Spectral Aurora Orbs (Cyan, Electric Indigo & Mint)
+       - Micro-Dot Cybernetic Tech Grid
+       - Dynamic Interactive AI Neural Synaptic Constellation Canvas
+       - Interactive Smooth Cursor Glow Halo
+       ======================================================================== -->
+  <div class="ai-bg-system" id="ai-bg-system" aria-hidden="true">
+    <div class="ai-bg-glow-orb ai-orb-1"></div>
+    <div class="ai-bg-glow-orb ai-orb-2"></div>
+    <div class="ai-bg-glow-orb ai-orb-3"></div>
+    <div class="ai-bg-cyber-grid"></div>
+    <canvas id="ai-neural-canvas" class="ai-neural-canvas"></canvas>
+    <div id="ai-cursor-aura" class="ai-cursor-aura"></div>
+  </div>
+
+  <!-- ========================================================================
+       TOP NAVIGATION BAR (Fixed at Top, Height ~68px, Dark Navy-Black)
+       ======================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <!-- Left: Purple Rounded-Square Code Icon + Brand Text -->
+      <a href="#home" class="nav-brand" aria-label="Hammad Hassan Portfolio Home">
+        <div class="brand-icon-box">
+          <span class="brand-code-symbol">&lt; / &gt;</span>
+        </div>
+        <span class="brand-name">Hammad<span class="brand-dot">.</span>Hassan</span>
+      </a>
+
+      <!-- Mobile Hamburger Toggle Button -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <!-- Right: Navigation Links with Small Icons -->
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">
+              <svg xmlns="http://www.w3.org/2000/svg" class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">
+              <svg xmlns="http://www.w3.org/2000/svg" class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+              <span>About</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#work" class="nav-link">
+              <svg xmlns="http://www.w3.org/2000/svg" class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+              <span>Work</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#education" class="nav-link">
+              <svg xmlns="http://www.w3.org/2000/svg" class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              <span>Education</span>
+            </a>
+          </li>
+          <!-- Active Page Initially Matching Screenshot -->
+          <li class="nav-item">
+            <a href="#projects" class="nav-link active">
+              <svg xmlns="http://www.w3.org/2000/svg" class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.9a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"></path><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"></path><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"></path></svg>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#certifications" class="nav-link">
+              <svg xmlns="http://www.w3.org/2000/svg" class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"></circle><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path></svg>
+              <span>Certifications</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">
+              <svg xmlns="http://www.w3.org/2000/svg" class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       SECTION 1: HOME (Compact Modern Intro)
+       ======================================================================== -->
+  <section id="home" class="home-section">
+    <div class="container">
+      <div class="home-card">
+        <div class="home-intro-content">
+          <div class="home-badge">
+            <span class="pulse-dot"></span>
+            <span>Available for AI, Automation &amp; Web Projects</span>
+          </div>
+
+          <h1 class="home-title">
+            Hi, I'm <span class="highlight">Hammad Hassan</span>
+          </h1>
+
+          <h2 class="home-subtitle">
+            AI &amp; Digital Solutions Developer
+          </h2>
+
+          <p class="home-description">
+            Building intelligent AI assistants, automated multi-tool workflows, responsive web applications, and digital publishing solutions that convert ideas into scalable, production-grade reality.
+          </p>
+
+          <div class="home-actions">
+            <a href="#projects" class="btn-primary">
+              <span>Explore Projects</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </a>
+
+            <a href="#contact" class="btn-secondary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+              <span>Contact Me</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="home-avatar-container">
+          <div class="avatar-wrapper">
+            <img src="images/profile/hammad.jpg" alt="Hammad Hassan" class="avatar-img" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 2: PROJECTS (PRIMARY FEATURE & DEFAULT ACTIVE SECTION)
+       Matches Reference Screenshot: Center Heading, Category Tabs, 3-Col Cards
+       ======================================================================== -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      
+      <!-- Hero Header matching Reference Screenshot -->
+      <div class="projects-hero">
+        <h1>Projects</h1>
+        <p>Showcasing my work and creative solutions</p>
+      </div>
+
+      <!-- Search & Category Filters Area -->
+      <div class="search-filter-wrapper">
+        <!-- Search Input -->
+        <div class="search-container">
+          <div class="search-input-box">
+            <svg xmlns="http://www.w3.org/2000/svg" class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input 
+              type="text" 
+              id="search-input" 
+              class="search-input" 
+              placeholder="Search projects, technologies, or categories..." 
+              autocomplete="off"
+            />
+            <button id="search-clear-btn" class="search-clear-btn" title="Clear search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Category Filter Buttons Row -->
+        <div class="filter-tabs-container" id="filter-tabs">
+          <button class="filter-btn active" data-category="All">All</button>
+          <button class="filter-btn" data-category="AI &amp; Chatbots">AI &amp; Chatbots</button>
+          <button class="filter-btn" data-category="Automations">Automations</button>
+          <button class="filter-btn" data-category="Web Applications">Web Applications</button>
+          <button class="filter-btn" data-category="Mobile Applications">Mobile Applications</button>
+          <button class="filter-btn" data-category="Book Design">Book Design</button>
+          <button class="filter-btn" data-category="Translation">Translation</button>
+          <button class="filter-btn" data-category="Graphic Design">Graphic Design</button>
+          <button class="filter-btn" data-category="Data Entry">Data Entry</button>
+        </div>
+      </div>
+
+      <!-- Results Count Bar -->
+      <div class="results-meta-bar">
+        <span id="results-count" class="results-count">Showing <strong>0</strong> projects</span>
+      </div>
+
+      <!-- 3-Column Responsive Project Gallery Grid -->
+      <div class="projects-grid" id="projects-grid">
+        <!-- Rendered dynamically via js/script.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ========================================================================
+       SECTION 3: ABOUT
+       ======================================================================== -->
+  <section id="about" class="section-wrapper about-section">
+    <div class="container">
+      <div class="section-header-compact">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Bridging artificial intelligence, engineering architecture, and digital craftsmanship.</p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Biography Card -->
+        <div class="about-bio-card">
+          <h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><line x1="19" y1="8" x2="19" y2="14"></line><line x1="22" y1="11" x2="16" y2="11"></line></svg>
+            Professional Background
+          </h3>
+
+          <p class="bio-lead">
+            I am <strong>Hammad Hassan</strong>, an <strong>AI &amp; Digital Solutions Developer</strong> dedicated to turning complex operational bottlenecks into high-yield, automated, and intelligent software systems.
+          </p>
+
+          <p class="bio-text">
+            Grounded in a completed <strong>BS in Computer Science (BSCS)</strong> from Virtual University of Pakistan, an <strong>Associate Degree in Arts (ADA)</strong> from University of Sargodha, and validated by <strong>12+ industry certifications</strong> (including ADBI, Deloitte, University of Helsinki, and DeepLearning.AI), I operate at the intersection of technical engineering, systematic automation, and user-centered design.
+          </p>
+
+          <div class="bio-pillars">
+            <div class="bio-pillar-item">
+              <div class="bio-pillar-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"></path><path d="m4.93 4.93 2.83 2.83"></path><path d="M2 12h4"></path><path d="m4.93 19.07 2.83-2.83"></path><path d="M12 22v-4"></path><path d="m19.07 19.07-2.83-2.83"></path><path d="M22 12h-4"></path><path d="m19.07 4.93-2.83 2.83"></path></svg>
+              </div>
+              <div class="bio-pillar-content">
+                <strong>Intelligent Conversational Systems</strong>
+                Architecting autonomous LLM chatbots with Botpress, OpenAI APIs, vector databases, and custom business knowledge bases—such as triage platforms like <em>Wellness Aura</em>.
+              </div>
+            </div>
+
+            <div class="bio-pillar-item">
+              <div class="bio-pillar-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <div class="bio-pillar-content">
+                <strong>End-to-End Workflow Automations</strong>
+                Eliminating repetitive operational friction through multi-scenario webhook pipelines on Make.com and self-hosted n8n, automated PDF generators, CRM routing, and live spreadsheets.
+              </div>
+            </div>
+
+            <div class="bio-pillar-item">
+              <div class="bio-pillar-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M3 9h18"></path><path d="M9 21V9"></path></svg>
+              </div>
+              <div class="bio-pillar-content">
+                <strong>Full-Stack Web &amp; Mobile Interfaces</strong>
+                Delivering lightning-fast, accessible web and mobile platforms with semantic HTML5, modern CSS3, vanilla JavaScript, React Native, and robust REST APIs.
+              </div>
+            </div>
+
+            <div class="bio-pillar-item">
+              <div class="bio-pillar-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path><path d="M6 6h10"></path><path d="M6 10h10"></path></svg>
+              </div>
+              <div class="bio-pillar-content">
+                <strong>Digital Publishing &amp; Multidisciplinary Precision</strong>
+                Full-cycle Amazon KDP print-ready packaging (300 DPI CMYK, InDesign typesetting), bilingual English/Urdu translation, branding graphics, and data normalization.
+              </div>
+            </div>
+          </div>
+
+          <p class="bio-text">
+            My philosophy centers on <strong>production dependability</strong>: whether building autonomous AI triage flows or crafting custom web platforms, I deliver clean architecture, clear documentation, and measurable business value from day one.
+          </p>
+
+          <div class="bio-stats-ribbon">
+            <div class="bio-stat-box">
+              <div class="bio-stat-value">12+</div>
+              <div class="bio-stat-label">Accreditations</div>
+            </div>
+            <div class="bio-stat-box">
+              <div class="bio-stat-value">8+</div>
+              <div class="bio-stat-label">Core Disciplines</div>
+            </div>
+            <div class="bio-stat-box">
+              <div class="bio-stat-value">100%</div>
+              <div class="bio-stat-label">Production Focus</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8 Core Disciplines Cards -->
+        <!-- 8 Core Disciplines 3D Interactive Flip Cards -->
+        <div class="disciplines-grid">
+          <!-- Card 1: AI Chatbots & GenAI -->
+          <div class="discipline-flip-card" tabindex="0">
+            <div class="discipline-flip-inner">
+              <div class="discipline-card-face discipline-card-front">
+                <div class="discipline-icon-box">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"></path><rect width="16" height="12" x="4" y="8" rx="2"></rect><path d="M2 14h2"></path><path d="M20 14h2"></path><path d="M15 13v2"></path><path d="M9 13v2"></path></svg>
+                </div>
+                <h4 class="discipline-title">AI Chatbots &amp; GenAI</h4>
+                <p class="discipline-desc">Conversational assistants, prompt engineering, and Botpress integrations.</p>
+                <div class="flip-action-hint">
+                  <span>Hover to flip</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m17 2 4 4-4 4"></path><path d="M3 11v-1a4 4 0 0 1 4-4h14"></path><path d="m7 22-4-4 4-4"></path><path d="M21 13v1a4 4 0 0 1-4 4H3"></path></svg>
+                </div>
+              </div>
+              <div class="discipline-card-face discipline-card-back flip-theme-cyan">
+                <div class="back-header">
+                  <span class="back-category-badge">AI Systems</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"></path><path d="m4.93 4.93 2.83 2.83"></path><path d="M2 12h4"></path><path d="m4.93 19.07 2.83-2.83"></path><path d="M12 22v-4"></path><path d="m19.07 19.07-2.83-2.83"></path><path d="M22 12h-4"></path><path d="m19.07 4.93-2.83 2.83"></path></svg>
+                </div>
+                <h4 class="back-title">Core Capabilities</h4>
+                <ul class="back-checklist">
+                  <li>Botpress &amp; OpenAI API Agents</li>
+                  <li>Custom Triage &amp; Vector DBs</li>
+                  <li>Multi-Turn Conversational Memory</li>
+                </ul>
+                <div class="back-pills">
+                  <span class="back-pill">Botpress</span>
+                  <span class="back-pill">OpenAI</span>
+                  <span class="back-pill">Prompt Eng</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Workflow Automation -->
+          <div class="discipline-flip-card" tabindex="0">
+            <div class="discipline-flip-inner">
+              <div class="discipline-card-face discipline-card-front">
+                <div class="discipline-icon-box">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"></path><path d="m4.93 4.93 2.83 2.83"></path><path d="M2 12h4"></path><path d="m4.93 19.07 2.83-2.83"></path><path d="M12 22v-4"></path><path d="m19.07 19.07-2.83-2.83"></path><path d="M22 12h-4"></path><path d="m19.07 4.93-2.83 2.83"></path></svg>
+                </div>
+                <h4 class="discipline-title">Workflow Automation</h4>
+                <p class="discipline-desc">Make.com &amp; n8n webhook pipelines, automated PDF and lead routing.</p>
+                <div class="flip-action-hint">
+                  <span>Hover to flip</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m17 2 4 4-4 4"></path><path d="M3 11v-1a4 4 0 0 1 4-4h14"></path><path d="m7 22-4-4 4-4"></path><path d="M21 13v1a4 4 0 0 1-4 4H3"></path></svg>
+                </div>
+              </div>
+              <div class="discipline-card-face discipline-card-back flip-theme-indigo">
+                <div class="back-header">
+                  <span class="back-category-badge">Automations</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                </div>
+                <h4 class="back-title">Core Capabilities</h4>
+                <ul class="back-checklist">
+                  <li>Multi-Scenario Make.com Flows</li>
+                  <li>Self-Hosted n8n Webhook Pipelines</li>
+                  <li>Instant CRM, Gmail &amp; Slack Sync</li>
+                </ul>
+                <div class="back-pills">
+                  <span class="back-pill">Make.com</span>
+                  <span class="back-pill">n8n</span>
+                  <span class="back-pill">Webhooks</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Web Development -->
+          <div class="discipline-flip-card" tabindex="0">
+            <div class="discipline-flip-inner">
+              <div class="discipline-card-face discipline-card-front">
+                <div class="discipline-icon-box">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                </div>
+                <h4 class="discipline-title">Web Development</h4>
+                <p class="discipline-desc">Semantic HTML5, CSS3, vanilla JavaScript, WordPress, and responsive layouts.</p>
+                <div class="flip-action-hint">
+                  <span>Hover to flip</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m17 2 4 4-4 4"></path><path d="M3 11v-1a4 4 0 0 1 4-4h14"></path><path d="m7 22-4-4 4-4"></path><path d="M21 13v1a4 4 0 0 1-4 4H3"></path></svg>
+                </div>
+              </div>
+              <div class="discipline-card-face discipline-card-back flip-theme-teal">
+                <div class="back-header">
+                  <span class="back-category-badge">Frontend Architecture</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M3 9h18"></path><path d="M9 21V9"></path></svg>
+                </div>
+                <h4 class="back-title">Core Capabilities</h4>
+                <ul class="back-checklist">
+                  <li>Modern HTML5 / CSS3 / Vanilla JS</li>
+                  <li>Custom WordPress Architectures</li>
+                  <li>Lightning-Fast 60FPS UI Engines</li>
+                </ul>
+                <div class="back-pills">
+                  <span class="back-pill">JavaScript</span>
+                  <span class="back-pill">HTML5/CSS3</span>
+                  <span class="back-pill">WordPress</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Mobile Applications -->
+          <div class="discipline-flip-card" tabindex="0">
+            <div class="discipline-flip-inner">
+              <div class="discipline-card-face discipline-card-front">
+                <div class="discipline-icon-box">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect><path d="M12 18h.01"></path></svg>
+                </div>
+                <h4 class="discipline-title">Mobile Applications</h4>
+                <p class="discipline-desc">Cross-platform React Native apps for iOS &amp; Android with offline persistence.</p>
+                <div class="flip-action-hint">
+                  <span>Hover to flip</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m17 2 4 4-4 4"></path><path d="M3 11v-1a4 4 0 0 1 4-4h14"></path><path d="m7 22-4-4 4-4"></path><path d="M21 13v1a4 4 0 0 1-4 4H3"></path></svg>
+                </div>
+              </div>
+              <div class="discipline-card-face discipline-card-back flip-theme-blue">
+                <div class="back-header">
+                  <span class="back-category-badge">Cross-Platform</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect><path d="M12 18h.01"></path></svg>
+                </div>
+                <h4 class="back-title">Core Capabilities</h4>
+                <ul class="back-checklist">
+                  <li>React Native for iOS &amp; Android</li>
+                  <li>Offline Sync &amp; Biometric Security</li>
+                  <li>Live BLE Sensor &amp; Health Telemetry</li>
+                </ul>
+                <div class="back-pills">
+                  <span class="back-pill">React Native</span>
+                  <span class="back-pill">iOS</span>
+                  <span class="back-pill">Android</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Book Design & Authoring -->
+          <div class="discipline-flip-card" tabindex="0">
+            <div class="discipline-flip-inner">
+              <div class="discipline-card-face discipline-card-front">
+                <div class="discipline-icon-box">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path><path d="M6 6h10"></path><path d="M6 10h10"></path></svg>
+                </div>
+                <h4 class="discipline-title">Book Design &amp; Authoring</h4>
+                <p class="discipline-desc">Canva &amp; MS Word typesetting, content writing, Arabic typography, and 300 DPI Amazon KDP publishing.</p>
+                <div class="flip-action-hint">
+                  <span>Hover to flip</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m17 2 4 4-4 4"></path><path d="M3 11v-1a4 4 0 0 1 4-4h14"></path><path d="m7 22-4-4 4-4"></path><path d="M21 13v1a4 4 0 0 1-4 4H3"></path></svg>
+                </div>
+              </div>
+              <div class="discipline-card-face discipline-card-back flip-theme-amber">
+                <div class="back-header">
+                  <span class="back-category-badge">Publishing &amp; KDP</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                </div>
+                <h4 class="back-title">Core Capabilities</h4>
+                <ul class="back-checklist">
+                  <li>300 DPI CMYK Amazon KDP Preflight</li>
+                  <li>Canva Pro &amp; MS Word Typesetting</li>
+                  <li>Children's Picture Books &amp; Curricula</li>
+                </ul>
+                <div class="back-pills">
+                  <span class="back-pill">Amazon KDP</span>
+                  <span class="back-pill">Canva</span>
+                  <span class="back-pill">Typesetting</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6: Translation & Localization -->
+          <div class="discipline-flip-card" tabindex="0">
+            <div class="discipline-flip-inner">
+              <div class="discipline-card-face discipline-card-front">
+                <div class="discipline-icon-box">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg>
+                </div>
+                <h4 class="discipline-title">Translation &amp; Localization</h4>
+                <p class="discipline-desc">Bilingual manuscripts, terminology verification, and RTL/LTR mirrored formatting.</p>
+                <div class="flip-action-hint">
+                  <span>Hover to flip</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m17 2 4 4-4 4"></path><path d="M3 11v-1a4 4 0 0 1 4-4h14"></path><path d="m7 22-4-4 4-4"></path><path d="M21 13v1a4 4 0 0 1-4 4H3"></path></svg>
+                </div>
+              </div>
+              <div class="discipline-card-face discipline-card-back flip-theme-emerald">
+                <div class="back-header">
+                  <span class="back-category-badge">Bilingual Expertise</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                </div>
+                <h4 class="back-title">Core Capabilities</h4>
+                <ul class="back-checklist">
+                  <li>English &amp; Urdu Technical Translation</li>
+                  <li>Mirrored RTL / LTR Dual Layouts</li>
+                  <li>Theological &amp; Academic Precision</li>
+                </ul>
+                <div class="back-pills">
+                  <span class="back-pill">English</span>
+                  <span class="back-pill">Urdu</span>
+                  <span class="back-pill">Mirrored RTL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 7: Graphic Design -->
+          <div class="discipline-flip-card" tabindex="0">
+            <div class="discipline-flip-inner">
+              <div class="discipline-card-face discipline-card-front">
+                <div class="discipline-icon-box">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.563-2.512 5.563-5.563C22 6.5 17.5 2 12 2Z"></path></svg>
+                </div>
+                <h4 class="discipline-title">Graphic Design</h4>
+                <p class="discipline-desc">Brand marketing assets, promotional posters, and social media carousels.</p>
+                <div class="flip-action-hint">
+                  <span>Hover to flip</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m17 2 4 4-4 4"></path><path d="M3 11v-1a4 4 0 0 1 4-4h14"></path><path d="m7 22-4-4 4-4"></path><path d="M21 13v1a4 4 0 0 1-4 4H3"></path></svg>
+                </div>
+              </div>
+              <div class="discipline-card-face discipline-card-back flip-theme-rose">
+                <div class="back-header">
+                  <span class="back-category-badge">Visual Identity</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                </div>
+                <h4 class="back-title">Core Capabilities</h4>
+                <ul class="back-checklist">
+                  <li>Viral Thought-Leadership Carousels</li>
+                  <li>Corporate Brand &amp; Logo Suites</li>
+                  <li>Canva &amp; Generative AI Creative Kits</li>
+                </ul>
+                <div class="back-pills">
+                  <span class="back-pill">Canva</span>
+                  <span class="back-pill">AI Creatives</span>
+                  <span class="back-pill">Branding</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 8: Data Entry & Sheets -->
+          <div class="discipline-flip-card" tabindex="0">
+            <div class="discipline-flip-inner">
+              <div class="discipline-card-face discipline-card-front">
+                <div class="discipline-icon-box">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M3 9h18"></path><path d="M3 15h18"></path><path d="M9 3v18"></path><path d="M15 3v18"></path></svg>
+                </div>
+                <h4 class="discipline-title">Data Entry &amp; Sheets</h4>
+                <p class="discipline-desc">Data cleaning, formula optimization, regex normalization, and spreadsheets.</p>
+                <div class="flip-action-hint">
+                  <span>Hover to flip</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m17 2 4 4-4 4"></path><path d="M3 11v-1a4 4 0 0 1 4-4h14"></path><path d="m7 22-4-4 4-4"></path><path d="M21 13v1a4 4 0 0 1-4 4H3"></path></svg>
+                </div>
+              </div>
+              <div class="discipline-card-face discipline-card-back flip-theme-slate">
+                <div class="back-header">
+                  <span class="back-category-badge">Data Processing</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                </div>
+                <h4 class="back-title">Core Capabilities</h4>
+                <ul class="back-checklist">
+                  <li>Regex Data Cleaning &amp; Deduplication</li>
+                  <li>Multi-Variable VLOOKUP / XLOOKUP</li>
+                  <li>Dynamic KPI Executive Dashboards</li>
+                </ul>
+                <div class="back-pills">
+                  <span class="back-pill">Excel</span>
+                  <span class="back-pill">Sheets</span>
+                  <span class="back-pill">Formulas</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ========================================================================
+       SECTION 4: WORK (Experience Timeline - Genuine & Editable)
+       ======================================================================== -->
+  <section id="work" class="section-wrapper">
+    <div class="container">
+      <div class="section-header-compact">
+        <h2 class="section-title">Work Experience</h2>
+        <p class="section-subtitle">Commercial software engineering, enterprise automation architectures, and corporate design engagements.</p>
+      </div>
+
+      <div class="timeline-container">
+        <!-- Entry 1: Marvel Logics (US) -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-role-group">
+                <h3 class="timeline-role">Mobile Application Developer (React Native / iOS &amp; Android)</h3>
+                <div class="timeline-company">
+                  <i class="fas fa-building"></i> Marvel Logics
+                  <span class="timeline-company-badge badge-us"><i class="fas fa-flag-usa"></i> US-Based Enterprise</span>
+                </div>
+              </div>
+              <span class="timeline-date"><i class="far fa-calendar-alt"></i> Mar 2025 &mdash; Mar 2026</span>
+            </div>
+            <div class="timeline-body">
+              <p class="timeline-desc-block scope-block">
+                <strong class="timeline-desc-label label-scope"><i class="fas fa-layer-group"></i> Project &amp; Engineering Scope:</strong> Architected and deployed cross-platform mobile applications for US enterprise clients using React Native and TypeScript, integrating biometric authentication, cloud data synchronization, and native device feature modules.
+              </p>
+              <p class="timeline-desc-block problem-block">
+                <strong class="timeline-desc-label label-problem"><i class="fas fa-shield-alt"></i> Problem Solved &amp; Strategic Impact:</strong> Solved mobile latency, irregular offline connectivity, and complex state synchronization by implementing offline-first Redux/Zustand caching, asynchronous background sync, and optimized native rendering pipelines&mdash;achieving fluid 60 FPS performance and zero transaction drops across iOS and Android ecosystems.
+              </p>
+            </div>
+            <div class="timeline-skills">
+              <span class="tech-tag">React Native</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">iOS &amp; Android</span>
+              <span class="tech-tag">Redux Toolkit</span>
+              <span class="tech-tag">Biometric Security</span>
+              <span class="tech-tag">RESTful APIs</span>
+              <span class="tech-tag">Mobile UI/UX</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Entry 2: BTS Pvt Ltd & FQE -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-role-group">
+                <h3 class="timeline-role">Senior Data Operations Specialist &amp; Graphic Designer</h3>
+                <div class="timeline-company">
+                  <i class="fas fa-building"></i> BTS Pvt Ltd &amp; Free Quran Education (FQE)
+                  <span class="timeline-company-badge badge-retainer"><i class="fas fa-check-circle"></i> Retainer Engagements</span>
+                </div>
+              </div>
+              <span class="timeline-date"><i class="far fa-calendar-alt"></i> 2025 &mdash; Present</span>
+            </div>
+            <div class="timeline-body">
+              <p class="timeline-desc-block scope-block">
+                <strong class="timeline-desc-label label-scope"><i class="fas fa-layer-group"></i> Project &amp; Creative Scope:</strong> Leading high-volume enterprise data normalization, regular expression auditing, and executive business analytics, while simultaneously directing commercial brand identities, corporate presentations, and digital marketing design suites.
+              </p>
+              <p class="timeline-desc-block problem-block">
+                <strong class="timeline-desc-label label-problem"><i class="fas fa-shield-alt"></i> Problem Solved &amp; Strategic Impact:</strong> Rescued high-volume unstructured commercial datasets prone to human entry errors by engineering custom regex validation scripts and automated Google Sheets/Excel formula pipelines, while standardizing disparate visual collateral into polished, brand-aligned marketing graphics that lifted audience engagement across global channels.
+              </p>
+            </div>
+            <div class="timeline-skills">
+              <span class="tech-tag">Data Cleansing</span>
+              <span class="tech-tag">Regex Auditing</span>
+              <span class="tech-tag">Google Sheets / Excel</span>
+              <span class="tech-tag">Data Normalization</span>
+              <span class="tech-tag">Brand Identity</span>
+              <span class="tech-tag">Canva Pro</span>
+              <span class="tech-tag">Marketing Creatives</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Entry 3: Automation & Chatbot Development -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-role-group">
+                <h3 class="timeline-role">AI Chatbot Architect &amp; Workflow Automation Specialist</h3>
+                <div class="timeline-company">
+                  <i class="fas fa-robot"></i> Independent Practice &amp; Private Enterprise Clients
+                  <span class="timeline-company-badge badge-client"><i class="fas fa-user-check"></i> Direct Client Retainers</span>
+                </div>
+              </div>
+              <span class="timeline-date"><i class="far fa-calendar-alt"></i> 2024 &mdash; Present</span>
+            </div>
+            <div class="timeline-body">
+              <p class="timeline-desc-block scope-block">
+                <strong class="timeline-desc-label label-scope"><i class="fas fa-layer-group"></i> Project &amp; Engineering Scope:</strong> Developing end-to-end webhook integration architectures, automated document pipelines, and multi-turn conversational AI triage agents utilizing Make.com, n8n, OpenAI APIs, and Botpress platforms.
+              </p>
+              <p class="timeline-desc-block problem-block">
+                <strong class="timeline-desc-label label-problem"><i class="fas fa-shield-alt"></i> Problem Solved &amp; Strategic Impact:</strong> Eliminated severe operational bottlenecks and manual lead-routing delays by automating CRM data ingestion, invoice generation, and customer query resolution&mdash;compressing inbound lead triage turnaround from hours to under 60 seconds with 99.8% workflow uptime.
+              </p>
+            </div>
+            <div class="timeline-skills">
+              <span class="tech-tag">Make.com</span>
+              <span class="tech-tag">n8n</span>
+              <span class="tech-tag">Botpress</span>
+              <span class="tech-tag">OpenAI API</span>
+              <span class="tech-tag">Webhook Workflows</span>
+              <span class="tech-tag">CRM Automation</span>
+              <span class="tech-tag">Generative AI</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Entry 4: Free Quran Education Center (Book Design & Development) -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-role-group">
+                <h3 class="timeline-role">Lead Book Designer, Typesetting &amp; Curriculum Development Specialist</h3>
+                <div class="timeline-company">
+                  <i class="fas fa-book"></i> Free Quran Education Center (FQE) &amp; Global Publishing Clients
+                  <span class="timeline-company-badge badge-client"><i class="fas fa-book-open"></i> Publishing Engagements</span>
+                </div>
+              </div>
+              <span class="timeline-date"><i class="far fa-calendar-alt"></i> 2023 &mdash; Present</span>
+            </div>
+            <div class="timeline-body">
+              <p class="timeline-desc-block scope-block">
+                <strong class="timeline-desc-label label-scope"><i class="fas fa-layer-group"></i> Project &amp; Publishing Scope:</strong> Directing full-lifecycle book formatting, editorial typography, bilingual curriculum development (Arabic, Urdu &amp; English), and Amazon KDP print-on-demand preflight production for educational and religious volumes.
+              </p>
+              <p class="timeline-desc-block problem-block">
+                <strong class="timeline-desc-label label-problem"><i class="fas fa-shield-alt"></i> Problem Solved &amp; Strategic Impact:</strong> Overcame chronic Amazon KDP print rejections, gutter margin clipping, and complex RTL-to-LTR bidirectional typography alignment clashes by engineering precision 300 DPI preflight master layouts, balanced multi-column concordance grids, and durable mathematical spine calculations for zero-error international printing.
+              </p>
+            </div>
+            <div class="timeline-skills">
+              <span class="tech-tag">Amazon KDP 300 DPI</span>
+              <span class="tech-tag">Editorial Typesetting</span>
+              <span class="tech-tag">Bilingual RTL/LTR</span>
+              <span class="tech-tag">Canva Pro</span>
+              <span class="tech-tag">MS Word Preflight</span>
+              <span class="tech-tag">Arabic Typography</span>
+              <span class="tech-tag">Curriculum Design</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Entry 5: WordPress Developer (Private Clients) -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-role-group">
+                <h3 class="timeline-role">WordPress &amp; Custom CMS Web Developer</h3>
+                <div class="timeline-company">
+                  <i class="fab fa-wordpress"></i> Independent Web Consultancy &amp; Private Global Clients
+                  <span class="timeline-company-badge badge-client"><i class="fas fa-globe"></i> International Clients</span>
+                </div>
+              </div>
+              <span class="timeline-date"><i class="far fa-calendar-alt"></i> Sep 2024 &mdash; Jan 2025</span>
+            </div>
+            <div class="timeline-body">
+              <p class="timeline-desc-block scope-block">
+                <strong class="timeline-desc-label label-scope"><i class="fas fa-layer-group"></i> Project &amp; Development Scope:</strong> Engineered custom WordPress web solutions, high-converting WooCommerce storefronts, and bespoke corporate portfolio architectures for international commercial clients.
+              </p>
+              <p class="timeline-desc-block problem-block">
+                <strong class="timeline-desc-label label-problem"><i class="fas fa-shield-alt"></i> Problem Solved &amp; Strategic Impact:</strong> Rescued sluggish, vulnerable client platforms plagued by bloated third-party plugins and mobile responsive breakages by developing clean custom themes, optimizing database query overhead, and configuring CDN caching&mdash;elevating Google PageSpeed scores from below 45 to 90+ and boosting mobile conversion rates.
+              </p>
+            </div>
+            <div class="timeline-skills">
+              <span class="tech-tag">WordPress</span>
+              <span class="tech-tag">Elementor Pro</span>
+              <span class="tech-tag">Custom Themes</span>
+              <span class="tech-tag">WooCommerce</span>
+              <span class="tech-tag">PageSpeed Optimization</span>
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">Technical SEO</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Entry 6: Nexus EMR (US) -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-role-group">
+                <h3 class="timeline-role">Healthcare Web Applications Developer</h3>
+                <div class="timeline-company">
+                  <i class="fas fa-laptop-medical"></i> Nexus EMR
+                  <span class="timeline-company-badge badge-us"><i class="fas fa-flag-usa"></i> US-Based Healthcare Software</span>
+                  <span class="timeline-company-badge badge-sprint"><i class="fas fa-bolt"></i> Contract Sprint</span>
+                </div>
+              </div>
+              <span class="timeline-date"><i class="far fa-calendar-alt"></i> May 2024 &mdash; May 2024</span>
+            </div>
+            <div class="timeline-body">
+              <p class="timeline-desc-block scope-block">
+                <strong class="timeline-desc-label label-scope"><i class="fas fa-layer-group"></i> Project &amp; Engineering Scope:</strong> Developed responsive, HIPAA-conscious clinical web interfaces, patient intake workflows, and real-time appointment scheduling modules for US electronic medical record (EMR/EHR) software platforms.
+              </p>
+              <p class="timeline-desc-block problem-block">
+                <strong class="timeline-desc-label label-problem"><i class="fas fa-shield-alt"></i> Problem Solved &amp; Strategic Impact:</strong> Resolved severe clinical navigation friction and data entry fatigue by designing intuitive, accessible UI dashboards with real-time form validation and clear status indicators, significantly expediting patient charting and reducing documentation errors during live healthcare encounters.
+              </p>
+            </div>
+            <div class="timeline-skills">
+              <span class="tech-tag">Healthcare EMR/EHR</span>
+              <span class="tech-tag">HIPAA Standards</span>
+              <span class="tech-tag">JavaScript / React</span>
+              <span class="tech-tag">UI/UX Architecture</span>
+              <span class="tech-tag">Form Validation</span>
+              <span class="tech-tag">Tailwind CSS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ========================================================================
+       SECTION 5: EDUCATION
+       ======================================================================== -->
+  <section id="education" class="section-wrapper">
+    <div class="container">
+      <div class="section-header-compact">
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">Academic foundations and continuous technical development.</p>
+      </div>
+
+      <div class="education-grid">
+        <!-- Degree 1: BSCS Virtual University -->
+        <div class="edu-card">
+          <div class="edu-preview-box">
+            <a href="../../../.gemini/antigravity/brain/5e3dc5c9-ef1b-41a4-95e8-a7b50cc14507/vu_bscs_degree_showcase_1792399228553.jpg" target="_blank" rel="noopener noreferrer" class="edu-preview-link" title="Click to view full-resolution degree diploma">
+              <img src="../../../.gemini/antigravity/brain/5e3dc5c9-ef1b-41a4-95e8-a7b50cc14507/vu_bscs_degree_showcase_1792399228553.jpg" alt="Bachelor of Science in Computer Science - Virtual University of Pakistan Degree Showcase" class="edu-preview-img" loading="lazy" onerror="this.onerror=null; this.src='images/education/vu-bscs.svg';">
+            </a>
+          </div>
+          <div class="edu-content">
+            <div class="edu-badge-row">
+              <span class="edu-status-badge completed"><span class="status-dot"></span> Completed</span>
+              <span class="edu-year">2022 — 2026</span>
+            </div>
+            <h3 class="edu-degree">Bachelor of Science in Computer Science (BSCS)</h3>
+            <div class="edu-institution">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              <span>Virtual University of Pakistan</span>
+            </div>
+            <p class="edu-desc">
+              Comprehensive computing curriculum emphasizing core software engineering, data structures &amp; algorithms, database management, modern web application development, and applied artificial intelligence systems.
+            </p>
+            <div class="edu-tags">
+              <span class="edu-tag">Data Structures</span>
+              <span class="edu-tag">Software Engineering</span>
+              <span class="edu-tag">Databases</span>
+              <span class="edu-tag">AI &amp; Web Systems</span>
+            </div>
+            <a href="../../../.gemini/antigravity/brain/5e3dc5c9-ef1b-41a4-95e8-a7b50cc14507/vu_bscs_degree_showcase_1792399228553.jpg" target="_blank" rel="noopener noreferrer" class="cert-verify-link" style="margin-top: 14px;">
+              <span>View Degree Diploma</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Degree 2: Associate Degree in Arts University of Sargodha -->
+        <div class="edu-card">
+          <div class="edu-preview-box">
+            <a href="../../../.gemini/antigravity/brain/5e3dc5c9-ef1b-41a4-95e8-a7b50cc14507/university_of_sargodha_ada_diploma_1792399228014.jpg" target="_blank" rel="noopener noreferrer" class="edu-preview-link" title="Click to view full-resolution degree diploma">
+              <img src="../../../.gemini/antigravity/brain/5e3dc5c9-ef1b-41a4-95e8-a7b50cc14507/university_of_sargodha_ada_diploma_1792399228014.jpg" alt="Associate Degree in Arts - University of Sargodha Diploma Showcase" class="edu-preview-img" loading="lazy" onerror="this.onerror=null; this.src='images/education/uos-ada.svg';">
+            </a>
+          </div>
+          <div class="edu-content">
+            <div class="edu-badge-row">
+              <span class="edu-status-badge completed"><span class="status-dot"></span> Completed</span>
+              <span class="edu-year">2023 — 2024</span>
+            </div>
+            <h3 class="edu-degree">Associate Degree in Arts (ADA)</h3>
+            <div class="edu-institution">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              <span>University of Sargodha</span>
+            </div>
+            <p class="edu-desc">
+              Higher education program cultivating advanced analytical inquiry, critical logic, structured research methodologies, and multidisciplinary communication competencies essential for cross-functional collaboration.
+            </p>
+            <div class="edu-tags">
+              <span class="edu-tag">Critical Thinking</span>
+              <span class="edu-tag">Research &amp; Analysis</span>
+              <span class="edu-tag">Humanities</span>
+              <span class="edu-tag">Communication</span>
+            </div>
+            <a href="../../../.gemini/antigravity/brain/5e3dc5c9-ef1b-41a4-95e8-a7b50cc14507/university_of_sargodha_ada_diploma_1792399228014.jpg" target="_blank" rel="noopener noreferrer" class="cert-verify-link" style="margin-top: 14px;">
+              <span>View Degree Diploma</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Degree 3: F.Sc Pre-Engineering Superior College Talagang -->
+        <div class="edu-card">
+          <div class="edu-preview-box">
+            <a href="../../../.gemini/antigravity/brain/5e3dc5c9-ef1b-41a4-95e8-a7b50cc14507/fsc_pre_engineering_diploma_showcase_1792399226405.jpg" target="_blank" rel="noopener noreferrer" class="edu-preview-link" title="Click to view full-resolution diploma certificate">
+              <img src="../../../.gemini/antigravity/brain/5e3dc5c9-ef1b-41a4-95e8-a7b50cc14507/fsc_pre_engineering_diploma_showcase_1792399226405.jpg" alt="Faculty of Science (F.Sc) — Pre-Engineering - Superior College Talagang Certificate Showcase" class="edu-preview-img" loading="lazy" onerror="this.onerror=null; this.src='images/education/superior-fsc.svg';">
+            </a>
+          </div>
+          <div class="edu-content">
+            <div class="edu-badge-row">
+              <span class="edu-status-badge completed"><span class="status-dot"></span> Completed</span>
+              <span class="edu-year">2019 — 2021</span>
+            </div>
+            <h3 class="edu-degree">Faculty of Science (F.Sc) — Pre-Engineering</h3>
+            <div class="edu-institution">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              <span>Superior College Talagang</span>
+            </div>
+            <p class="edu-desc">
+              Rigorous STEM foundation grounded in advanced calculus, differential equations, classical and modern mechanics, thermodynamics, and quantitative analytical problem solving.
+            </p>
+            <div class="edu-tags">
+              <span class="edu-tag">Calculus</span>
+              <span class="edu-tag">Physics</span>
+              <span class="edu-tag">Applied Mathematics</span>
+              <span class="edu-tag">STEM Foundations</span>
+            </div>
+            <a href="../../../.gemini/antigravity/brain/5e3dc5c9-ef1b-41a4-95e8-a7b50cc14507/fsc_pre_engineering_diploma_showcase_1792399226405.jpg" target="_blank" rel="noopener noreferrer" class="cert-verify-link" style="margin-top: 14px;">
+              <span>View Diploma Certificate</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ========================================================================
+       SECTION 6: CERTIFICATIONS
+       ======================================================================== -->
+  <section id="certifications" class="section-wrapper">
+    <div class="container">
+      <div class="section-header-compact">
+        <h2 class="section-title">Certifications</h2>
+        <p class="section-subtitle">Verified accreditations in artificial intelligence, automations, and modern web software.</p>
+      </div>
+
+      <div class="cert-grid">
+        <!-- Cert 1: ADBI Institute -->
+        <div class="cert-card">
+          <div class="cert-preview-box">
+            <img src="images/certifications/adbi-ai-certificate.svg" alt="Seizing the Full Potential of AI Certification - ADBInstitute" class="cert-preview-img" loading="lazy" />
+          </div>
+          <div class="cert-content">
+            <h3 class="cert-name">Seizing the Full Potential of AI</h3>
+            <div class="cert-org">Asian Development Bank Institute (ADBI)</div>
+            <div class="cert-date">Completed: July 17, 2026 • ADBI eLearning</div>
+            <p class="cert-desc">
+              Strategic accreditation on harnessing artificial intelligence for transformative economic productivity, scalable intelligent digital infrastructure, and institutional AI integration.
+            </p>
+            <a href="images/certifications/adbi-ai-certificate.pdf" target="_blank" class="cert-verify-link">
+              <span>View Credential Document (PDF)</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Cert 2: DigiSkills.pk Python AI -->
+        <div class="cert-card">
+          <div class="cert-preview-box">
+            <img src="images/certifications/digiskills-python-ai.svg" alt="Artificial Intelligence Using Python - DigiSkills Training Program" class="cert-preview-img" loading="lazy" />
+          </div>
+          <div class="cert-content">
+            <h3 class="cert-name">Artificial Intelligence Using Python</h3>
+            <div class="cert-org">DigiSkills.pk • Ministry of IT &amp; Telecom &amp; VU</div>
+            <div class="cert-date">Issued: 20/07/2026 • Credential #NR9RSPAMK</div>
+            <p class="cert-desc">
+              Rigorous hands-on training covering Python-driven artificial intelligence, machine learning model architectures, data processing pipelines, and production neural network engineering.
+            </p>
+            <div style="display: flex; gap: 14px; flex-wrap: wrap; margin-top: auto;">
+              <a href="images/certifications/digiskills-python-ai.pdf" target="_blank" class="cert-verify-link">
+                <span>View PDF Document</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <a href="https://digiskills.pk/verify" target="_blank" class="cert-verify-link" style="color: #38bdf8;">
+                <span>Verify Online</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cert 3: Elements of AI -->
+        <div class="cert-card">
+          <div class="cert-preview-box">
+            <img src="images/certifications/elements-of-ai.png" alt="Elements of AI Certification - University of Helsinki & MinnaLearn" class="cert-preview-img" loading="lazy" />
+          </div>
+          <div class="cert-content">
+            <h3 class="cert-name">Elements of AI (2 ECTS Credits)</h3>
+            <div class="cert-org">University of Helsinki &amp; MinnaLearn</div>
+            <div class="cert-date">Completed: July 14, 2026 • Academic MOOC</div>
+            <p class="cert-desc">
+              Accredited European university course covering the fundamental mathematics, probabilistic reasoning, machine learning methodologies, and societal implications of artificial intelligence.
+            </p>
+            <a href="https://certificates.mooc.fi/validate/5gw7subxwvk" target="_blank" class="cert-verify-link">
+              <span>Verify Credential Online</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Cert 4: Deloitte Data Analytics -->
+        <div class="cert-card">
+          <div class="cert-preview-box">
+            <img src="images/certifications/deloitte-data-analytics.svg" alt="Deloitte Data Analytics Job Simulation Certification" class="cert-preview-img" loading="lazy" />
+          </div>
+          <div class="cert-content">
+            <h3 class="cert-name">Data Analytics Job Simulation</h3>
+            <div class="cert-org">Deloitte • Issued via Forage</div>
+            <div class="cert-date">Completed: June 30th, 2026 • Verified Simulation</div>
+            <p class="cert-desc">
+              Practical industry simulation solving complex enterprise tasks in data analysis and forensic technology, evaluating enterprise datasets, identifying forensic anomalies, and preparing business intelligence reports.
+            </p>
+            <a href="images/certifications/deloitte-data-analytics.pdf" target="_blank" class="cert-verify-link">
+              <span>View Credential Document (PDF)</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Cert 5: DigiSkills Communication and Soft Skills -->
+        <div class="cert-card">
+          <div class="cert-preview-box">
+            <img src="images/certifications/digiskills-communication-soft-skills.svg" alt="Communication and Soft Skills Certification - DigiSkills" class="cert-preview-img" loading="lazy" />
+          </div>
+          <div class="cert-content">
+            <h3 class="cert-name">Communication and Soft Skills</h3>
+            <div class="cert-org">DigiSkills.pk • Ministry of IT &amp; Telecom &amp; VU</div>
+            <div class="cert-date">Issued: 20/07/2026 • Credential #8ANMYFQMK</div>
+            <p class="cert-desc">
+              Professional accreditation in cross-functional client communication, agile workplace leadership, technical pitching, conflict resolution, and digital freelance client relations.
+            </p>
+            <div style="display: flex; gap: 14px; flex-wrap: wrap; margin-top: auto;">
+              <a href="images/certifications/digiskills-communication-soft-skills.pdf" target="_blank" class="cert-verify-link">
+                <span>View PDF Document</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <a href="https://digiskills.pk/verify" target="_blank" class="cert-verify-link" style="color: #38bdf8;">
+                <span>Verify Online</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cert 6: DigiSkills WordPress -->
+        <div class="cert-card">
+          <div class="cert-preview-box">
+            <img src="images/certifications/digiskills-wordpress.svg" alt="WordPress Certification - DigiSkills Training Program" class="cert-preview-img" loading="lazy" />
+          </div>
+          <div class="cert-content">
+            <h3 class="cert-name">Professional WordPress Development</h3>
+            <div class="cert-org">DigiSkills.pk • Ministry of IT &amp; Telecom &amp; VU</div>
+            <div class="cert-date">Issued: 24/10/2024 • Credential #NZ3UJDHMK</div>
+            <p class="cert-desc">
+              Comprehensive training in WordPress website engineering, custom theme architecture, CMS configuration, e-commerce plugin ecosystems, and responsive web deployment.
+            </p>
+            <div style="display: flex; gap: 14px; flex-wrap: wrap; margin-top: auto;">
+              <a href="images/certifications/digiskills-wordpress.pdf" target="_blank" class="cert-verify-link">
+                <span>View PDF Document</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <a href="https://digiskills.pk/verify" target="_blank" class="cert-verify-link" style="color: #38bdf8;">
+                <span>Verify Online</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cert 7: DeepLearning.AI & Coursera -->
+        <div class="cert-card">
+          <div class="cert-preview-box">
+            <img src="images/certifications/deeplearning-ai-for-everyone.svg" alt="AI For Everyone Certification - DeepLearning.AI & Coursera" class="cert-preview-img" loading="lazy" />
+          </div>
+          <div class="cert-content">
+            <h3 class="cert-name">AI For Everyone</h3>
+            <div class="cert-org">DeepLearning.AI &amp; Coursera • Andrew Ng</div>
+            <div class="cert-date">Completed: Aug 19, 2025 • Credential #FH4NF10RYGRW</div>
+            <p class="cert-desc">
+              Foundational artificial intelligence accreditation authorized by DeepLearning.AI, covering machine learning capabilities, deep learning workflows, AI strategy formulation, and realistic societal ethics.
+            </p>
+            <div style="display: flex; gap: 14px; flex-wrap: wrap; margin-top: auto;">
+              <a href="images/certifications/deeplearning-ai-for-everyone.pdf" target="_blank" class="cert-verify-link">
+                <span>View PDF Document</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <a href="https://coursera.org/verify/FH4NF10RYGRW" target="_blank" class="cert-verify-link" style="color: #38bdf8;">
+                <span>Verify Online</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cert 8: DigiSkills Freelancing -->
+        <div class="cert-card">
+          <div class="cert-preview-box">
+            <img src="images/certifications/digiskills-freelancing.svg" alt="Freelancing Certification - DigiSkills Training Program" class="cert-preview-img" loading="lazy" />
+          </div>
+          <div class="cert-content">
+            <h3 class="cert-name">Professional Freelancing</h3>
+            <div class="cert-org">DigiSkills.pk • Ministry of IT &amp; Telecom &amp; VU</div>
+            <div class="cert-date">Issued: 24/10/2024 • Credential #55P3XMEMK</div>
+            <p class="cert-desc">
+              Comprehensive professional training in global freelance marketplace operations, high-converting client proposal writing, project contract management, client retention, and international digital service delivery.
+            </p>
+            <div style="display: flex; gap: 14px; flex-wrap: wrap; margin-top: auto;">
+              <a href="images/certifications/digiskills-freelancing.pdf" target="_blank" class="cert-verify-link">
+                <span>View PDF Document</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <a href="https://digiskills.pk/verify" target="_blank" class="cert-verify-link" style="color: #38bdf8;">
+                <span>Verify Online</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cert 9: One Million Prompters Dubai -->
+        <div class="cert-card">
+          <div class="cert-preview-box">
+            <img src="images/certifications/dubai-1-million-prompters.svg" alt="One Million Prompters Certification - Dubai Future Foundation & DCAI" class="cert-preview-img" loading="lazy" />
+          </div>
+          <div class="cert-content">
+            <h3 class="cert-name">One Million Prompters Initiative</h3>
+            <div class="cert-org">Dubai Future Foundation &amp; Dubai Centre for AI</div>
+            <div class="cert-date">Dubai Universal Blueprint for AI • Global Initiative</div>
+            <p class="cert-desc">
+              Prestigious prompt engineering accreditation under the initiative launched by H.H. Sheikh Hamdan bin Mohammed Al Maktoum, specializing in advanced prompt architecture, generative AI systems, and future-ready AI workforce alignment.
+            </p>
+            <a href="images/certifications/dubai-1-million-prompters.pdf" target="_blank" class="cert-verify-link">
+              <span>View Credential Document (PDF)</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Cert 10: UniAthena MS Excel -->
+        <div class="cert-card">
+          <div class="cert-preview-box">
+            <img src="images/certifications/uniathena-ms-excel.svg" alt="Essentials of MS Excel Certification - UniAthena & Cambridge International Qualifications" class="cert-preview-img" loading="lazy" />
+          </div>
+          <div class="cert-content">
+            <h3 class="cert-name">Essentials of MS Excel - Formulas &amp; Functions</h3>
+            <div class="cert-org">UniAthena &amp; Cambridge International Qualifications (UK)</div>
+            <div class="cert-date">Completed: Nov 05, 2024 • Blockchain ID #6801-5313-2024</div>
+            <p class="cert-desc">
+              Accredited spreadsheet architecture training delivered in partnership with Cambridge International Qualifications, covering nested analytical formulas, financial functions, and automated data processing.
+            </p>
+            <a href="images/certifications/uniathena-ms-excel.pdf" target="_blank" class="cert-verify-link">
+              <span>View Credential Document (PDF)</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Cert 11: Great Learning React JS -->
+        <div class="cert-card">
+          <div class="cert-preview-box">
+            <img src="images/certifications/great-learning-react-js.svg" alt="React JS Tutorial Certification - Great Learning Academy" class="cert-preview-img" loading="lazy" />
+          </div>
+          <div class="cert-content">
+            <h3 class="cert-name">React JS Tutorial</h3>
+            <div class="cert-org">Great Learning Academy</div>
+            <div class="cert-date">Completed: October 2024 • Credential #UHEUKNPI</div>
+            <p class="cert-desc">
+              Practical modern frontend engineering accreditation covering React component lifecycle architectures, state and props flow, virtual DOM manipulation, and responsive single-page web applications.
+            </p>
+            <div style="display: flex; gap: 14px; flex-wrap: wrap; margin-top: auto;">
+              <a href="images/certifications/great-learning-react-js.pdf" target="_blank" class="cert-verify-link">
+                <span>View PDF Document</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <a href="https://www.mygreatlearning.com/certificate/UHEUKNPI" target="_blank" class="cert-verify-link" style="color: #38bdf8;">
+                <span>Verify Online</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cert 12: Velocity Solutions C++ Internship -->
+        <div class="cert-card">
+          <div class="cert-preview-box">
+            <img src="images/certifications/velocity-cpp-internship.svg" alt="Remote C++ Programming Internship Program - Velocity Solutions" class="cert-preview-img" loading="lazy" />
+          </div>
+          <div class="cert-content">
+            <h3 class="cert-name">Remote C++ Programming Internship</h3>
+            <div class="cert-org">Velocity Solutions</div>
+            <div class="cert-date">Completed: 01-July-2025 to 31-July-2025 • Verified Internship</div>
+            <p class="cert-desc">
+              Completed intensive virtual software engineering internship focused on C++ programming architecture, memory management, algorithm design, software optimization, and agile team contributions.
+            </p>
+            <a href="images/certifications/velocity-cpp-internship.pdf" target="_blank" class="cert-verify-link">
+              <span>View Credential Document (PDF)</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ========================================================================
+       SECTION 7: CONTACT (Direct Email & Working Interactive Message Drafter)
+       ======================================================================== -->
+  <section id="contact" class="section-wrapper contact-section">
+    <div class="container">
+      <div class="section-header-compact">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Interested in collaborating or hiring me for your next project? Reach out directly.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Direct Contact Channels -->
+        <div class="contact-info-card">
+          <h3>Direct Channels</h3>
+          
+          <div class="contact-channels">
+            <!-- Email -->
+            <a href="mailto:hammad.hassan5775@gmail.com" class="contact-channel-item">
+              <div class="channel-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+              </div>
+              <div class="channel-details">
+                <span class="channel-label">Email Directly</span>
+                <span class="channel-value">hammad.hassan5775@gmail.com</span>
+              </div>
+            </a>
+
+            <!-- WhatsApp Direct -->
+            <a href="https://wa.me/923035553044" target="_blank" rel="noopener noreferrer" class="contact-channel-item">
+              <div class="channel-icon" style="color: #25d366; background: rgba(37, 211, 102, 0.12);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.888 9.884"/>
+                </svg>
+              </div>
+              <div class="channel-details">
+                <span class="channel-label">WhatsApp Direct</span>
+                <span class="channel-value">+92 303 5553044 (0303-5553044)</span>
+              </div>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/hammadhassan201" target="_blank" rel="noopener noreferrer" class="contact-channel-item">
+              <div class="channel-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </div>
+              <div class="channel-details">
+                <span class="channel-label">LinkedIn</span>
+                <span class="channel-value">linkedin.com/in/hammadhassan201</span>
+              </div>
+            </a>
+          </div>
+
+          <p style="font-size:0.8rem; color:#8585a0; margin-top:auto;">
+            💡 Note: For quick inquiries, reaching out via WhatsApp at <strong>+92 303 5553044</strong> or emailing <strong>hammad.hassan5775@gmail.com</strong> ensures prompt response.
+          </p>
+        </div>
+
+        <!-- Direct Client Project Inquiry & Dispatch Interface -->
+        <div class="contact-drafter-card">
+          <div class="drafter-header-row">
+            <div class="drafter-header-text">
+              <h3>Initiate Project Engagement</h3>
+              <p>
+                Have a project or collaboration in mind? Send a quick message directly to WhatsApp or Email.
+              </p>
+            </div>
+            <span class="drafter-badge">
+              <span class="pulse-dot"></span>
+              Active Dispatch
+            </span>
+          </div>
+
+          <form id="drafter-form" class="drafter-form">
+            <!-- Row 1: Name & Contact -->
+            <div class="drafter-form-row">
+              <div class="form-group">
+                <label for="drafter-name">Your Name / Organization <span class="required-star">*</span></label>
+                <input type="text" id="drafter-name" class="form-control" placeholder="e.g. Alex Morgan" required autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label for="drafter-client-contact">Email or WhatsApp <span class="required-star">*</span></label>
+                <input type="text" id="drafter-client-contact" class="form-control" placeholder="e.g. alex@company.com" required autocomplete="email" />
+              </div>
+            </div>
+
+            <!-- Row 2: Service Discipline -->
+            <div class="form-group">
+              <label for="drafter-topic">Service Needed</label>
+              <select id="drafter-topic" class="form-control">
+                <option value="AI Chatbot & Conversational LLM Integration">AI Chatbots &amp; Conversational LLM Systems</option>
+                <option value="Make.com / n8n Workflow Automation">Workflow Automation (Make.com / n8n)</option>
+                <option value="Custom Web Application Development">Custom Web Application Development</option>
+                <option value="Mobile App Development (React Native)">Mobile App Development (React Native)</option>
+                <option value="Book Design & Amazon KDP Typesetting">Book Design &amp; Amazon KDP Publishing</option>
+                <option value="Technical Translation & Localization">Bilingual Translation &amp; Localization</option>
+                <option value="Graphic Design & Marketing Brand Assets">Graphic Design &amp; Brand Identity</option>
+                <option value="Data Processing, Cleaning & Extraction">Data Processing &amp; Spreadsheet Automation</option>
+                <option value="General Consultation & Collaboration">General Consultation &amp; Collaboration</option>
+              </select>
+            </div>
+
+            <!-- Row 3: Project Brief -->
+            <div class="form-group">
+              <label for="drafter-message">Project Brief / Message <span class="required-star">*</span></label>
+              <textarea id="drafter-message" class="form-control" rows="3" placeholder="Tell me briefly about what you'd like to build, timeline, or key deliverables..."></textarea>
+            </div>
+
+            <!-- Action Dispatch Buttons -->
+            <div class="drafter-actions">
+              <button type="button" id="drafter-whatsapp-btn" class="btn-whatsapp-direct">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.888 9.884"/>
+                </svg>
+                <span>Send WhatsApp</span>
+              </button>
+
+              <button type="button" id="drafter-email-btn" class="btn-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                <span>Send Email</span>
+              </button>
+
+              <button type="button" id="drafter-copy-btn" class="btn-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg>
+                <span>Copy Brief</span>
+              </button>
+            </div>
+
+            <div id="drafter-status" style="display:none; font-size:0.85rem; font-weight:500; margin-top:8px;"></div>
+
+            <div class="drafter-guarantee-row">
+              <span class="drafter-guarantee-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                <span>Confidential &amp; NDA</span>
+              </span>
+              <span class="drafter-guarantee-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Fast Reply (&lt; 4h)</span>
+              </span>
+              <span class="drafter-guarantee-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                <span>Worldwide Remote</span>
+              </span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Hammad Hassan</strong> — AI &amp; Digital Solutions Developer
+      </div>
+      <div>
+        Designed &amp; Developed with Vanilla HTML, CSS &amp; JavaScript
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       FLOATING BUTTONS
+       1. Bottom-Left: Circular Purple Back-to-Top Button (Arrow Up)
+       2. Bottom-Right: Floating AI Assistant Demo Button
+       ======================================================================== -->
+  <!-- Back to Top Button -->
+  <button id="btn-scroll-top" class="btn-floating-top" aria-label="Scroll back to top of page" title="Back to Top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m18 15-6-6-6 6"></path>
+    </svg>
+  </button>
+
+  <!-- Floating Assistant Toggle matching Reference Screenshot -->
+  <button id="btn-assistant-toggle" class="btn-floating-assistant" aria-label="Chat with AI Assistant" title="Chat with AI Assistant">
+    <span class="assistant-btn-text">Chat with AI Assistant</span>
+    <div class="assistant-robot-mascot">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="30" height="30">
+        <defs>
+          <linearGradient id="robotGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#ffffff"/>
+            <stop offset="100%" stop-color="#cbd5e1"/>
+          </linearGradient>
+          <linearGradient id="visorGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#1e293b"/>
+            <stop offset="100%" stop-color="#0f172a"/>
+          </linearGradient>
+        </defs>
+        <!-- Antenna -->
+        <line x1="22" y1="8" x2="22" y2="4" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+        <circle cx="22" cy="3" r="2.5" fill="#38bdf8"/>
+        <!-- Left & Right Ears -->
+        <rect x="4" y="16" width="4" height="9" rx="2" fill="#94a3b8"/>
+        <rect x="36" y="16" width="4" height="9" rx="2" fill="#94a3b8"/>
+        <!-- Head Outer Frame -->
+        <rect x="7" y="8" width="30" height="26" rx="9" fill="url(#robotGrad)"/>
+        <!-- Dark Screen/Visor -->
+        <rect x="10" y="12" width="24" height="15" rx="6" fill="url(#visorGrad)"/>
+        <!-- Glowing Cyan Eyes -->
+        <ellipse cx="16" cy="19.5" rx="3" ry="4" fill="#38bdf8"/>
+        <ellipse cx="28" cy="19.5" rx="3" ry="4" fill="#38bdf8"/>
+        <!-- Eye Highlights -->
+        <circle cx="15.2" cy="18" r="1.2" fill="#ffffff"/>
+        <circle cx="27.2" cy="18" r="1.2" fill="#ffffff"/>
+        <!-- Smile -->
+        <path d="M19 23 Q22 25 25 23" fill="none" stroke="#38bdf8" stroke-width="1.2" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </button>
+
+  <!-- ========================================================================
+       AI ASSISTANT FLYOUT PANEL (Offline Intelligence & Portfolio Guide)
+       ======================================================================== -->
+  <aside id="assistant-panel" class="assistant-panel" aria-label="Portfolio Guide AI Assistant">
+    <!-- AI Top Ambient Luminous Bar -->
+    <div class="assistant-top-glow-bar"></div>
+
+    <!-- Eye-Catchy AI Header -->
+    <div class="assistant-header">
+      <div class="assistant-header-info">
+        <div class="assistant-avatar-glow">
+          <div class="assistant-avatar">
+            <svg class="ai-sparkle-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"></path><path d="m4.93 4.93 2.83 2.83"></path><path d="M2 12h4"></path><path d="m4.93 19.07 2.83-2.83"></path><path d="M12 22v-4"></path><path d="m19.07 19.07-2.83-2.83"></path><path d="M22 12h-4"></path><path d="m19.07 4.93-2.83 2.83"></path></svg>
+          </div>
+          <span class="avatar-status-dot" title="AI Engine Online &amp; Active"></span>
+        </div>
+        <div class="assistant-title-box">
+          <div class="assistant-title-row">
+            <h4>Hammad's AI Advisor</h4>
+            <span class="assistant-ai-badge">v2.4 Pro</span>
+          </div>
+          <span class="assistant-live-status">
+            <span class="status-pulse-ring"></span>
+            Online &amp; Instant Responses
+          </span>
+        </div>
+      </div>
+      <div class="assistant-header-actions">
+        <button id="assistant-reset-btn" class="assistant-action-btn" title="Reset conversation" aria-label="Reset conversation">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><path d="M3 3v5h5"></path></svg>
+        </button>
+        <button id="assistant-close-btn" class="assistant-close-btn" aria-label="Close assistant panel" title="Close assistant">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Chat Messages & Interactive Flow Stage -->
+    <div class="assistant-body" id="assistant-chat-body">
+      <!-- Persuasive Value Proposition Banner -->
+      <div class="assistant-pro-banner">
+        <div class="pro-banner-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+        </div>
+        <div class="pro-banner-text">
+          <strong>Verified Solutions Intelligence:</strong> Ask about technical architectures, production automations, or instant project estimates.
+        </div>
+      </div>
+
+      <!-- Welcome Message from AI Bot -->
+      <div class="assistant-message bot">
+        <div class="msg-bubble">
+          <div class="bot-greeting-header">
+            <span class="bot-badge-pill">⚡ Welcome</span>
+            <span class="bot-timestamp">Live</span>
+          </div>
+          <p class="bot-text-primary">
+            Hello! I am <strong>Hammad Hassan's AI Portfolio &amp; Solutions Advisor</strong>.
+          </p>
+          <p class="bot-text-body">
+            I can provide verified technical architecture, live project demos, client ROI metrics, and instant hiring &amp; collaboration details across:
+          </p>
+          <div class="bot-domain-chips">
+            <span class="domain-chip">🤖 AI Chatbots &amp; LLMs</span>
+            <span class="domain-chip">⚡ Make.com &amp; n8n</span>
+            <span class="domain-chip">💻 Modern Web Apps</span>
+            <span class="domain-chip">📱 Mobile (React Native)</span>
+            <span class="domain-chip">🎨 Graphic Design &amp; Books</span>
+          </div>
+          <p class="bot-prompt-hint">Tap a high-impact query below or type your inquiry:</p>
+        </div>
+      </div>
+
+      <!-- Persuasive Curated Quick Shortcut Chips -->
+      <div class="assistant-shortcuts">
+        <div class="shortcuts-kicker">Recommended Inquiries:</div>
+        <button class="shortcut-chip" onclick="askAssistantShortcut('Showcase top Make.com automations')">
+          <span class="chip-icon">⚡</span>
+          <span class="chip-text">Showcase Make.com &amp; n8n Automations</span>
+          <span class="chip-arrow">→</span>
+        </button>
+        <button class="shortcut-chip" onclick="askAssistantShortcut('How does Hammad build AI Chatbots?')">
+          <span class="chip-icon">🤖</span>
+          <span class="chip-text">How does Hammad build AI Chatbots?</span>
+          <span class="chip-arrow">→</span>
+        </button>
+        <button class="shortcut-chip" onclick="askAssistantShortcut('What web applications has Hammad built?')">
+          <span class="chip-icon">💻</span>
+          <span class="chip-text">Live Web Apps (AP Roofing, BillingLoop, Opus)</span>
+          <span class="chip-arrow">→</span>
+        </button>
+        <button class="shortcut-chip" onclick="askAssistantShortcut('Tell me about mobile applications and vibe coding')">
+          <span class="chip-icon">📱</span>
+          <span class="chip-text">Mobile Apps (SkyVoyage, FitPulse, CraveWave)</span>
+          <span class="chip-arrow">→</span>
+        </button>
+        <button class="shortcut-chip" onclick="askAssistantShortcut('Tell me about Graphic Design and brand identity')">
+          <span class="chip-icon">🎨</span>
+          <span class="chip-text">Graphic Design Suites &amp; M-RIK Brand Identity</span>
+          <span class="chip-arrow">→</span>
+        </button>
+        <button class="shortcut-chip" onclick="askAssistantShortcut('What is Hammad\'s professional work experience?')">
+          <span class="chip-icon">💼</span>
+          <span class="chip-text">Work Experience (Marvel Logics, Nexus EMR, BTS, FQE)</span>
+          <span class="chip-arrow">→</span>
+        </button>
+        <button class="shortcut-chip" onclick="askAssistantShortcut('How can I contact or hire Hammad?')">
+          <span class="chip-icon">🤝</span>
+          <span class="chip-text">Hire Hammad or Request a Custom Quote</span>
+          <span class="chip-arrow">→</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Assistant Footer with Polish and Trust Hint -->
+    <div class="assistant-footer">
+      <div class="assistant-input-box">
+        <div class="assistant-input-wrapper">
+          <svg class="input-sparkle" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"></path></svg>
+          <input type="text" id="assistant-input" class="assistant-input" placeholder="Ask about automations, skills, tech stack, hiring..." autocomplete="off" />
+        </div>
+        <button id="assistant-send-btn" class="assistant-send-btn" title="Send message" aria-label="Send message">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+        </button>
+      </div>
+      <div class="assistant-footer-hint">
+        <span>🔒 Client-ready AI intelligence • 100% private &amp; instant</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       PROJECT DETAIL MODAL OVERLAY
+       Displays: Title, Category, Year, Full Description, Gallery Viewer, 
+                 Thumbnails, Tech Badges, Live Demo & GitHub Links
+       ======================================================================== -->
+  <div id="project-modal" class="modal-backdrop" aria-hidden="true" role="dialog">
+    <div class="modal-window">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <h2 id="modal-title">Project Title</h2>
+          <span id="modal-meta" class="modal-category-year">Category</span>
+        </div>
+        <button id="modal-close-btn" class="modal-close-btn" aria-label="Close project modal">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+        <!-- Interactive Gallery Stage -->
+        <div class="modal-gallery-stage" id="modal-gallery-stage">
+          <button id="modal-prev-btn" class="modal-nav-arrow prev" title="Previous Image (Left Arrow)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"></path></svg>
+          </button>
+
+          <img id="modal-main-img" src="images/placeholder.svg" alt="Project Preview" class="modal-main-image" />
+
+          <button id="modal-next-btn" class="modal-nav-arrow next" title="Next Image (Right Arrow)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+          </button>
+
+          <div id="modal-gallery-counter" class="modal-gallery-counter">1 / 1</div>
+        </div>
+
+        <!-- Thumbnails Row -->
+        <div id="modal-thumbnails" class="modal-thumbnails-row">
+          <!-- Dynamic thumbnails populated by script.js -->
+        </div>
+
+        <!-- Detailed Description -->
+        <div class="modal-description-box">
+          <h4>Project Overview &amp; Architecture</h4>
+          <p id="modal-description">Full detailed project overview...</p>
+        </div>
+
+        <!-- Technologies Used -->
+        <div class="modal-tech-box">
+          <h4>Technologies &amp; Tools</h4>
+          <div id="modal-tags" class="modal-tags">
+            <!-- Dynamic tech badges -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Footer Action Buttons -->
+      <div class="modal-footer">
+        <a id="modal-live-link" href="#" target="_blank" rel="noopener noreferrer" class="btn-primary" style="display:none;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          <span>Live Demo</span>
+        </a>
+
+        <a id="modal-github-link" href="#" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="display:none;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          <span>View Source Code</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Primary Application Script -->
+  <script src="js/script.js"></script>
+</body>
+</html>

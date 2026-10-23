@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgBiPub" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a14"/>
+      <stop offset="100%" stop-color="#161a2b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bgBiPub)"/>
+
+  <text x="400" y="55" font-family="'Inter', sans-serif" font-size="20" font-weight="bold" fill="#ffffff" text-anchor="middle">Bilingual Publishing &amp; Document Formatting</text>
+  <text x="400" y="80" font-family="'Inter', sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">Mirrored RTL / LTR document architecture and publishing layout</text>
+
+  <rect x="120" y="115" width="260" height="280" rx="6" fill="#1b233a" stroke="#2d3752"/>
+  <text x="250" y="150" font-family="'Inter', sans-serif" font-size="14" font-weight="bold" fill="#60a5fa" text-anchor="middle">English (LTR Edition)</text>
+  <rect x="150" y="175" width="200" height="4" fill="#3b4a6b"/>
+  <rect x="150" y="195" width="200" height="4" fill="#3b4a6b"/>
+  <rect x="150" y="215" width="170" height="4" fill="#3b4a6b"/>
+  <rect x="150" y="245" width="200" height="80" rx="4" fill="#242e47"/>
+  <text x="250" y="290" font-family="'Inter', sans-serif" font-size="11" fill="#93c5fd" text-anchor="middle">Fig 1.1: System Flow</text>
+
+  <rect x="420" y="115" width="260" height="280" rx="6" fill="#1b233a" stroke="#2d3752"/>
+  <text x="550" y="150" font-family="'Inter', sans-serif" font-size="14" font-weight="bold" fill="#34d399" text-anchor="middle">Urdu/Arabic (RTL Mirrored)</text>
+  <rect x="450" y="175" width="200" height="4" fill="#3b4a6b"/>
+  <rect x="450" y="195" width="200" height="4" fill="#3b4a6b"/>
+  <rect x="480" y="215" width="170" height="4" fill="#3b4a6b"/>
+  <rect x="450" y="245" width="200" height="80" rx="4" fill="#242e47"/>
+  <text x="550" y="290" font-family="'Inter', sans-serif" font-size="11" fill="#6ee7b7" text-anchor="middle">شکل 1.1: فلو چارٹ</text>
+</svg>

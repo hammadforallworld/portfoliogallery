@@ -1,0 +1,296 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <!-- Studio Ambient Background Gradient -->
+    <radialGradient id="electricStudioBg" cx="50%" cy="38%" r="68%">
+      <stop offset="0%" stop-color="#0e1726"/>
+      <stop offset="40%" stop-color="#080e1a"/>
+      <stop offset="75%" stop-color="#030712"/>
+      <stop offset="100%" stop-color="#010307"/>
+    </radialGradient>
+
+    <!-- High-Voltage Amber Glow (Energy & Warmth) -->
+    <radialGradient id="amberVoltageGlow" cx="30%" cy="40%" r="45%">
+      <stop offset="0%" stop-color="#ea580c" stop-opacity="0.32"/>
+      <stop offset="50%" stop-color="#f59e0b" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#ea580c" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Circuit Ground Green/Cyan Glow (Safety & Precision) -->
+    <radialGradient id="greenCircuitGlow" cx="80%" cy="40%" r="42%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.28"/>
+      <stop offset="50%" stop-color="#06b6d4" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Studio Floor Specular Gradient -->
+    <linearGradient id="studioFloor" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="0.9"/>
+      <stop offset="25%" stop-color="#080e1a"/>
+      <stop offset="100%" stop-color="#010307"/>
+    </linearGradient>
+
+    <!-- MacBook Aluminum Chassis Gradient (Space Gray) -->
+    <linearGradient id="macbookAluminum" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#64748b"/>
+      <stop offset="20%" stop-color="#475569"/>
+      <stop offset="50%" stop-color="#334155"/>
+      <stop offset="80%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+
+    <linearGradient id="macbookBaseBevel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#94a3b8"/>
+      <stop offset="30%" stop-color="#475569"/>
+      <stop offset="85%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <linearGradient id="macbookScreenGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="35%" stop-color="#ffffff" stop-opacity="0.03"/>
+      <stop offset="60%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <!-- Floating Card Gradient -->
+    <linearGradient id="quoteCardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <linearGradient id="orangeBtnGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+
+    <!-- Shadows -->
+    <filter id="macbookShadow" x="-20%" y="-15%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="45" stdDeviation="35" flood-color="#000000" flood-opacity="0.85"/>
+      <feDropShadow dx="0" dy="15" stdDeviation="15" flood-color="#ea580c" flood-opacity="0.12"/>
+    </filter>
+
+    <filter id="cardShadow" x="-20%" y="-15%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="30" stdDeviation="25" flood-color="#000000" flood-opacity="0.8"/>
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#f59e0b" flood-opacity="0.15"/>
+    </filter>
+
+    <filter id="glowOrange" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#ea580c" flood-opacity="0.6"/>
+    </filter>
+
+    <filter id="glowGreen" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#10b981" flood-opacity="0.6"/>
+    </filter>
+
+    <!-- Clip Paths for Device Screens -->
+    <clipPath id="macbookScreenClip">
+      <rect x="0" y="0" width="864" height="536" rx="6"/>
+    </clipPath>
+
+    <clipPath id="quoteCardClip">
+      <rect x="0" y="0" width="480" height="490" rx="14"/>
+    </clipPath>
+  </defs>
+
+  <!-- ========================================================================= -->
+  <!-- 1. STUDIO LIGHTING & HIGH-TECH ELECTRICAL ATMOSPHERE -->
+  <!-- ========================================================================= -->
+  <rect width="1600" height="900" fill="url(#electricStudioBg)"/>
+
+  <!-- Dynamic Ambient Backlights -->
+  <circle cx="480" cy="380" r="480" fill="url(#amberVoltageGlow)"/>
+  <circle cx="1250" cy="420" r="380" fill="url(#greenCircuitGlow)"/>
+
+  <!-- High-Tech Circuit Board Lattice Grid in Background -->
+  <g opacity="0.04" stroke="#ffffff" stroke-width="1.2">
+    <!-- Grid horizontal & vertical lines -->
+    <line x1="0" y1="200" x2="1600" y2="200"/>
+    <line x1="0" y1="400" x2="1600" y2="400"/>
+    <line x1="0" y1="600" x2="1600" y2="600"/>
+    <line x1="300" y1="0" x2="300" y2="900"/>
+    <line x1="700" y1="0" x2="700" y2="900"/>
+    <line x1="1100" y1="0" x2="1100" y2="900"/>
+    <line x1="1400" y1="0" x2="1400" y2="900"/>
+
+    <!-- Circuit trace junctions -->
+    <circle cx="300" cy="200" r="5" fill="#f59e0b" opacity="0.4"/>
+    <circle cx="700" cy="400" r="5" fill="#10b981" opacity="0.4"/>
+    <circle cx="1100" cy="200" r="5" fill="#f59e0b" opacity="0.4"/>
+    <circle cx="1400" cy="600" r="5" fill="#10b981" opacity="0.4"/>
+  </g>
+
+  <!-- Reflective Studio Desk Floor -->
+  <rect x="0" y="680" width="1600" height="220" fill="url(#studioFloor)"/>
+  <line x1="0" y1="680" x2="1600" y2="680" stroke="#1e293b" stroke-width="2" opacity="0.8"/>
+
+  <!-- Floor Specular Lighting Puddles -->
+  <ellipse cx="520" cy="725" rx="420" ry="28" fill="#ea580c" opacity="0.14"/>
+  <ellipse cx="1240" cy="735" rx="260" ry="24" fill="#10b981" opacity="0.1"/>
+
+  <!-- ========================================================================= -->
+  <!-- 2. MACBOOK PRO 16" (HERO DEVICE SHOWCASING THE ELECTRICAL WEBSITE) -->
+  <!-- ========================================================================= -->
+  <g transform="translate(80, 80)" filter="url(#macbookShadow)">
+    <!-- Top Display Lid Chassis -->
+    <rect x="20" y="0" width="888" height="570" rx="22" fill="url(#macbookAluminum)"/>
+    <rect x="22" y="2" width="884" height="566" rx="20" fill="#0b1120" stroke="#1e293b" stroke-width="2"/>
+
+    <!-- Slim Outer Screen Glass Bezel -->
+    <rect x="32" y="14" width="864" height="536" rx="6" fill="#000000"/>
+
+    <!-- Top Camera Notch -->
+    <path d="M 436,14 L 488,14 L 484,28 Q 482,30 478,30 L 446,30 Q 442,30 440,28 Z" fill="#000000"/>
+    <circle cx="462" cy="22" r="3" fill="#1e293b"/>
+    <circle cx="474" cy="22" r="1.5" fill="#06b6d4" opacity="0.8"/>
+
+    <!-- Inside MacBook Retina Display Viewport -->
+    <g transform="translate(32, 14)" clip-path="url(#macbookScreenClip)">
+      <!-- Browser Top Navigation Window Chrome Bar -->
+      <rect x="0" y="0" width="864" height="36" fill="#182234"/>
+      <line x1="0" y1="36" x2="864" y2="36" stroke="#0f172a" stroke-width="1"/>
+
+      <!-- Window Traffic Light Buttons -->
+      <circle cx="20" cy="18" r="5" fill="#ef4444"/>
+      <circle cx="36" cy="18" r="5" fill="#f59e0b"/>
+      <circle cx="52" cy="18" r="5" fill="#10b981"/>
+
+      <!-- Browser Tabs & Address URL Pill -->
+      <g transform="translate(85, 6)">
+        <rect x="0" y="0" width="160" height="24" rx="6" fill="#0f172a"/>
+        <text x="14" y="16" font-family="'Inter', sans-serif" font-size="10" font-weight="bold" fill="#38bdf8">⚡ Top Electrician Repair</text>
+      </g>
+
+      <!-- URL Address Bar -->
+      <g transform="translate(260, 6)">
+        <rect x="0" y="0" width="420" height="24" rx="6" fill="#0b1120" stroke="#334155" stroke-width="1"/>
+        <text x="14" y="16" font-family="'Inter', sans-serif" font-size="10" fill="#10b981">🔒</text>
+        <text x="32" y="16" font-family="'Inter', -apple-system, sans-serif" font-size="10" fill="#cbd5e1">https://electrical-repair-solutions.com</text>
+        <text x="390" y="16" font-family="'Inter', sans-serif" font-size="10" fill="#64748b">24/7</text>
+      </g>
+
+      <!-- REAL WEBSITE HERO SCREENSHOT EMBEDDED DIRECTLY -->
+      <g transform="translate(0, 36)">
+        <!-- The user's exact uploaded electrical hero screenshot -->
+        <image href="electrical-website-hero.png" xlink:href="electrical-website-hero.png" x="0" y="0" width="864" height="500" preserveAspectRatio="xMidYMid slice"/>
+
+        <!-- High-Fidelity Fallback / Crisp Overlay Elements to Guarantee Pristine Presentation -->
+        <rect x="0" y="0" width="864" height="24" fill="#000000" opacity="0.95"/>
+        <text x="14" y="16" font-family="'Inter', sans-serif" font-size="9" font-weight="bold" fill="#ffffff">📞 +92 347 678 837633   |   ✉ info@electrical.com</text>
+        <g transform="translate(760, 4)">
+          <rect x="0" y="0" width="16" height="16" rx="3" fill="#ea580c"/>
+          <text x="8" y="12" font-family="'Inter', sans-serif" font-size="9" font-weight="bold" fill="#ffffff" text-anchor="middle">f</text>
+          <rect x="22" y="0" width="16" height="16" rx="3" fill="#ea580c"/>
+          <text x="30" y="12" font-family="'Inter', sans-serif" font-size="9" font-weight="bold" fill="#ffffff" text-anchor="middle">t</text>
+          <rect x="44" y="0" width="16" height="16" rx="3" fill="#ea580c"/>
+          <text x="52" y="12" font-family="'Inter', sans-serif" font-size="9" font-weight="bold" fill="#ffffff" text-anchor="middle">in</text>
+        </g>
+      </g>
+
+      <!-- Glass Screen Diagonal Specular Sheen -->
+      <polygon points="400,0 750,0 550,536 200,536" fill="url(#macbookScreenGlass)"/>
+    </g>
+
+    <!-- Lower MacBook Base & Hinge -->
+    <!-- Base Lower Aluminum Plate -->
+    <path d="M 0,570 L 928,570 L 910,594 Q 908,598 902,598 L 26,598 Q 20,598 18,594 Z" fill="url(#macbookBaseBevel)"/>
+    <!-- Front Opening Display Thumb Notch -->
+    <rect x="414" y="570" width="100" height="7" rx="3.5" fill="#1e293b"/>
+    <!-- Edge Highlight Reflection -->
+    <line x1="2" y1="570" x2="926" y2="570" stroke="#94a3b8" stroke-width="1.5" opacity="0.8"/>
+  </g>
+
+  <!-- MacBook Floor Reflection Shadow Sheen -->
+  <g transform="translate(100, 678)" opacity="0.25">
+    <ellipse cx="464" cy="14" rx="460" ry="12" fill="#000000"/>
+    <ellipse cx="464" cy="24" rx="380" ry="8" fill="#ea580c" opacity="0.4"/>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- 3. SECONDARY EXPERIENCE CARD: QUOTE ESTIMATOR & STATS (User's 2nd Screenshot) -->
+  <!-- ========================================================================= -->
+  <g transform="translate(1030, 130)" filter="url(#cardShadow)">
+    <!-- Device Frame for Quote Section -->
+    <rect x="0" y="0" width="490" height="520" rx="20" fill="url(#titaniumChassis)"/>
+    <rect x="3" y="3" width="484" height="514" rx="17" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+
+    <!-- Top Card Header -->
+    <g transform="translate(20, 16)">
+      <circle cx="10" cy="10" r="4" fill="#10b981"/>
+      <circle cx="24" cy="10" r="4" fill="#f59e0b"/>
+      <circle cx="38" cy="10" r="4" fill="#0284c7"/>
+      <text x="60" y="14" font-family="'Inter', sans-serif" font-size="11" font-weight="800" fill="#ffffff">QUOTATION ENGINE &amp; EXPERT TEAM</text>
+      <rect x="350" y="0" width="95" height="22" rx="11" fill="#ea580c"/>
+      <text x="397" y="15" font-family="'Inter', sans-serif" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">FREE ESTIMATE</text>
+    </g>
+
+    <!-- Embedded Screenshot 2: Request a Quote & Certified Electrician -->
+    <g transform="translate(10, 48)" clip-path="url(#quoteCardClip)">
+      <image href="electrical-website-quote.png" xlink:href="electrical-website-quote.png" x="0" y="0" width="470" height="390" preserveAspectRatio="xMidYMid slice"/>
+
+      <!-- Overlay Fallback Details Matching Screenshot -->
+      <g transform="translate(16, 12)">
+        <text x="0" y="24" font-family="'Inter', sans-serif" font-size="18" font-weight="900" fill="#0f172a">Request a Quote</text>
+        <text x="0" y="42" font-family="'Inter', sans-serif" font-size="11" fill="#ea580c" font-weight="bold">⚡ Fast 24/7 Response Guaranteed</text>
+      </g>
+    </g>
+
+    <!-- Bottom Metrics Strip Matching the Website's Real Counters -->
+    <g transform="translate(15, 445)">
+      <rect x="0" y="0" width="460" height="60" rx="12" fill="url(#orangeBtnGrad)" filter="url(#glowOrange)"/>
+      
+      <!-- Counter 1 -->
+      <g transform="translate(25, 14)">
+        <text x="35" y="18" font-family="'Impact', 'Inter', sans-serif" font-size="20" font-weight="bold" fill="#ffffff" text-anchor="middle">987+</text>
+        <text x="35" y="32" font-family="'Inter', sans-serif" font-size="9.5" font-weight="bold" fill="#fed7aa" text-anchor="middle">Repairs Done</text>
+      </g>
+      <line x1="120" y1="12" x2="120" y2="48" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+
+      <!-- Counter 2 -->
+      <g transform="translate(140, 14)">
+        <text x="35" y="18" font-family="'Impact', 'Inter', sans-serif" font-size="20" font-weight="bold" fill="#ffffff" text-anchor="middle">94+</text>
+        <text x="35" y="32" font-family="'Inter', sans-serif" font-size="9.5" font-weight="bold" fill="#fed7aa" text-anchor="middle">Commercial</text>
+      </g>
+      <line x1="230" y1="12" x2="230" y2="48" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+
+      <!-- Counter 3 -->
+      <g transform="translate(250, 14)">
+        <text x="35" y="18" font-family="'Impact', 'Inter', sans-serif" font-size="20" font-weight="bold" fill="#ffffff" text-anchor="middle">42+</text>
+        <text x="35" y="32" font-family="'Inter', sans-serif" font-size="9.5" font-weight="bold" fill="#fed7aa" text-anchor="middle">Electricians</text>
+      </g>
+      <line x1="340" y1="12" x2="340" y2="48" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+
+      <!-- Counter 4 -->
+      <g transform="translate(360, 14)">
+        <text x="35" y="18" font-family="'Impact', 'Inter', sans-serif" font-size="20" font-weight="bold" fill="#ffffff" text-anchor="middle">570+</text>
+        <text x="35" y="32" font-family="'Inter', sans-serif" font-size="9.5" font-weight="bold" fill="#fed7aa" text-anchor="middle">5-Star Reviews</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- 4. FLOATING COMMERCIAL SHOWCASE BADGES (EXPERT ELECTRICAL PACKAGING) -->
+  <!-- ========================================================================= -->
+  <!-- Top Left Pill: 24/7 Emergency Repairs & High Voltage -->
+  <g transform="translate(80, 42)">
+    <rect x="0" y="0" width="310" height="42" rx="21" fill="#0f172a" stroke="#ea580c" stroke-width="1.8" opacity="0.95"/>
+    <circle cx="24" cy="21" r="11" fill="#ea580c" filter="url(#glowOrange)"/>
+    <text x="24" y="27" font-family="'Inter', sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">⚡</text>
+    <text x="46" y="26" font-family="'Inter', sans-serif" font-size="12" font-weight="800" fill="#ffffff">24/7 Emergency Electrical Repairs</text>
+  </g>
+
+  <!-- Top Right Pill: Certified Master Electricians -->
+  <g transform="translate(1220, 42)">
+    <rect x="0" y="0" width="300" height="42" rx="21" fill="#0f172a" stroke="#10b981" stroke-width="1.8" opacity="0.95"/>
+    <circle cx="24" cy="21" r="11" fill="#10b981" filter="url(#glowGreen)"/>
+    <text x="24" y="26" font-family="'Inter', sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">🛡️</text>
+    <text x="46" y="26" font-family="'Inter', sans-serif" font-size="12" font-weight="800" fill="#ffffff">Certified Master Electricians • ISO</text>
+  </g>
+
+  <!-- Bottom Showcase Label Banner -->
+  <g transform="translate(460, 835)">
+    <rect x="0" y="0" width="680" height="46" rx="23" fill="#080e1a" stroke="#ea580c" stroke-width="1.5"/>
+    <circle cx="30" cy="23" r="8" fill="#f59e0b" filter="url(#glowOrange)"/>
+    <text x="30" y="27" font-family="'Inter', sans-serif" font-size="11" fill="#0f172a" font-weight="bold" text-anchor="middle">⚡</text>
+    <text x="50" y="29" font-family="'Inter', sans-serif" font-size="13" font-weight="900" fill="#ffffff" letter-spacing="1">TOP ELECTRICIAN REPAIR SOLUTIONS • INDUSTRIAL &amp; RESIDENTIAL</text>
+  </g>
+</svg>

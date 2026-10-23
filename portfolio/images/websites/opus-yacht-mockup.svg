@@ -1,0 +1,327 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 475" width="100%" height="100%">
+  <defs>
+    <!-- Background Luxury Gradients -->
+    <linearGradient id="studio-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0c"/>
+      <stop offset="50%" stop-color="#121318"/>
+      <stop offset="100%" stop-color="#08080a"/>
+    </linearGradient>
+
+    <!-- Marina Water / Sunset Ambient Glow -->
+    <radialGradient id="sunset-glow" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#d8b984" stop-opacity="0.18"/>
+      <stop offset="40%" stop-color="#b8860b" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Gold Foil Gradients -->
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8e7c4"/>
+      <stop offset="40%" stop-color="#f1d9a7"/>
+      <stop offset="70%" stop-color="#e7c887"/>
+      <stop offset="100%" stop-color="#d8b984"/>
+    </linearGradient>
+
+    <linearGradient id="gold-btn-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f5ddb1"/>
+      <stop offset="50%" stop-color="#e7c887"/>
+      <stop offset="100%" stop-color="#d8b984"/>
+    </linearGradient>
+
+    <linearGradient id="macbook-body" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a2c33"/>
+      <stop offset="50%" stop-color="#1e2025"/>
+      <stop offset="100%" stop-color="#141519"/>
+    </linearGradient>
+
+    <linearGradient id="screen-bezel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1c1d22"/>
+      <stop offset="100%" stop-color="#0d0e12"/>
+    </linearGradient>
+
+    <linearGradient id="sea-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0c2538"/>
+      <stop offset="50%" stop-color="#081825"/>
+      <stop offset="100%" stop-color="#050e18"/>
+    </linearGradient>
+
+    <linearGradient id="sky-sunset" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1b172a"/>
+      <stop offset="35%" stop-color="#2a1f2f"/>
+      <stop offset="70%" stop-color="#42292e"/>
+      <stop offset="100%" stop-color="#643b35"/>
+    </linearGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="laptop-shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="25" stdDeviation="22" flood-color="#000000" flood-opacity="0.85"/>
+    </filter>
+
+    <filter id="gold-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="badge-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Studio Background -->
+  <rect width="800" height="475" fill="url(#studio-bg)"/>
+  <rect width="800" height="475" fill="url(#sunset-glow)"/>
+
+  <!-- Subtle Studio Marina Teak Horizon Reflection -->
+  <line x1="0" y1="410" x2="800" y2="410" stroke="#f1d9a7" stroke-opacity="0.12" stroke-width="1"/>
+  <rect x="0" y="411" width="800" height="64" fill="#090a0d" opacity="0.9"/>
+
+  <!-- =========================================================================
+       MACBOOK PRO 16-INCH FRAME
+       ========================================================================= -->
+  <g transform="translate(65, 25)" filter="url(#laptop-shadow)">
+    <!-- Screen Outer Shell (Top Lid) -->
+    <rect x="25" y="10" width="620" height="375" rx="14" fill="url(#macbook-body)" stroke="#454852" stroke-width="1.5"/>
+
+    <!-- Screen Bezel (Inner Glass Frame) -->
+    <rect x="33" y="18" width="604" height="358" rx="8" fill="url(#screen-bezel)" stroke="#000000" stroke-width="1"/>
+
+    <!-- Top Camera Notch -->
+    <rect x="305" y="18" width="60" height="10" rx="4" fill="#000000"/>
+    <circle cx="335" cy="23" r="2.5" fill="#111827"/>
+    <circle cx="335" cy="23" r="1" fill="#06b6d4" opacity="0.7"/>
+
+    <!-- =======================================================================
+         RETINA DISPLAY CONTENT: OPUS MIAMI LIVE WEB APPLICATION
+         ======================================================================= -->
+    <g transform="translate(36, 28)">
+      <clipPath id="screen-clip">
+        <rect width="598" height="344" rx="4"/>
+      </clipPath>
+      <g clip-path="url(#screen-clip)">
+        <!-- Website Background Canvas -->
+        <rect width="598" height="344" fill="#111111"/>
+
+        <!-- Top Announcement & Social Utility Bar -->
+        <rect width="598" height="18" fill="#0d0e12"/>
+        <!-- Phone & Location -->
+        <g transform="translate(14, 12)">
+          <path d="M1 2 C1 1 2 0 3 0 L4.5 0 C5 0 5.5 0.5 5.5 1 L6.2 2.8 C6.4 3.2 6.2 3.7 5.8 4 L5 4.6 C5.6 5.8 6.6 6.8 7.8 7.4 L8.4 6.6 C8.7 6.2 9.2 6 9.6 6.2 L11.4 6.9 C11.9 6.9 12.4 7.4 12.4 7.9 L12.4 9.4 C12.4 10.4 11.4 11.4 10.4 11.4 C4.6 11.4 1 6.8 1 2 Z" fill="#f1d9a7" transform="scale(0.8)"/>
+          <text x="14" y="0" fill="#f1d9a7" font-family="'Inter', sans-serif" font-size="7.5" font-weight="600">(954) 494-1448</text>
+          <text x="92" y="0" fill="#9ca3af" font-family="'Inter', sans-serif" font-size="7">|</text>
+          <text x="102" y="0" fill="#e5e7eb" font-family="'Inter', sans-serif" font-size="7">Downtown Miami, FL 33160</text>
+          <text x="220" y="0" fill="#9ca3af" font-family="'Inter', sans-serif" font-size="7">|</text>
+          <text x="230" y="0" fill="#f1d9a7" font-family="'Inter', sans-serif" font-size="7">Opus1miami@gmail.com</text>
+        </g>
+        <g transform="translate(520, 12)">
+          <text x="0" y="0" fill="#d8b984" font-family="'Inter', sans-serif" font-size="7" font-weight="600">VIP Charters 24/7</text>
+        </g>
+
+        <!-- Main Navbar -->
+        <rect y="18" width="598" height="34" fill="#14151a" opacity="0.95"/>
+        <line x1="0" y1="52" x2="598" y2="52" stroke="#252730" stroke-width="0.8"/>
+
+        <!-- Brand Logo -->
+        <g transform="translate(18, 38)">
+          <text x="0" y="0" fill="url(#gold-grad)" font-family="'Playfair Display', Georgia, serif" font-size="14" font-weight="800" letter-spacing="1.5">OPUS YACHT</text>
+          <text x="0" y="8" fill="#9ca3af" font-family="'Inter', sans-serif" font-size="5.5" font-weight="500" letter-spacing="1.2">MIAMI EVENT YACHT</text>
+        </g>
+
+        <!-- Nav Links -->
+        <g transform="translate(195, 39)">
+          <text x="0" y="0" fill="#f1d9a7" font-family="'Inter', sans-serif" font-size="8.5" font-weight="700">Venue</text>
+          <rect x="0" y="4" width="26" height="1.5" fill="#f1d9a7"/>
+          <text x="44" y="0" fill="#d1d5db" font-family="'Inter', sans-serif" font-size="8.5" font-weight="500">Events</text>
+          <text x="90" y="0" fill="#d1d5db" font-family="'Inter', sans-serif" font-size="8.5" font-weight="500">Services</text>
+          <text x="142" y="0" fill="#d1d5db" font-family="'Inter', sans-serif" font-size="8.5" font-weight="500">Pricing</text>
+          <text x="190" y="0" fill="#d1d5db" font-family="'Inter', sans-serif" font-size="8.5" font-weight="500">Contact</text>
+        </g>
+
+        <!-- Navbar CTA Button -->
+        <g transform="translate(485, 27)">
+          <rect width="98" height="20" rx="10" fill="url(#gold-btn-grad)"/>
+          <text x="49" y="13" fill="#111111" font-family="'Inter', sans-serif" font-size="7.5" font-weight="800" text-anchor="middle" letter-spacing="0.4">Book Event Now</text>
+        </g>
+
+        <!-- Hero Section Canvas -->
+        <g transform="translate(0, 52)">
+          <!-- Sunset Sky Gradient -->
+          <rect width="598" height="185" fill="url(#sky-sunset)"/>
+
+          <!-- Biscayne Bay Water -->
+          <rect y="125" width="598" height="60" fill="url(#sea-grad)"/>
+
+          <!-- Miami Downtown Skyline Silhouettes -->
+          <g fill="#1a1c24" opacity="0.85">
+            <rect x="20" y="65" width="18" height="60"/>
+            <rect x="34" y="55" width="22" height="70"/>
+            <rect x="52" y="70" width="15" height="55"/>
+            <polygon points="60,40 54,70 66,70"/>
+            <rect x="80" y="48" width="28" height="77"/>
+            <rect x="115" y="60" width="35" height="65"/>
+            <polygon points="128,30 120,60 136,60"/>
+            <rect x="160" y="52" width="24" height="73"/>
+            <rect x="420" y="58" width="30" height="67"/>
+            <rect x="455" y="45" width="26" height="80"/>
+            <polygon points="468,25 460,45 476,45"/>
+            <rect x="488" y="62" width="32" height="63"/>
+            <rect x="530" y="50" width="28" height="75"/>
+            <rect x="565" y="68" width="25" height="57"/>
+          </g>
+
+          <!-- Golden Sunset Rays on Biscayne Bay -->
+          <ellipse cx="300" cy="125" rx="140" ry="12" fill="#f1d9a7" opacity="0.22"/>
+          <ellipse cx="300" cy="132" rx="200" ry="8" fill="#e7c887" opacity="0.14"/>
+
+          <!-- The Mega Yacht (Opus Miami Private Event Yacht) -->
+          <g transform="translate(295, 62)">
+            <!-- Water Wash & Wake -->
+            <ellipse cx="140" cy="74" rx="145" ry="5" fill="#38bdf8" opacity="0.25"/>
+            <path d="M -10 74 Q 60 77 150 75 Q 260 76 290 73" stroke="#e0f2fe" stroke-width="2" stroke-opacity="0.4" fill="none"/>
+
+            <!-- Main Hull (White & Sleek) -->
+            <path d="M 10 72 L 40 45 L 210 45 L 265 62 L 270 72 Z" fill="#f8fafc"/>
+            <path d="M 10 72 L 270 72 L 255 77 L 30 77 Z" fill="#0f172a"/>
+            <!-- Teak Deck Accent Line -->
+            <line x1="38" y1="45" x2="215" y2="45" stroke="#d8b984" stroke-width="2.2"/>
+
+            <!-- Mid Deck & Panoramic Glass Windows -->
+            <rect x="55" y="28" width="145" height="17" rx="3" fill="#ffffff"/>
+            <!-- Tinted Glass Salon Windows with Warm Interior Golden Glow -->
+            <rect x="62" y="31" width="22" height="11" rx="1.5" fill="#fef08a" opacity="0.85"/>
+            <rect x="88" y="31" width="22" height="11" rx="1.5" fill="#fef08a" opacity="0.85"/>
+            <rect x="114" y="31" width="22" height="11" rx="1.5" fill="#fef08a" opacity="0.85"/>
+            <rect x="140" y="31" width="22" height="11" rx="1.5" fill="#fef08a" opacity="0.85"/>
+            <rect x="166" y="31" width="28" height="11" rx="1.5" fill="#fef08a" opacity="0.85"/>
+
+            <!-- Upper Sky Deck (Flybridge & Cocktail Lounge) -->
+            <rect x="75" y="14" width="95" height="14" rx="2" fill="#ffffff"/>
+            <rect x="82" y="17" width="18" height="8" rx="1" fill="#38bdf8" opacity="0.7"/>
+            <rect x="104" y="17" width="18" height="8" rx="1" fill="#38bdf8" opacity="0.7"/>
+            <!-- Radar Arch & Satellite Domes -->
+            <path d="M 125 14 L 132 4 L 136 4 L 134 14 Z" fill="#e2e8f0"/>
+            <circle cx="134" cy="3" r="3" fill="#ffffff"/>
+            <circle cx="118" cy="11" r="2.5" fill="#ffffff"/>
+
+            <!-- Sky Deck Railings & Cocktail Guests (Silhouettes) -->
+            <line x1="72" y1="14" x2="175" y2="14" stroke="#94a3b8" stroke-width="1"/>
+            <circle cx="148" cy="10" r="2" fill="#d8b984"/>
+            <line x1="148" y1="12" x2="148" y2="15" stroke="#111827" stroke-width="1.5"/>
+            <circle cx="156" cy="10" r="2" fill="#f1d9a7"/>
+            <line x1="156" y1="12" x2="156" y2="15" stroke="#111827" stroke-width="1.5"/>
+            <circle cx="164" cy="10" r="2" fill="#ffffff"/>
+            <line x1="164" y1="12" x2="164" y2="15" stroke="#111827" stroke-width="1.5"/>
+
+            <!-- Warm Deck Illumination Glow -->
+            <ellipse cx="130" cy="40" rx="60" ry="14" fill="#f5ddb1" opacity="0.25" filter="url(#gold-glow)"/>
+          </g>
+
+          <!-- Hero Typography Overlay (Left Side) -->
+          <g transform="translate(24, 20)">
+            <!-- Top Location Tag Badge -->
+            <rect width="182" height="17" rx="8.5" fill="#f1d9a7"/>
+            <text x="91" y="11.5" fill="#111111" font-family="'Inter', sans-serif" font-size="7.5" font-weight="700" text-anchor="middle" letter-spacing="0.3">Miami / Fort Lauderdale Private Event Yacht</text>
+
+            <!-- Main Headline -->
+            <text x="0" y="37" fill="#ffffff" font-family="'Playfair Display', Georgia, serif" font-size="16" font-weight="800">Luxury Yacht Rental in Miami, FL</text>
+            <text x="0" y="55" fill="#f1d9a7" font-family="'Playfair Display', Georgia, serif" font-size="14.5" font-weight="700" font-style="italic">Unforgettable Celebrations on the Water</text>
+
+            <!-- Dynamic Animated Badge: UP TO 250+ GUESTS -->
+            <g transform="translate(0, 64)" filter="url(#badge-glow)">
+              <rect width="168" height="24" rx="12" fill="#14151a" stroke="url(#gold-grad)" stroke-width="1.5"/>
+              <circle cx="15" cy="12" r="4" fill="#22c55e"/>
+              <text x="90" y="16" fill="url(#gold-grad)" font-family="'Inter', sans-serif" font-size="9" font-weight="800" text-anchor="middle" letter-spacing="1">UP TO 250+ GUESTS</text>
+            </g>
+
+            <!-- Descriptive Text -->
+            <text x="0" y="104" fill="#e5e7eb" font-family="'Inter', sans-serif" font-size="8" font-weight="400">Host grand corporate galas, luxury weddings &amp; VIP celebrations</text>
+            <text x="0" y="115" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="8" font-weight="400">aboard our premier multi-level mega-yacht venue with skyline views.</text>
+
+            <!-- Dual CTA Buttons -->
+            <g transform="translate(0, 126)">
+              <!-- Primary Gold Button -->
+              <rect width="84" height="24" rx="12" fill="url(#gold-btn-grad)" filter="url(#gold-glow)"/>
+              <text x="42" y="15.5" fill="#111111" font-family="'Inter', sans-serif" font-size="8" font-weight="800" text-anchor="middle">Book Now</text>
+
+              <!-- Secondary Hotline Button -->
+              <g transform="translate(92, 0)">
+                <rect width="105" height="24" rx="12" fill="#1a1c23" stroke="#f1d9a7" stroke-width="1"/>
+                <text x="52" y="15.5" fill="#f1d9a7" font-family="'Inter', sans-serif" font-size="7.8" font-weight="700" text-anchor="middle">📞 (954) 494-1448</text>
+              </g>
+            </g>
+          </g>
+        </g>
+
+        <!-- Lower Content Strip: The Opus Miami Real Yacht Experience -->
+        <g transform="translate(0, 237)">
+          <rect width="598" height="107" fill="#14151b"/>
+          <line x1="0" y1="0" x2="598" y2="0" stroke="#262833" stroke-width="1"/>
+
+          <!-- Section Subtitle & Title -->
+          <text x="24" y="16" fill="url(#gold-grad)" font-family="'Inter', sans-serif" font-size="6.5" font-weight="800" letter-spacing="1.5">REAL YACHT EXPERIENCE</text>
+          <text x="24" y="29" fill="#ffffff" font-family="'Playfair Display', Georgia, serif" font-size="11" font-weight="700">A Luxury Setting for Every Celebration</text>
+
+          <!-- 3 Showcase Feature Cards -->
+          <!-- Card 1: Interior Salon -->
+          <g transform="translate(24, 38)">
+            <rect width="170" height="56" rx="6" fill="#1a1b23" stroke="#2e3140" stroke-width="0.8"/>
+            <rect x="8" y="8" width="18" height="18" rx="4" fill="#f1d9a7" opacity="0.15"/>
+            <text x="17" y="20.5" fill="#f1d9a7" font-family="'Inter', sans-serif" font-size="8" font-weight="800" text-anchor="middle">01</text>
+            <text x="32" y="18" fill="#ffffff" font-family="'Inter', sans-serif" font-size="8" font-weight="700">Interior Salon</text>
+            <text x="32" y="28" fill="#9ca3af" font-family="'Inter', sans-serif" font-size="6.2">Spacious climate-controlled salon</text>
+            <text x="32" y="37" fill="#9ca3af" font-family="'Inter', sans-serif" font-size="6.2">designed for luxury dining &amp; seating.</text>
+            <text x="8" y="49" fill="#f1d9a7" font-family="'Inter', sans-serif" font-size="6.5" font-weight="600">Explore Salon →</text>
+          </g>
+
+          <!-- Card 2: Upper Deck Lounge -->
+          <g transform="translate(204, 38)">
+            <rect width="175" height="56" rx="6" fill="#1a1b23" stroke="#2e3140" stroke-width="0.8"/>
+            <rect x="8" y="8" width="18" height="18" rx="4" fill="#f1d9a7" opacity="0.15"/>
+            <text x="17" y="20.5" fill="#f1d9a7" font-family="'Inter', sans-serif" font-size="8" font-weight="800" text-anchor="middle">02</text>
+            <text x="32" y="18" fill="#ffffff" font-family="'Inter', sans-serif" font-size="8" font-weight="700">Upper Deck Lounge</text>
+            <text x="32" y="28" fill="#9ca3af" font-family="'Inter', sans-serif" font-size="6.2">Open-air sky deck for cocktail parties,</text>
+            <text x="32" y="37" fill="#9ca3af" font-family="'Inter', sans-serif" font-size="6.2">dancing &amp; 360° Miami skyline views.</text>
+            <text x="8" y="49" fill="#f1d9a7" font-family="'Inter', sans-serif" font-size="6.5" font-weight="600">Explore Sky Deck →</text>
+          </g>
+
+          <!-- Card 3: Food & Entertainment -->
+          <g transform="translate(389, 38)">
+            <rect width="185" height="56" rx="6" fill="#1a1b23" stroke="#2e3140" stroke-width="0.8"/>
+            <rect x="8" y="8" width="18" height="18" rx="4" fill="#f1d9a7" opacity="0.15"/>
+            <text x="17" y="20.5" fill="#f1d9a7" font-family="'Inter', sans-serif" font-size="8" font-weight="800" text-anchor="middle">03</text>
+            <text x="32" y="18" fill="#ffffff" font-family="'Inter', sans-serif" font-size="8" font-weight="700">Catering &amp; AV Staging</text>
+            <text x="32" y="28" fill="#9ca3af" font-family="'Inter', sans-serif" font-size="6.2">Chef-curated menus, premium bars,</text>
+            <text x="32" y="37" fill="#9ca3af" font-family="'Inter', sans-serif" font-size="6.2">live DJs, sound systems &amp; lighting.</text>
+            <text x="8" y="49" fill="#f1d9a7" font-family="'Inter', sans-serif" font-size="6.5" font-weight="600">Explore Services →</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <!-- Screen Bezel Glare / Glass Reflection -->
+    <path d="M 36 28 L 300 28 L 90 372 L 36 372 Z" fill="#ffffff" opacity="0.025" pointer-events="none"/>
+
+    <!-- =======================================================================
+         MACBOOK LOWER CHASSIS & KEYBOARD BASE
+         ======================================================================= -->
+    <!-- Base Top Surface -->
+    <polygon points="0,385 670,385 640,396 30,396" fill="#2d3038" stroke="#3e414c" stroke-width="0.8"/>
+    <!-- Front Lip with Display Opening Indentation -->
+    <rect x="290" y="386" width="90" height="4" rx="2" fill="#14151a"/>
+    <!-- Base Front Edge -->
+    <rect x="30" y="396" width="610" height="5" rx="2.5" fill="#1a1c22"/>
+  </g>
+
+  <!-- High-End Luxury Showcase Badges Floating in Studio Scene -->
+  <g transform="translate(50, 432)">
+    <rect width="180" height="26" rx="13" fill="#161822" stroke="url(#gold-grad)" stroke-width="1"/>
+    <circle cx="16" cy="13" r="4.5" fill="#f1d9a7"/>
+    <text x="96" y="17" fill="#f8e7c4" font-family="'Inter', sans-serif" font-size="9" font-weight="700" text-anchor="middle">250+ GUEST MEGA YACHT</text>
+  </g>
+
+  <g transform="translate(565, 432)">
+    <rect width="185" height="26" rx="13" fill="#161822" stroke="#38bdf8" stroke-width="1"/>
+    <circle cx="16" cy="13" r="4.5" fill="#38bdf8"/>
+    <text x="100" y="17" fill="#e0f2fe" font-family="'Inter', sans-serif" font-size="9" font-weight="700" text-anchor="middle">LIVE: miamieventyacht.com</text>
+  </g>
+</svg>

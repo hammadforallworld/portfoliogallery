@@ -1,0 +1,634 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <!-- Studio Ambient Background Gradient -->
+    <radialGradient id="studioAmbientGlow" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="35%" stop-color="#090d16"/>
+      <stop offset="70%" stop-color="#040711"/>
+      <stop offset="100%" stop-color="#010307"/>
+    </radialGradient>
+
+    <!-- Neon Backlight Halos -->
+    <radialGradient id="centerNeonGlow" cx="50%" cy="45%" r="40%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.32"/>
+      <stop offset="50%" stop-color="#10b981" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="leftNeonGlow" cx="25%" cy="40%" r="35%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="rightNeonGlow" cx="75%" cy="40%" r="35%">
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Studio Floor Specular Gradient -->
+    <linearGradient id="floorGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="0.8"/>
+      <stop offset="25%" stop-color="#080e1a"/>
+      <stop offset="100%" stop-color="#010307"/>
+    </linearGradient>
+
+    <!-- Titanium Phone Chassis Edge Gradient -->
+    <linearGradient id="titaniumFrame" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#64748b"/>
+      <stop offset="25%" stop-color="#334155"/>
+      <stop offset="50%" stop-color="#475569"/>
+      <stop offset="75%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- Screen Bezel Metallic Highlight -->
+    <linearGradient id="innerBezelHighlight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#94a3b8" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#1e293b" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.6"/>
+    </linearGradient>
+
+    <!-- OLED Screen Black Gradient -->
+    <linearGradient id="oledBlack" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="cyanLimeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+
+    <linearGradient id="flameOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb923c"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+
+    <linearGradient id="coralRed" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f43f5e"/>
+      <stop offset="100%" stop-color="#e11d48"/>
+    </linearGradient>
+
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.85"/>
+    </linearGradient>
+
+    <linearGradient id="barActiveGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#0891b2"/>
+    </linearGradient>
+
+    <!-- 3D Shadow Filters -->
+    <filter id="phoneShadowCenter" x="-20%" y="-15%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="35" stdDeviation="30" flood-color="#000000" flood-opacity="0.8"/>
+      <feDropShadow dx="0" dy="15" stdDeviation="15" flood-color="#06b6d4" flood-opacity="0.15"/>
+    </filter>
+
+    <filter id="phoneShadowSide" x="-20%" y="-15%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="30" stdDeviation="25" flood-color="#000000" flood-opacity="0.75"/>
+    </filter>
+
+    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#00f2fe" flood-opacity="0.6"/>
+    </filter>
+
+    <filter id="glowLime" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#10b981" flood-opacity="0.6"/>
+    </filter>
+
+    <filter id="glowRed" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#f43f5e" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- ========================================================================= -->
+  <!-- 1. BACKGROUND ENVIRONMENT & STUDIO LIGHTING -->
+  <!-- ========================================================================= -->
+  <rect width="1600" height="900" fill="url(#studioAmbientGlow)"/>
+
+  <!-- Backlight Halos -->
+  <circle cx="800" cy="400" r="420" fill="url(#centerNeonGlow)"/>
+  <circle cx="340" cy="440" r="320" fill="url(#leftNeonGlow)"/>
+  <circle cx="1260" cy="440" r="320" fill="url(#rightNeonGlow)"/>
+
+  <!-- Dark Polished Studio Reflective Floor -->
+  <rect x="0" y="700" width="1600" height="200" fill="url(#floorGrad)"/>
+  <line x1="0" y1="700" x2="1600" y2="700" stroke="#1e293b" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Ground Specular Floor Lighting Highlights -->
+  <ellipse cx="800" cy="740" rx="350" ry="30" fill="#06b6d4" opacity="0.12"/>
+  <ellipse cx="360" cy="750" rx="250" ry="24" fill="#8b5cf6" opacity="0.08"/>
+  <ellipse cx="1240" cy="750" rx="250" ry="24" fill="#0ea5e9" opacity="0.08"/>
+
+  <!-- Subtle Studio Grid Pattern -->
+  <g opacity="0.04" stroke="#ffffff" stroke-width="1">
+    <line x1="200" y1="0" x2="200" y2="900"/>
+    <line x1="400" y1="0" x2="400" y2="900"/>
+    <line x1="600" y1="0" x2="600" y2="900"/>
+    <line x1="800" y1="0" x2="800" y2="900"/>
+    <line x1="1000" y1="0" x2="1000" y2="900"/>
+    <line x1="1200" y1="0" x2="1200" y2="900"/>
+    <line x1="1400" y1="0" x2="1400" y2="900"/>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- 2. LEFT PHONE: DAILY HABIT STREAKS & ROUTINE DASHBOARD (Tilted Perspective) -->
+  <!-- ========================================================================= -->
+  <g transform="translate(140, 110) rotate(-4 175 350)" filter="url(#phoneShadowSide)">
+    <!-- Chassis Shadow Base -->
+    <rect x="0" y="0" width="350" height="710" rx="48" fill="url(#titaniumFrame)"/>
+    <rect x="3" y="3" width="344" height="704" rx="46" fill="#020617" stroke="url(#innerBezelHighlight)" stroke-width="2"/>
+    
+    <!-- OLED Inner Screen -->
+    <rect x="12" y="12" width="326" height="686" rx="40" fill="url(#oledBlack)"/>
+
+    <!-- Dynamic Island / Speaker Pill -->
+    <rect x="115" y="24" width="120" height="28" rx="14" fill="#000000"/>
+    <circle cx="218" cy="38" r="4.5" fill="#1e293b"/>
+
+    <!-- Screen Status Bar -->
+    <text x="40" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="12" font-weight="700" fill="#94a3b8">9:41</text>
+    <g transform="translate(268, 32)" fill="#94a3b8">
+      <!-- 5G & Battery icon -->
+      <path d="M 0 8 L 3 8 L 3 10 L 0 10 Z M 5 6 L 8 6 L 8 10 L 5 10 Z M 10 3 L 13 3 L 13 10 L 10 10 Z"/>
+      <rect x="18" y="1" width="18" height="9" rx="2" fill="none" stroke="#94a3b8" stroke-width="1.2"/>
+      <rect x="20" y="3" width="12" height="5" rx="1" fill="#10b981"/>
+    </g>
+
+    <!-- Screen 1 Content: PulseHabit Routines -->
+    <g transform="translate(28, 70)">
+      <!-- Top Title & Streak Badge -->
+      <text x="0" y="22" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#00f2fe" letter-spacing="1">TODAY'S TARGETS</text>
+      <text x="0" y="48" font-family="'Inter', sans-serif" font-size="22" font-weight="800" fill="#ffffff">Habits &amp; Routines</text>
+
+      <!-- Streak Flame Pill Badge -->
+      <g transform="translate(180, 24)">
+        <rect x="0" y="0" width="114" height="28" rx="14" fill="#431407" stroke="#ea580c" stroke-width="1.5"/>
+        <text x="14" y="19" font-family="'Inter', sans-serif" font-size="14">🔥</text>
+        <text x="35" y="18" font-family="'Inter', sans-serif" font-size="11" font-weight="800" fill="#fb923c">24d Streak</text>
+      </g>
+
+      <!-- Weekly Progress Day Circles -->
+      <g transform="translate(0, 68)">
+        <rect x="0" y="0" width="294" height="56" rx="14" fill="url(#cardBg)" stroke="#334155" stroke-width="1"/>
+        <!-- Mon to Sun -->
+        <g transform="translate(18, 12)">
+          <text x="10" y="12" font-family="'Inter', sans-serif" font-size="10" fill="#64748b" text-anchor="middle">M</text>
+          <circle cx="10" cy="28" r="11" fill="#10b981"/>
+          <text x="10" y="32" font-family="'Inter', sans-serif" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">✓</text>
+        </g>
+        <g transform="translate(56, 12)">
+          <text x="10" y="12" font-family="'Inter', sans-serif" font-size="10" fill="#64748b" text-anchor="middle">T</text>
+          <circle cx="10" cy="28" r="11" fill="#10b981"/>
+          <text x="10" y="32" font-family="'Inter', sans-serif" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">✓</text>
+        </g>
+        <g transform="translate(94, 12)">
+          <text x="10" y="12" font-family="'Inter', sans-serif" font-size="10" fill="#64748b" text-anchor="middle">W</text>
+          <circle cx="10" cy="28" r="11" fill="#10b981"/>
+          <text x="10" y="32" font-family="'Inter', sans-serif" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">✓</text>
+        </g>
+        <g transform="translate(132, 12)">
+          <text x="10" y="12" font-family="'Inter', sans-serif" font-size="10" fill="#64748b" text-anchor="middle">T</text>
+          <circle cx="10" cy="28" r="11" fill="#10b981"/>
+          <text x="10" y="32" font-family="'Inter', sans-serif" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">✓</text>
+        </g>
+        <g transform="translate(170, 12)">
+          <text x="10" y="12" font-family="'Inter', sans-serif" font-size="10" fill="#64748b" text-anchor="middle">F</text>
+          <circle cx="10" cy="28" r="11" fill="#10b981"/>
+          <text x="10" y="32" font-family="'Inter', sans-serif" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">✓</text>
+        </g>
+        <g transform="translate(208, 12)">
+          <text x="10" y="12" font-family="'Inter', sans-serif" font-size="10" fill="#00f2fe" font-weight="bold" text-anchor="middle">S</text>
+          <circle cx="10" cy="28" r="11" fill="#00f2fe"/>
+          <text x="10" y="32" font-family="'Inter', sans-serif" font-size="10" font-weight="bold" fill="#020617" text-anchor="middle">★</text>
+        </g>
+        <g transform="translate(246, 12)">
+          <text x="10" y="12" font-family="'Inter', sans-serif" font-size="10" fill="#64748b" text-anchor="middle">S</text>
+          <circle cx="10" cy="28" r="11" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+          <text x="10" y="32" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">19</text>
+        </g>
+      </g>
+
+      <!-- Habit Card 1: Morning Run (Completed) -->
+      <g transform="translate(0, 138)">
+        <rect x="0" y="0" width="294" height="74" rx="14" fill="url(#cardBg)" stroke="#10b981" stroke-width="1.5"/>
+        <rect x="14" y="16" width="42" height="42" rx="10" fill="#064e3b"/>
+        <text x="26" y="42" font-family="'Inter', sans-serif" font-size="20">🏃</text>
+        <text x="68" y="32" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#ffffff">Morning 5.4km Run</text>
+        <text x="68" y="48" font-family="'Inter', sans-serif" font-size="10.5" fill="#10b981">Completed • 06:45 AM • 420 kcal</text>
+        <circle cx="264" cy="37" r="13" fill="#10b981"/>
+        <path d="M 259 37 L 263 41 L 270 33" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+      </g>
+
+      <!-- Habit Card 2: Hydration 3.0L Target (In Progress) -->
+      <g transform="translate(0, 224)">
+        <rect x="0" y="0" width="294" height="82" rx="14" fill="url(#cardBg)" stroke="#0284c7" stroke-width="1.2"/>
+        <rect x="14" y="16" width="42" height="42" rx="10" fill="#0c4a6e"/>
+        <text x="26" y="43" font-family="'Inter', sans-serif" font-size="20">💧</text>
+        <text x="68" y="32" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#ffffff">Hydration Target</text>
+        <text x="68" y="48" font-family="'Inter', sans-serif" font-size="10.5" fill="#38bdf8">2.4L / 3.0L Logged (80%)</text>
+        <!-- Mini progress bar -->
+        <rect x="68" y="56" width="180" height="6" rx="3" fill="#0f172a"/>
+        <rect x="68" y="56" width="144" height="6" rx="3" fill="url(#cyanLimeGrad)"/>
+        <text x="260" y="62" font-family="'Inter', sans-serif" font-size="9" font-weight="bold" fill="#38bdf8">+250ml</text>
+      </g>
+
+      <!-- Habit Card 3: Strength Workout -->
+      <g transform="translate(0, 318)">
+        <rect x="0" y="0" width="294" height="74" rx="14" fill="url(#cardBg)" stroke="#334155" stroke-width="1"/>
+        <rect x="14" y="16" width="42" height="42" rx="10" fill="#581c87"/>
+        <text x="26" y="42" font-family="'Inter', sans-serif" font-size="20">🏋️</text>
+        <text x="68" y="32" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#ffffff">Push Day • Upper Body</text>
+        <text x="68" y="48" font-family="'Inter', sans-serif" font-size="10.5" fill="#c084fc">4 of 5 Exercises Completed</text>
+        <circle cx="264" cy="37" r="13" fill="#1e293b" stroke="#a855f7" stroke-width="2"/>
+        <text x="264" y="41" font-family="'Inter', sans-serif" font-size="9" font-weight="bold" fill="#c084fc" text-anchor="middle">80%</text>
+      </g>
+
+      <!-- Habit Card 4: Mindful Breathing -->
+      <g transform="translate(0, 404)">
+        <rect x="0" y="0" width="294" height="74" rx="14" fill="url(#cardBg)" stroke="#334155" stroke-width="1"/>
+        <rect x="14" y="16" width="42" height="42" rx="10" fill="#1e3a8a"/>
+        <text x="26" y="42" font-family="'Inter', sans-serif" font-size="20">🧘</text>
+        <text x="68" y="32" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#ffffff">Evening Mindfulness</text>
+        <text x="68" y="48" font-family="'Inter', sans-serif" font-size="10.5" fill="#93c5fd">15 Minutes • Scheduled 09:30 PM</text>
+        <circle cx="264" cy="37" r="13" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+      </g>
+
+      <!-- Floating Add Habit Button -->
+      <g transform="translate(20, 495)">
+        <rect x="0" y="0" width="254" height="42" rx="21" fill="url(#cyanLimeGrad)"/>
+        <text x="127" y="26" font-family="'Inter', sans-serif" font-size="12" font-weight="800" fill="#020617" text-anchor="middle">+ ADD NEW HABIT</text>
+      </g>
+    </g>
+
+    <!-- Bottom Navigation Bar -->
+    <g transform="translate(24, 630)">
+      <line x1="0" y1="0" x2="300" y2="0" stroke="#1e293b" stroke-width="1"/>
+      <g transform="translate(25, 12)">
+        <circle cx="15" cy="15" r="4" fill="#00f2fe"/>
+        <text x="15" y="30" font-family="'Inter', sans-serif" font-size="8.5" font-weight="bold" fill="#00f2fe" text-anchor="middle">Habits</text>
+      </g>
+      <g transform="translate(95, 12)">
+        <circle cx="15" cy="15" r="4" fill="#64748b"/>
+        <text x="15" y="30" font-family="'Inter', sans-serif" font-size="8.5" fill="#64748b" text-anchor="middle">Workouts</text>
+      </g>
+      <g transform="translate(165, 12)">
+        <circle cx="15" cy="15" r="4" fill="#64748b"/>
+        <text x="15" y="30" font-family="'Inter', sans-serif" font-size="8.5" fill="#64748b" text-anchor="middle">Metrics</text>
+      </g>
+      <g transform="translate(235, 12)">
+        <circle cx="15" cy="15" r="4" fill="#64748b"/>
+        <text x="15" y="30" font-family="'Inter', sans-serif" font-size="8.5" fill="#64748b" text-anchor="middle">Profile</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- 3. RIGHT PHONE: PERFORMANCE, SLEEP & RECOVERY ENGINE (Tilted Perspective) -->
+  <!-- ========================================================================= -->
+  <g transform="translate(1110, 110) rotate(4 175 350)" filter="url(#phoneShadowSide)">
+    <!-- Chassis Shadow Base -->
+    <rect x="0" y="0" width="350" height="710" rx="48" fill="url(#titaniumFrame)"/>
+    <rect x="3" y="3" width="344" height="704" rx="46" fill="#020617" stroke="url(#innerBezelHighlight)" stroke-width="2"/>
+    
+    <!-- OLED Inner Screen -->
+    <rect x="12" y="12" width="326" height="686" rx="40" fill="url(#oledBlack)"/>
+
+    <!-- Dynamic Island / Speaker Pill -->
+    <rect x="115" y="24" width="120" height="28" rx="14" fill="#000000"/>
+    <circle cx="218" cy="38" r="4.5" fill="#1e293b"/>
+
+    <!-- Screen Status Bar -->
+    <text x="40" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="12" font-weight="700" fill="#94a3b8">9:41</text>
+    <g transform="translate(268, 32)" fill="#94a3b8">
+      <path d="M 0 8 L 3 8 L 3 10 L 0 10 Z M 5 6 L 8 6 L 8 10 L 5 10 Z M 10 3 L 13 3 L 13 10 L 10 10 Z"/>
+      <rect x="18" y="1" width="18" height="9" rx="2" fill="none" stroke="#94a3b8" stroke-width="1.2"/>
+      <rect x="20" y="3" width="12" height="5" rx="1" fill="#10b981"/>
+    </g>
+
+    <!-- Screen 3 Content: Recovery & Analytics -->
+    <g transform="translate(28, 70)">
+      <!-- Top Title -->
+      <text x="0" y="22" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#10b981" letter-spacing="1">BIO-RECOVERY SCORE</text>
+      <text x="0" y="48" font-family="'Inter', sans-serif" font-size="22" font-weight="800" fill="#ffffff">Readiness &amp; Sleep</text>
+
+      <!-- Recovery Circular Gauge Hero Card -->
+      <g transform="translate(0, 68)">
+        <rect x="0" y="0" width="294" height="130" rx="16" fill="url(#cardBg)" stroke="#10b981" stroke-width="1.5"/>
+        
+        <!-- Gauge Ring Arc -->
+        <g transform="translate(70, 65)">
+          <circle cx="0" cy="0" r="45" fill="none" stroke="#1e293b" stroke-width="10"/>
+          <circle cx="0" cy="0" r="45" fill="none" stroke="#10b981" stroke-width="10" stroke-dasharray="282" stroke-dashoffset="30" stroke-linecap="round" transform="rotate(-90)" filter="url(#glowLime)"/>
+          <text x="0" y="4" font-family="'Inter', sans-serif" font-size="24" font-weight="900" fill="#ffffff" text-anchor="middle">94%</text>
+          <text x="0" y="18" font-family="'Inter', sans-serif" font-size="8.5" font-weight="bold" fill="#10b981" text-anchor="middle">OPTIMAL</text>
+        </g>
+
+        <!-- Recovery Stats List -->
+        <g transform="translate(145, 25)">
+          <text x="0" y="15" font-family="'Inter', sans-serif" font-size="11" font-weight="bold" fill="#ffffff">Physiological Readiness</text>
+          <text x="0" y="32" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">HRV: <tspan fill="#10b981" font-weight="bold">68 ms (+12%)</tspan></text>
+          <text x="0" y="50" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">Resting HR: <tspan fill="#00f2fe" font-weight="bold">52 BPM</tspan></text>
+          <text x="0" y="68" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">Muscle Recovery: <tspan fill="#a855f7" font-weight="bold">Full</tspan></text>
+          <rect x="0" y="78" width="135" height="18" rx="9" fill="#064e3b"/>
+          <text x="67" y="90" font-family="'Inter', sans-serif" font-size="8.5" font-weight="bold" fill="#34d399" text-anchor="middle">Prime for High Intensity</text>
+        </g>
+      </g>
+
+      <!-- Sleep Analysis Card -->
+      <g transform="translate(0, 210)">
+        <rect x="0" y="0" width="294" height="96" rx="16" fill="url(#cardBg)" stroke="#334155" stroke-width="1"/>
+        <g transform="translate(16, 20)">
+          <text x="0" y="12" font-family="'Inter', sans-serif" font-size="14">🌙</text>
+          <text x="24" y="12" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#ffffff">Sleep Architecture</text>
+          <text x="200" y="12" font-family="'Inter', sans-serif" font-size="13" font-weight="800" fill="#38bdf8">7h 48m</text>
+          
+          <!-- Sleep Stages Bar -->
+          <g transform="translate(0, 26)">
+            <rect x="0" y="0" width="262" height="10" rx="5" fill="#1e293b"/>
+            <!-- Deep Sleep (Violet) -->
+            <rect x="0" y="0" width="65" height="10" rx="5" fill="#8b5cf6"/>
+            <!-- REM Sleep (Cyan) -->
+            <rect x="68" y="0" width="85" height="10" rx="0" fill="#0284c7"/>
+            <!-- Light Sleep (Sky) -->
+            <rect x="156" y="0" width="95" height="10" rx="0" fill="#38bdf8"/>
+            <!-- Awake -->
+            <rect x="253" y="0" width="9" height="10" rx="2" fill="#f43f5e"/>
+          </g>
+
+          <g transform="translate(0, 52)" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">
+            <circle cx="4" cy="0" r="3" fill="#8b5cf6"/>
+            <text x="12" y="3">Deep 2h 10m</text>
+            <circle cx="85" cy="0" r="3" fill="#0284c7"/>
+            <text x="93" y="3">REM 2h 45m</text>
+            <circle cx="170" cy="0" r="3" fill="#38bdf8"/>
+            <text x="178" y="3">Light 2h 53m</text>
+          </g>
+        </g>
+      </g>
+
+      <!-- Weekly Calorie Expenditure Bar Chart -->
+      <g transform="translate(0, 318)">
+        <rect x="0" y="0" width="294" height="135" rx="16" fill="url(#cardBg)" stroke="#334155" stroke-width="1"/>
+        <text x="16" y="24" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#ffffff">Weekly Calorie Burn</text>
+        <text x="215" y="24" font-family="'Inter', sans-serif" font-size="11" font-weight="bold" fill="#00f2fe">4,850 kcal</text>
+
+        <!-- Chart Grid Lines -->
+        <g stroke="#334155" stroke-width="0.8" stroke-dasharray="3,3" opacity="0.6">
+          <line x1="20" y1="45" x2="274" y2="45"/>
+          <line x1="20" y1="75" x2="274" y2="75"/>
+          <line x1="20" y1="105" x2="274" y2="105"/>
+        </g>
+
+        <!-- 7 Day Bars -->
+        <!-- Mon -->
+        <g transform="translate(30, 45)">
+          <rect x="0" y="25" width="18" height="40" rx="4" fill="#334155"/>
+          <text x="9" y="75" font-family="'Inter', sans-serif" font-size="9" fill="#64748b" text-anchor="middle">M</text>
+        </g>
+        <!-- Tue -->
+        <g transform="translate(65, 45)">
+          <rect x="0" y="15" width="18" height="50" rx="4" fill="url(#barActiveGrad)"/>
+          <text x="9" y="75" font-family="'Inter', sans-serif" font-size="9" fill="#64748b" text-anchor="middle">T</text>
+        </g>
+        <!-- Wed -->
+        <g transform="translate(100, 45)">
+          <rect x="0" y="28" width="18" height="37" rx="4" fill="#334155"/>
+          <text x="9" y="75" font-family="'Inter', sans-serif" font-size="9" fill="#64748b" text-anchor="middle">W</text>
+        </g>
+        <!-- Thu -->
+        <g transform="translate(135, 45)">
+          <rect x="0" y="10" width="18" height="55" rx="4" fill="url(#barActiveGrad)"/>
+          <text x="9" y="75" font-family="'Inter', sans-serif" font-size="9" fill="#64748b" text-anchor="middle">T</text>
+        </g>
+        <!-- Fri (Peak Highlight) -->
+        <g transform="translate(170, 45)">
+          <rect x="0" y="0" width="18" height="65" rx="4" fill="url(#cyanLimeGrad)" filter="url(#glowLime)"/>
+          <text x="9" y="-6" font-family="'Inter', sans-serif" font-size="8.5" font-weight="bold" fill="#10b981" text-anchor="middle">850</text>
+          <text x="9" y="75" font-family="'Inter', sans-serif" font-size="9" font-weight="bold" fill="#00f2fe" text-anchor="middle">F</text>
+        </g>
+        <!-- Sat -->
+        <g transform="translate(205, 45)">
+          <rect x="0" y="8" width="18" height="57" rx="4" fill="url(#barActiveGrad)"/>
+          <text x="9" y="75" font-family="'Inter', sans-serif" font-size="9" fill="#64748b" text-anchor="middle">S</text>
+        </g>
+        <!-- Sun -->
+        <g transform="translate(240, 45)">
+          <rect x="0" y="35" width="18" height="30" rx="4" fill="#1e293b"/>
+          <text x="9" y="75" font-family="'Inter', sans-serif" font-size="9" fill="#64748b" text-anchor="middle">S</text>
+        </g>
+      </g>
+
+      <!-- Achievement Badges Strip -->
+      <g transform="translate(0, 465)">
+        <rect x="0" y="0" width="140" height="60" rx="12" fill="url(#cardBg)" stroke="#eab308" stroke-width="1"/>
+        <text x="14" y="36" font-family="'Inter', sans-serif" font-size="18">🏆</text>
+        <text x="40" y="26" font-family="'Inter', sans-serif" font-size="10.5" font-weight="bold" fill="#ffffff">Century Club</text>
+        <text x="40" y="42" font-family="'Inter', sans-serif" font-size="9" fill="#facc15">100 Workouts</text>
+
+        <rect x="154" y="0" width="140" height="60" rx="12" fill="url(#cardBg)" stroke="#06b6d4" stroke-width="1"/>
+        <text x="168" y="36" font-family="'Inter', sans-serif" font-size="18">⚡</text>
+        <text x="194" y="26" font-family="'Inter', sans-serif" font-size="10.5" font-weight="bold" fill="#ffffff">Master Pacer</text>
+        <text x="194" y="42" font-family="'Inter', sans-serif" font-size="9" fill="#38bdf8">Top 5% Speed</text>
+      </g>
+    </g>
+
+    <!-- Bottom Navigation Bar -->
+    <g transform="translate(24, 630)">
+      <line x1="0" y1="0" x2="300" y2="0" stroke="#1e293b" stroke-width="1"/>
+      <g transform="translate(25, 12)">
+        <circle cx="15" cy="15" r="4" fill="#64748b"/>
+        <text x="15" y="30" font-family="'Inter', sans-serif" font-size="8.5" fill="#64748b" text-anchor="middle">Habits</text>
+      </g>
+      <g transform="translate(95, 12)">
+        <circle cx="15" cy="15" r="4" fill="#64748b"/>
+        <text x="15" y="30" font-family="'Inter', sans-serif" font-size="8.5" fill="#64748b" text-anchor="middle">Workouts</text>
+      </g>
+      <g transform="translate(165, 12)">
+        <circle cx="15" cy="15" r="4" fill="#10b981"/>
+        <text x="15" y="30" font-family="'Inter', sans-serif" font-size="8.5" font-weight="bold" fill="#10b981" text-anchor="middle">Metrics</text>
+      </g>
+      <g transform="translate(235, 12)">
+        <circle cx="15" cy="15" r="4" fill="#64748b"/>
+        <text x="15" y="30" font-family="'Inter', sans-serif" font-size="8.5" fill="#64748b" text-anchor="middle">Profile</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- 4. CENTER HERO PHONE: ACTIVE WORKOUT & BIOMETRIC RINGS (Frontal Elevated) -->
+  <!-- ========================================================================= -->
+  <g transform="translate(615, 60)" filter="url(#phoneShadowCenter)">
+    <!-- Flagship Titanium Dark Space Frame -->
+    <rect x="0" y="0" width="370" height="760" rx="52" fill="url(#titaniumFrame)"/>
+    <rect x="3" y="3" width="364" height="754" rx="50" fill="#020617" stroke="url(#innerBezelHighlight)" stroke-width="2.5"/>
+    
+    <!-- OLED True Black Screen Display -->
+    <rect x="14" y="14" width="342" height="732" rx="44" fill="url(#oledBlack)"/>
+
+    <!-- Dynamic Island with Sensor and Camera -->
+    <rect x="125" y="24" width="120" height="30" rx="15" fill="#000000"/>
+    <circle cx="228" cy="39" r="5" fill="#1e293b"/>
+    <circle cx="145" cy="39" r="4" fill="#0f172a"/>
+
+    <!-- Screen Status Bar -->
+    <text x="44" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="13" font-weight="700" fill="#ffffff">9:41</text>
+    <g transform="translate(282, 34)" fill="#ffffff">
+      <path d="M 0 9 L 3.5 9 L 3.5 11 L 0 11 Z M 5.5 6.5 L 9 6.5 L 9 11 L 5.5 11 Z M 11 3.5 L 14.5 3.5 L 14.5 11 L 11 11 Z"/>
+      <rect x="20" y="1" width="20" height="10" rx="2.5" fill="none" stroke="#ffffff" stroke-width="1.3"/>
+      <rect x="22" y="3" width="14" height="6" rx="1.5" fill="#10b981"/>
+    </g>
+
+    <!-- Center Phone Screen Content: Active Workout Session -->
+    <g transform="translate(30, 75)">
+      <!-- Top Session Header -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="310" height="38" rx="12" fill="url(#cardBg)" stroke="#334155" stroke-width="1"/>
+        <circle cx="20" cy="19" r="6" fill="#10b981" filter="url(#glowLime)"/>
+        <text x="34" y="23" font-family="'Inter', sans-serif" font-size="11" font-weight="800" fill="#ffffff">HIIT &amp; CARDIO SPRINT</text>
+        <rect x="220" y="8" width="76" height="22" rx="11" fill="#064e3b"/>
+        <text x="258" y="23" font-family="'Inter', sans-serif" font-size="10" font-weight="bold" fill="#34d399" text-anchor="middle">LIVE SYNC</text>
+      </g>
+
+      <!-- Big Active Timer Display -->
+      <g transform="translate(0, 56)">
+        <text x="155" y="38" font-family="'Impact', 'Inter', sans-serif" font-size="44" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="2">42:15<tspan font-size="20" fill="#00f2fe">.8</tspan></text>
+        <text x="155" y="58" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#64748b" text-anchor="middle" letter-spacing="1.5">ACTIVE DURATION</text>
+      </g>
+
+      <!-- 3 CONCENTRIC ACTIVITY RINGS (Apple Fitness Architecture) -->
+      <g transform="translate(155, 185)">
+        <!-- Outer Ring: MOVE (Red / Coral) 642 / 700 kcal -->
+        <circle cx="0" cy="0" r="68" fill="none" stroke="#3f121a" stroke-width="12"/>
+        <circle cx="0" cy="0" r="68" fill="none" stroke="url(#coralRed)" stroke-width="12" stroke-dasharray="427" stroke-dashoffset="35" stroke-linecap="round" transform="rotate(-90)" filter="url(#glowRed)"/>
+        
+        <!-- Middle Ring: EXERCISE (Neon Lime) 42 / 30 mins (Over 100%!) -->
+        <circle cx="0" cy="0" r="50" fill="none" stroke="#052e16" stroke-width="12"/>
+        <circle cx="0" cy="0" r="50" fill="none" stroke="url(#cyanLimeGrad)" stroke-width="12" stroke-dasharray="314" stroke-dashoffset="0" stroke-linecap="round" transform="rotate(-90)" filter="url(#glowLime)"/>
+
+        <!-- Inner Ring: STAND (Electric Cyan) 10 / 12 hrs -->
+        <circle cx="0" cy="0" r="32" fill="none" stroke="#082f49" stroke-width="12"/>
+        <circle cx="0" cy="0" r="32" fill="none" stroke="#00f2fe" stroke-width="12" stroke-dasharray="201" stroke-dashoffset="32" stroke-linecap="round" transform="rotate(-90)" filter="url(#glowCyan)"/>
+
+        <!-- Ring Center Flame Icon -->
+        <text x="0" y="8" font-family="'Inter', sans-serif" font-size="22" text-anchor="middle">⚡</text>
+      </g>
+
+      <!-- Triple Rings Legend Metric Badges -->
+      <g transform="translate(0, 275)">
+        <!-- Move -->
+        <g transform="translate(15, 0)">
+          <circle cx="8" cy="8" r="5" fill="#f43f5e"/>
+          <text x="18" y="12" font-family="'Inter', sans-serif" font-size="11" font-weight="bold" fill="#ffffff">642 <tspan fill="#64748b" font-weight="normal">kcal</tspan></text>
+        </g>
+        <!-- Exercise -->
+        <g transform="translate(115, 0)">
+          <circle cx="8" cy="8" r="5" fill="#10b981"/>
+          <text x="18" y="12" font-family="'Inter', sans-serif" font-size="11" font-weight="bold" fill="#ffffff">42 <tspan fill="#64748b" font-weight="normal">mins</tspan></text>
+        </g>
+        <!-- Stand -->
+        <g transform="translate(215, 0)">
+          <circle cx="8" cy="8" r="5" fill="#00f2fe"/>
+          <text x="18" y="12" font-family="'Inter', sans-serif" font-size="11" font-weight="bold" fill="#ffffff">10/12 <tspan fill="#64748b" font-weight="normal">hrs</tspan></text>
+        </g>
+      </g>
+
+      <!-- LIVE BIOMETRIC HEART RATE & ECG CARD -->
+      <g transform="translate(0, 305)">
+        <rect x="0" y="0" width="310" height="98" rx="16" fill="url(#cardBg)" stroke="#f43f5e" stroke-width="1.5"/>
+        
+        <!-- Heart Rate Pulse Box -->
+        <g transform="translate(16, 16)">
+          <circle cx="16" cy="16" r="16" fill="#881337"/>
+          <text x="16" y="22" font-family="'Inter', sans-serif" font-size="16" text-anchor="middle">❤️</text>
+          
+          <text x="42" y="16" font-family="'Impact', 'Inter', sans-serif" font-size="30" font-weight="900" fill="#ffffff">148</text>
+          <text x="96" y="12" font-family="'Inter', sans-serif" font-size="11" font-weight="bold" fill="#f43f5e">BPM</text>
+          <text x="42" y="32" font-family="'Inter', sans-serif" font-size="10" font-weight="bold" fill="#34d399">Zone 4 • Fat Burn &amp; Peak</text>
+        </g>
+
+        <!-- Live ECG Waveform Path (Glowing Neon Line) -->
+        <g transform="translate(150, 20)">
+          <path d="M 0 35 L 25 35 L 35 20 L 45 48 L 55 5 L 68 62 L 78 30 L 88 40 L 98 35 L 140 35" fill="none" stroke="#00f2fe" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#glowCyan)"/>
+          <circle cx="140" cy="35" r="4" fill="#00f2fe" filter="url(#glowCyan)"/>
+        </g>
+      </g>
+
+      <!-- Secondary Telemetry Grid: Pace, Distance, Cadence -->
+      <g transform="translate(0, 420)">
+        <!-- Box 1: Distance -->
+        <rect x="0" y="0" width="96" height="68" rx="12" fill="url(#cardBg)" stroke="#334155" stroke-width="1"/>
+        <text x="12" y="22" font-family="'Inter', sans-serif" font-size="9.5" font-weight="bold" fill="#64748b">DISTANCE</text>
+        <text x="12" y="46" font-family="'Impact', sans-serif" font-size="20" font-weight="bold" fill="#ffffff">6.82</text>
+        <text x="56" y="46" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">km</text>
+
+        <!-- Box 2: Current Pace -->
+        <rect x="107" y="0" width="96" height="68" rx="12" fill="url(#cardBg)" stroke="#334155" stroke-width="1"/>
+        <text x="119" y="22" font-family="'Inter', sans-serif" font-size="9.5" font-weight="bold" fill="#64748b">AVG PACE</text>
+        <text x="119" y="46" font-family="'Impact', sans-serif" font-size="20" font-weight="bold" fill="#00f2fe">5'14"</text>
+        <text x="166" y="46" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">/km</text>
+
+        <!-- Box 3: Cadence / Elevation -->
+        <rect x="214" y="0" width="96" height="68" rx="12" fill="url(#cardBg)" stroke="#334155" stroke-width="1"/>
+        <text x="226" y="22" font-family="'Inter', sans-serif" font-size="9.5" font-weight="bold" fill="#64748b">ELEVATION</text>
+        <text x="226" y="46" font-family="'Impact', sans-serif" font-size="20" font-weight="bold" fill="#10b981">+148</text>
+        <text x="274" y="46" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">m</text>
+      </g>
+
+      <!-- Action Button: Pause Session (Vibrant Gradient Pill) -->
+      <g transform="translate(0, 508)">
+        <rect x="0" y="0" width="310" height="52" rx="26" fill="url(#cyanLimeGrad)" filter="url(#glowLime)"/>
+        <text x="155" y="32" font-family="'Impact', 'Inter', sans-serif" font-size="16" font-weight="900" fill="#020617" text-anchor="middle" letter-spacing="1.5">⏸ PAUSE WORKOUT</text>
+      </g>
+    </g>
+
+    <!-- Bottom Navigation Home Bar -->
+    <g transform="translate(30, 665)">
+      <line x1="0" y1="0" x2="310" y2="0" stroke="#1e293b" stroke-width="1"/>
+      <g transform="translate(30, 14)">
+        <circle cx="15" cy="15" r="4" fill="#64748b"/>
+        <text x="15" y="30" font-family="'Inter', sans-serif" font-size="9" fill="#64748b" text-anchor="middle">Habits</text>
+      </g>
+      <g transform="translate(100, 14)">
+        <circle cx="15" cy="15" r="4" fill="#00f2fe" filter="url(#glowCyan)"/>
+        <text x="15" y="30" font-family="'Inter', sans-serif" font-size="9" font-weight="bold" fill="#00f2fe" text-anchor="middle">Workouts</text>
+      </g>
+      <g transform="translate(170, 14)">
+        <circle cx="15" cy="15" r="4" fill="#64748b"/>
+        <text x="15" y="30" font-family="'Inter', sans-serif" font-size="9" fill="#64748b" text-anchor="middle">Metrics</text>
+      </g>
+      <g transform="translate(240, 14)">
+        <circle cx="15" cy="15" r="4" fill="#64748b"/>
+        <text x="15" y="30" font-family="'Inter', sans-serif" font-size="9" fill="#64748b" text-anchor="middle">Profile</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- 5. FLOATING GLASS BADGES & FEATURE PILLS (COMMERCIAL SHOWCASE FINISH) -->
+  <!-- ========================================================================= -->
+  <!-- Top Left Pill: Cross-Platform React Native -->
+  <g transform="translate(80, 50)">
+    <rect x="0" y="0" width="220" height="42" rx="21" fill="#0f172a" stroke="#00f2fe" stroke-width="1.5" opacity="0.95"/>
+    <circle cx="24" cy="21" r="9" fill="#00f2fe"/>
+    <text x="24" y="25" font-family="'Inter', sans-serif" font-size="12" font-weight="bold" fill="#020617" text-anchor="middle">⚛</text>
+    <text x="44" y="26" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#ffffff">React Native • iOS &amp; Android</text>
+  </g>
+
+  <!-- Top Right Pill: Biometrics & Offline-First -->
+  <g transform="translate(1260, 50)">
+    <rect x="0" y="0" width="260" height="42" rx="21" fill="#0f172a" stroke="#10b981" stroke-width="1.5" opacity="0.95"/>
+    <circle cx="24" cy="21" r="9" fill="#10b981"/>
+    <text x="24" y="25" font-family="'Inter', sans-serif" font-size="12" font-weight="bold" fill="#020617" text-anchor="middle">⚡</text>
+    <text x="44" y="26" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#ffffff">HealthKit • Biometrics &amp; Streaks</text>
+  </g>
+
+  <!-- Bottom Showcase Label Banner -->
+  <g transform="translate(500, 835)">
+    <rect x="0" y="0" width="600" height="44" rx="22" fill="#090d16" stroke="#334155" stroke-width="1.5"/>
+    <circle cx="30" cy="22" r="7" fill="#00f2fe"/>
+    <text x="48" y="28" font-family="'Inter', sans-serif" font-size="13" font-weight="800" fill="#ffffff" letter-spacing="1">FITPULSE PRO • HABIT TRACKER &amp; WORKOUT TELEMETRY</text>
+  </g>
+</svg>

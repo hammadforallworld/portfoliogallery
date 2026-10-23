@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="vu-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="vu-cyan-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+    <linearGradient id="vu-card-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9"/>
+    </linearGradient>
+    <pattern id="vu-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(56, 189, 248, 0.07)" stroke-width="1"/>
+      <circle cx="40" cy="40" r="1" fill="rgba(129, 140, 248, 0.2)"/>
+    </pattern>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#vu-bg)"/>
+  <rect width="800" height="450" fill="url(#vu-grid)"/>
+
+  <!-- Glowing atmospheric orbs -->
+  <circle cx="680" cy="90" r="160" fill="#38bdf8" opacity="0.12" filter="url(#glow)"/>
+  <circle cx="120" cy="360" r="140" fill="#6366f1" opacity="0.1" filter="url(#glow)"/>
+
+  <!-- Outer Border Frame -->
+  <rect x="20" y="20" width="760" height="410" rx="16" fill="none" stroke="rgba(56, 189, 248, 0.25)" stroke-width="1.5"/>
+
+  <!-- Code Graphic / Hexagonal Tech Emblem (Right side) -->
+  <g transform="translate(560, 145)">
+    <!-- Outer rotating hexagon -->
+    <polygon points="100,0 186,50 186,150 100,200 14,150 14,50" fill="none" stroke="rgba(56, 189, 248, 0.3)" stroke-width="2"/>
+    <polygon points="100,10 178,55 178,145 100,190 22,145 22,55" fill="#0f172a" fill-opacity="0.8" stroke="url(#vu-cyan-glow)" stroke-width="2"/>
+    
+    <!-- Tech node circuits -->
+    <path d="M 100 20 L 100 60 M 178 100 L 140 100 M 22 100 L 60 100 M 100 180 L 100 140" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1.5" stroke-dasharray="3,3"/>
+    <circle cx="100" cy="60" r="4" fill="#38bdf8"/>
+    <circle cx="140" cy="100" r="4" fill="#818cf8"/>
+    <circle cx="60" cy="100" r="4" fill="#38bdf8"/>
+    <circle cx="100" cy="140" r="4" fill="#818cf8"/>
+
+    <!-- Central Code Brackets Icon -->
+    <path d="M 85 85 L 68 100 L 85 115" fill="none" stroke="#38bdf8" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 115 85 L 132 100 L 115 115" fill="none" stroke="#38bdf8" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="106" y1="80" x2="94" y2="120" stroke="#818cf8" stroke-width="3.5" stroke-linecap="round"/>
+    
+    <!-- Binary data streaming floating lines -->
+    <text x="100" y="225" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11" fill="rgba(56, 189, 248, 0.6)" text-anchor="middle" letter-spacing="3">01000011 01010011</text>
+  </g>
+
+  <!-- Content Left Column -->
+  <!-- Top Badge Pill -->
+  <g transform="translate(60, 56)">
+    <rect x="0" y="0" width="220" height="30" rx="15" fill="rgba(56, 189, 248, 0.12)" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1"/>
+    <circle cx="15" cy="15" r="4" fill="#38bdf8"/>
+    <text x="28" y="20" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#38bdf8" letter-spacing="1.5">BACHELOR DEGREE</text>
+  </g>
+
+  <!-- Institution Name -->
+  <text x="60" y="125" font-family="'Inter', sans-serif" font-size="14" font-weight="600" fill="#94a3b8" letter-spacing="2">VIRTUAL UNIVERSITY OF PAKISTAN</text>
+
+  <!-- Degree Title -->
+  <text x="60" y="165" font-family="'Inter', sans-serif" font-size="28" font-weight="800" fill="#ffffff" letter-spacing="-0.5">Bachelor of Science in</text>
+  <text x="60" y="202" font-family="'Inter', sans-serif" font-size="30" font-weight="800" fill="url(#vu-cyan-glow)" letter-spacing="-0.5">Computer Science (BSCS)</text>
+
+  <!-- Timeline & Status Badges -->
+  <g transform="translate(60, 235)">
+    <rect x="0" y="0" width="124" height="28" rx="6" fill="#1e293b" stroke="rgba(255,255,255,0.1)"/>
+    <text x="62" y="18" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600" fill="#cbd5e1" text-anchor="middle">2022 — 2026</text>
+
+    <rect x="136" y="0" width="120" height="28" rx="6" fill="rgba(56, 189, 248, 0.12)" stroke="rgba(56, 189, 248, 0.35)"/>
+    <circle cx="148" cy="14" r="3.5" fill="#38bdf8"/>
+    <text x="198" y="18" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#38bdf8" text-anchor="middle">COMPLETED</text>
+  </g>
+
+  <!-- Specialization Pills -->
+  <g transform="translate(60, 290)">
+    <rect x="0" y="0" width="170" height="26" rx="6" fill="rgba(56, 189, 248, 0.08)" stroke="rgba(56, 189, 248, 0.2)"/>
+    <text x="85" y="17" font-family="'Inter', sans-serif" font-size="11" font-weight="500" fill="#93c5fd" text-anchor="middle">Data Structures &amp; Algos</text>
+
+    <rect x="180" y="0" width="160" height="26" rx="6" fill="rgba(129, 140, 248, 0.08)" stroke="rgba(129, 140, 248, 0.2)"/>
+    <text x="260" y="17" font-family="'Inter', sans-serif" font-size="11" font-weight="500" fill="#c7d2fe" text-anchor="middle">Software Engineering</text>
+
+    <rect x="350" y="0" width="135" height="26" rx="6" fill="rgba(56, 189, 248, 0.08)" stroke="rgba(56, 189, 248, 0.2)"/>
+    <text x="417" y="17" font-family="'Inter', sans-serif" font-size="11" font-weight="500" fill="#93c5fd" text-anchor="middle">AI &amp; Web Systems</text>
+  </g>
+
+  <!-- Bottom Terminal Status Bar -->
+  <g transform="translate(60, 360)">
+    <line x1="0" y1="0" x2="680" y2="0" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="0" y="24" font-family="'JetBrains Mono', monospace" font-size="11" fill="#64748b">&gt; Federal Chartered University | Higher Education Commission (HEC) Recognized</text>
+  </g>
+</svg>
